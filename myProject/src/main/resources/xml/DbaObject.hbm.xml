@@ -1,0 +1,28 @@
+<?xml version='1.0' encoding='utf-8'?>
+<!DOCTYPE hibernate-mapping PUBLIC
+    "-//Hibernate/Hibernate Mapping DTD 3.0//EN"
+    "http://www.hibernate.org/dtd/hibernate-mapping-3.0.dtd">
+<hibernate-mapping>
+    <class name="person.pojo.DbaObject" table="dba_objects_copy">
+        <id name="object_id" type="java.lang.String">
+            <column name="object_id" />
+            <generator class="assigned" />
+        </id>
+        <property name="owner" type="java.lang.String">
+            <column name="owner" />
+        </property><property name="object_name" type="java.lang.String">
+            <column name="object_name" />
+        </property><property name="namespace" type="java.lang.String">
+            <column name="namespace" />
+        </property><property name="edition_name" type="java.lang.String">
+            <column name="edition_name" />
+        </property><property name="secondary" type="java.lang.String">
+            <column name="secondary" />
+        </property><property name="last_ddl_time" type="java.util.Date">
+            <column name="last_ddl_time" />
+        </property><property name="object_type" type="java.lang.String">
+            <column name="object_type" />
+        </property>
+
+    </class>
+</hibernate-mapping>

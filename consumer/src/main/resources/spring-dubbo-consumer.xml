@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns="http://www.springframework.org/schema/beans"
+       xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:dubbo="http://dubbo.apache.org/schema/dubbo"
+       xsi:schemaLocation="http://www.springframework.org/schema/beans http://www.springframework.org/schema/beans/spring-beans.xsd http://dubbo.apache.org/schema/dubbo http://dubbo.apache.org/schema/dubbo/dubbo.xsd">
+<!--    dubbo应用的名称-->
+  <dubbo:application name="demo-consumer" owner="zsxtest"/>
+    <!-- use multicast registry center to discover service -->
+  <dubbo:registry address="multicast://239.5.6.8:12345"/>
+    <!-- use dubbo protocol to export service on port 20880 多个服务提供者端口号不能重复
+     多播能使一个或多个多播源只把数据包发送给特定的多播组，而只有加入该多播组的主机才能接收到数据包-->
+   <dubbo:protocol name="dubbo" port="20880"/>
+
+    <!-- 产生服务代理类，使得远程调用的服务可以像本地服务一样使用-->
+    <dubbo:reference id="todoService" interface="common.service.IToDoService" />
+</beans>

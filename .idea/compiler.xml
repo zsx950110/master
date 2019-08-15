@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="CompilerConfiguration">
+    <annotationProcessing>
+      <profile name="Maven default annotation processors profile" enabled="true">
+        <sourceOutputDir name="target/generated-sources/annotations" />
+        <sourceTestOutputDir name="target/generated-test-sources/test-annotations" />
+        <outputRelativeToContentRoot value="true" />
+        <module name="workspace" />
+        <module name="common" />
+        <module name="provider" />
+        <module name="myProject" />
+        <module name="java-redis-search" />
+        <module name="consumer" />
+      </profile>
+    </annotationProcessing>
+    <bytecodeTargetLevel>
+      <module name="common" target="1.5" />
+      <module name="consumer" target="1.5" />
+      <module name="dubbocommon" target="1.5" />
+      <module name="java-redis-search" target="1.6" />
+      <module name="myProject" target="1.7" />
+      <module name="provider" target="1.5" />
+      <module name="workspace" target="1.5" />
+    </bytecodeTargetLevel>
+  </component>
+  <component name="JavacSettings">
+    <option name="ADDITIONAL_OPTIONS_OVERRIDE">
+      <module name="java-redis-search" options="-sourcepath F:\workspace\java10000-java-redis-search-master\java-redis-search/src/main/java" />
+    </option>
+  </component>
+</project>
