@@ -1,36 +1,27 @@
 package provider;
 
-import common.test.StringUtil;
-import org.springframework.context.ApplicationContext;
-import org.springframework.context.support.ClassPathXmlApplicationContext;
+import com.alibaba.dubbo.container.Main;
 
-import java.text.ParseException;
-import java.text.SimpleDateFormat;
-
+import java.io.IOException;
 public class MainTest {
     public static void main(String[] args) {
-        String date1 = "2019-08-13";
-       SimpleDateFormat dateFormat = new  SimpleDateFormat("yyyy/MM/dd");
-       String date2 = date1.replace('-','/');
-        System.out.println(date2);
-        try {
-            dateFormat.parse(date2);
-        } catch (ParseException e) {
-            e.printStackTrace();
-        }
-        return;
-
-     /*   ApplicationContext applicationContext = new ClassPathXmlApplicationContext("classpath:spring-dubbo-provider.xml");
+     /*  ApplicationContext applicationContext = new ClassPathXmlApplicationContext("classpath:spring-dubbo-provider.xml");
         String[] beanDefinitionNames = applicationContext.getBeanDefinitionNames();
+
         System.out.println("开始展示beanname");
         for (String beanDefinitionName : beanDefinitionNames) {
             System.out.println(beanDefinitionName);
-        }
+        }*/
+     //   Main.main(args);
         try {
-            Thread.sleep(1000000000);
-        } catch (InterruptedException e) {
+            //阻塞使得provider能一直连这zk
+            System.out.println("阻塞中。。。");
+            System.in.read(); // press any key to exit
+
+            System.out.println("结束阻塞。。。。");
+        } catch (IOException e) {
             e.printStackTrace();
         }
-        System.out.println("加载成功");*/
+        System.out.println("加载成功");
     }
 }

@@ -20,6 +20,7 @@
 <h1>查看图片</h1>
 <a href="./viewer.html" style="display: none;" id="seePicLink"></a>
 <button onclick="seePic()">查看大pdf</button>
-<button onclick="view()">查看pdf</button>
+<button onclick="view()">查看hhpdf</button>
+<a href="search.html">搜索页面</a>
 </body>
 </html>

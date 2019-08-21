@@ -16,6 +16,7 @@ import org.springframework.web.bind.annotation.PathVariable;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.ResponseBody;
 import org.springframework.web.bind.annotation.RestController;
+import person.pojo.Book;
 import person.pojo.Comment;
 import person.pojo.TestUser;
 import person.pojo.ToDo;
@@ -240,23 +241,35 @@ public class TestController {
     @ResponseBody
     @RequestMapping("/shoppingCardAdd/{userId}/{bookId}")
     public String shoppingCardAdd(HttpServletRequest request, @PathVariable String userId, @PathVariable String bookId) {
-        operations.shoppingCartAdd(userId,bookId);
-        return  JSON.toJSONString(operations.showCart(userId));
+        operations.shoppingCartAdd(userId, bookId);
+        return JSON.toJSONString("");
 
     }
+
     //减少
     @ResponseBody
     @RequestMapping("/shoppingCardDecrease/{userId}/{bookId}")
     public String shoppingCardDecrease(HttpServletRequest request, @PathVariable String userId, @PathVariable String bookId) {
-        operations.shoppingCardDecrease(userId,bookId);
-        return  JSON.toJSONString(operations.showCart(userId));
+        operations.shoppingCardDecrease(userId, bookId);
+        return JSON.toJSONString("");
 
     }
+
     //查看
     @ResponseBody
-    @RequestMapping("/shoppingCardshow/{userId}")
-    public String shoppingCardShow(HttpServletRequest request, @PathVariable String userId) {
-        return  JSON.toJSONString(operations.showCart(userId));
+    @RequestMapping("/saveBook")
+    public String saveBook() {
+        Book book = new Book();
+        book.setDiscount(3);
+        book.setId(String.valueOf(System.currentTimeMillis()));
+        book.setType("java");
+        book.setPrice(23.0);
+        book.setWrap("平装");
+        book.setStar(3);
+        book.setName("水浒传");
+        book.setPublisher("人民");
+        operations.saveBook();
+        return "成功";
 
     }
 

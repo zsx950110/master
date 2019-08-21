@@ -7,20 +7,28 @@
         <sourceTestOutputDir name="target/generated-test-sources/test-annotations" />
         <outputRelativeToContentRoot value="true" />
         <module name="workspace" />
-        <module name="common" />
-        <module name="provider" />
+        <module name="dubbo_test.provider" />
+        <module name="dubbo_test.consumer" />
+        <module name="myProjectProvider" />
         <module name="myProject" />
+        <module name="dubbo_test.common" />
         <module name="java-redis-search" />
         <module name="consumer" />
+        <module name="MVC2Distributed.myProjectConsumer" />
       </profile>
     </annotationProcessing>
     <bytecodeTargetLevel>
-      <module name="common" target="1.5" />
       <module name="consumer" target="1.5" />
+      <module name="dubbo_test.common" target="1.5" />
+      <module name="dubbo_test.consumer" target="1.5" />
+      <module name="dubbo_test.provider" target="1.5" />
       <module name="dubbocommon" target="1.5" />
       <module name="java-redis-search" target="1.6" />
+      <module name="MVC2Distributed.myProjectCommon" target="1.7" />
+      <module name="MVC2Distributed.myProjectConsumer" target="1.5" />
+      <module name="MVC2Distributed.myProjectProvider" target="1.5" />
       <module name="myProject" target="1.7" />
-      <module name="provider" target="1.5" />
+      <module name="myProjectProvider" target="1.7" />
       <module name="workspace" target="1.5" />
     </bytecodeTargetLevel>
   </component>

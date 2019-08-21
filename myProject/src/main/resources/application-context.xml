@@ -44,7 +44,7 @@
 	<property name="jndiName" value="jdbc/oracle"/>
 	</bean>-->
 	<!--注意：这里的value值就是在server.xml或者context.xml中配置的name值一样。-->
-	<!--<bean id="Operations" class="person.service.Operations"/>-->
+	<!--<bean id="serviceImpl.Operations" class="person.service.serviceImpl.Operations"/>-->
 	<!-- Spring整合Hibernate -->
 	<bean id="sessionFactory" class="org.springframework.orm.hibernate4.LocalSessionFactoryBean">
 		<!--		<property-->
@@ -61,7 +61,7 @@
 		<property name="dataSource" ref="dataSource"/>
 		<!--		<property name="annotatedataSourcedClasses">-->
 		<!--			<list>-->
-		<!--				<value>person.service.Operations</value>-->
+		<!--				<value>person.service.serviceImpl.Operations</value>-->
 		<!--			</list>-->
 		<!--		</property>-->
 		<property name="mappingLocations">

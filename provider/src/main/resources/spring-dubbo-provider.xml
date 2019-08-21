@@ -1,17 +1,22 @@
-<?xml version="1.0" encoding="UTF-8"?>
-<beans xmlns="http://www.springframework.org/schema/beans"
-       xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:dubbo="http://dubbo.apache.org/schema/dubbo"
-       xsi:schemaLocation="http://www.springframework.org/schema/beans http://www.springframework.org/schema/beans/spring-beans.xsd http://dubbo.apache.org/schema/dubbo http://dubbo.apache.org/schema/dubbo/dubbo.xsd">
-<!--    dubbo应用的名称-->
-  <dubbo:application name="demo-provider"/>
-    <!--多播注册中心地址-->
-    <dubbo:registry address="multicast://239.5.6.8:12345"/>
+<beans xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
 
-    <!-- use dubbo protocol to export service on port 20880 多个服务提供者端口号不能重复
-     多播能使一个或多个多播源只把数据包发送给特定的多播组，而只有加入该多播组的主机才能接收到数据包-->
-   <dubbo:protocol name="dubbo" port="20880"/>
-    <!-- service implementation, as same as regular local bean -->
-    <bean id="todoService" class="provider.serviceImpl.ToDoServiceImpl"/>
-    <!-- declare the service interface to be exported 把本地实现类以接口的方式暴露 -->
-    <dubbo:service interface="common.service.IToDoService" ref="todoService"/>
+       xmlns="http://www.springframework.org/schema/beans" xmlns:dubbo="http://code.alibabatech.com/schema/dubbo"
+       xsi:schemaLocation="http://www.springframework.org/schema/beans http://www.springframework.org/schema/beans/spring-beans-4.3.xsd http://code.alibabatech.com/schema/dubbo http://code.alibabatech.com/schema/dubbo/dubbo.xsd">
+
+    <!-- provider's application name, used for tracing dependency relationship -->
+    <dubbo:application name="demo-provider"/>
+    <!-- use multicast registry center to export service -->
+   <!-- <dubbo:registry address="multicast://239.5.6.7:1234"/>-->
+    <!-- 使用zookeeper注册中心暴露服务地址 -->
+    <dubbo:registry protocol="zookeeper" address="127.0.0.1:2181"/>
+    <!-- 用dubbo协议在20880端口暴露服务 -->
+    <dubbo:protocol name="dubbo" port="2090"/>
+
+    <!-- use dubbo protocol to export service on port 20880 -->
+   <!-- <dubbo:protocol name="dubbo" port="20880"/>-->
+    <!-- service implementation, as same as regu    lar local bean -->
+  <!--<bean id="toDoService" class="provider.serviceImpl.ToDoServiceImpl"/>
+    <dubbo:service interface="common.service.IToDoService" ref="toDoService"/>-->
+    <!--配置扫描包-->
+   <dubbo:annotation package="provider.serviceImpl"/>
 </beans>

@@ -1,5 +1,6 @@
 
 package common.vo;
+import java.io.Serializable;
 import java.util.Date;
 
 
@@ -9,7 +10,7 @@ import java.util.Date;
  * @version 1.0, 2019-2-25
  * @since 1.0, 2019-2-25
  */
-public class ToDo {
+public class ToDo  implements Serializable{
 
     @Override
     public String toString() {

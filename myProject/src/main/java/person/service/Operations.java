@@ -2,6 +2,7 @@ package person.service;
 
 import com.alibaba.fastjson.JSON;
 import com.alibaba.fastjson.JSONArray;
+import org.apache.poi.hwpf.HWPFDocument;
 import org.hibernate.*;
 
 
@@ -12,15 +13,15 @@ import org.springframework.context.support.ClassPathXmlApplicationContext;
 import org.springframework.stereotype.Service;
 import org.springframework.transaction.annotation.Transactional;
 import org.springframework.util.StringUtils;
+import person.pojo.Book;
 import person.pojo.TestUser;
 import person.pojo.ToDo;
 import person.util.JedisUtil;
 import redis.clients.jedis.Jedis;
+import redis.clients.jedis.Pipeline;
 
-import java.util.Date;
-import java.util.HashMap;
-import java.util.List;
-import java.util.Map;
+import java.io.*;
+import java.util.*;
 
 @Service
 
@@ -29,7 +30,7 @@ public class Operations {
 
     private SessionFactory sessionFactory;
     private Session session;
-    private Logger logger = LoggerFactory.getLogger(Operations.class);
+    private static Logger logger = LoggerFactory.getLogger(Operations.class);
 
     @Autowired
     public Operations(SessionFactory sessionFactory) {
@@ -38,6 +39,8 @@ public class Operations {
 
     }
 
+    public Operations() {
+    }
 
     public void insertData() {
 
@@ -185,45 +188,47 @@ public class Operations {
         return string;
     }
 
-    public List<Object[]> listDbaObject(int pagesize,int pagenum) {
-        int all = pagenum*pagesize;
-        int li = all-pagesize;
+    public List<Object[]> listDbaObject(int pagesize, int pagenum) {
+        int all = pagenum * pagesize;
+        int li = all - pagesize;
      /*   String sql = "select * from(\n" +
                 "select owner, object_name, subobject_name, \n" +
                         "object_id, data_object_id, object_type, created,\n" +
                         " last_ddl_time, timestamp, status, temporary, generated,\n" +
                         "  secondary, namespace, edition_name,rownum as rownum_ from dba_1 \n" +
                         "  where rownum<:all ) where rownum_  >= :allBe and rownum_ <= :all";*/
-       String sql = "select owner, object_name, subobject_name, \n" +
+        String sql = "select owner, object_name, subobject_name, \n" +
                 "object_id, data_object_id, object_type, created,\n" +
                 " last_ddl_time, timestamp, status, temporary, generated,\n" +
                 "  secondary, namespace, edition_name,rownum as rownum_ from dba_2";
         this.session = sessionFactory.getCurrentSession();
         Query query = session.createSQLQuery(sql);//.setParameter("all",all).setParameter("allBe",li);
-        System.out.println("》》》》》数据库查询前"+System.currentTimeMillis());
+        System.out.println("》》》》》数据库查询前" + System.currentTimeMillis());
         List<Object[]> list = query.list();
-        System.out.println("》》》》》》数据库查询后"+System.currentTimeMillis());
-       saveToJedis(list);
+        System.out.println("》》》》》》数据库查询后" + System.currentTimeMillis());
+        saveToJedis(list);
 
         return list;
     }
-    private void saveToJedis(List<Object[]> list){
+
+    private void saveToJedis(List<Object[]> list) {
         Jedis jedis = JedisUtil.getJedis();
         for (Object[] objects : list) {
-            jedis.lpush("dbaList",JSON.toJSONString(objects));
+            jedis.lpush("dbaList", JSON.toJSONString(objects));
         }
         JedisUtil.returnJedis(jedis);
     }
-    public void  viewPage(int pageSize,int pageNum){
-        Jedis jedis = JedisUtil.getJedis();
-        int f = (pageNum-1)*pageSize;
-        int r = f+pageSize;
-        System.out.println("》》》》》》Redis之前"+System.currentTimeMillis());
 
-        List<String> list =  jedis.lrange("dbaList",0,-1);
-        System.out.println("》》》》》》Redis之后"+System.currentTimeMillis());
-        System.out.println("list的长度为"+list.size());
-        System.out.println("dbaList的长度为"+jedis.llen("dbaList"));
+    public void viewPage(int pageSize, int pageNum) {
+        Jedis jedis = JedisUtil.getJedis();
+        int f = (pageNum - 1) * pageSize;
+        int r = f + pageSize;
+        System.out.println("》》》》》》Redis之前" + System.currentTimeMillis());
+
+        List<String> list = jedis.lrange("dbaList", 0, -1);
+        System.out.println("》》》》》》Redis之后" + System.currentTimeMillis());
+        System.out.println("list的长度为" + list.size());
+        System.out.println("dbaList的长度为" + jedis.llen("dbaList"));
        /* for (String s : list) {
             List<Object> objects = JSON.parseArray(s,Object.class);
             System.out.println(objects.get(0));
@@ -231,18 +236,19 @@ public class Operations {
         JedisUtil.returnJedis(jedis);
 
     }
-//购物车增加
-    public void shoppingCartAdd(String userId,String bookId){
+
+    //购物车增加
+    public void shoppingCartAdd(String userId, String bookId) {
 
         Jedis jedis = JedisUtil.getJedis();
-        boolean notExists = StringUtils.isEmpty(jedis.hget(userId,bookId));
+        boolean notExists = StringUtils.isEmpty(jedis.hget(userId, bookId));
         try {
-            if (notExists){
-                Map<String,String> map = new HashMap<>();
-                map.put(bookId,"1");
-                jedis.hmset(userId,map);
-            }else {
-                jedis.hincrBy(userId,bookId,1);
+            if (notExists) {
+                Map<String, String> map = new HashMap<>();
+                map.put(bookId, "1");
+                jedis.hmset(userId, map);
+            } else {
+                jedis.hincrBy(userId, bookId, 1);
             }
         } catch (Exception e) {
             e.printStackTrace();
@@ -252,19 +258,20 @@ public class Operations {
 
 
     }
+
     //购物车商品减少
-    public void shoppingCardDecrease(String userId,String bookId){
+    public void shoppingCardDecrease(String userId, String bookId) {
         Jedis jedis = JedisUtil.getJedis();
         //判断是否存在
-        String get = jedis.hget(userId,bookId);
+        String get = jedis.hget(userId, bookId);
         boolean isExists = StringUtils.isEmpty(get);
-        if (!isExists){
-            boolean isZero = Integer.valueOf(get)<=0;
+        if (!isExists) {
+            boolean isZero = Integer.valueOf(get) <= 0;
             try {
-                if (isZero){
-                    jedis.hdel(userId,bookId);
-                }else {
-                    jedis.hincrBy(userId,bookId,-1);
+                if (isZero) {
+                    jedis.hdel(userId, bookId);
+                } else {
+                    jedis.hincrBy(userId, bookId, -1);
                 }
             } catch (Exception e) {
                 e.printStackTrace();
@@ -276,17 +283,123 @@ public class Operations {
 
 
     }
-    //展示购物车
-    public Map<String, String> showCart(String userId){
-        Jedis jedis = JedisUtil.getJedis();
-       Map<String,String> map = new HashMap<>();
+
+    //先保存图书造数据
+    public void saveBook() {
+
+        this.session = sessionFactory.getCurrentSession();
+        //书分类
+        String[] types = new String[]{"java", "python", "Linux", "PHP", "IOS", "汇编", "JavaScript", "mysql", "oracle"};
+        //出版社
+        String[] publishers = new String[]{"商务印书馆 ", "科学出版社 ", "国家图书馆出版社 ", "中央编译出版社 ", "译林出版社 ", "北京科学技术出版社 ", "社科文献出版社", "中央编译出版社 ", "生活·读书·新知三联书店 ","中国金融出版社"};
+        //价格直接给一个随机数范围
+        String[] wrappers = new String[]{"平装","精装","软精装","简装"};
+        //评分1-5随机
+        //折扣1-10随机数
+       String names= this.bookNames();
+        //每一本书保存时都按照查询条件去保存
+      List<Book> books = new ArrayList<>();
+            for (int i =0; i<names.length()-4;i++){
+                Book book = new Book();
+                //名字
+                Random randomName  =new Random();
+                int r = randomName.nextInt(names.length()-4);
+                book.setName(names.substring(r,r+4));
+                //出版方
+                Random randomP  =new Random();
+                book.setPublisher(publishers[randomP.nextInt(publishers.length)]);
+
+                //评分
+                Random randomStar  =new Random();
+                //0-4，加1变为1-5
+                book.setStar(randomStar.nextInt(5)+1);
+
+                //价格
+                Random randomPrice  =new Random();
+                book.setPrice(randomPrice.nextDouble());
+
+                //类型
+                Random randomType  =new Random();
+                book.setType(types[randomType.nextInt(types.length)]);
+
+                //包装
+                Random randomWrap  =new Random();
+                book.setWrap(wrappers[randomWrap.nextInt(wrappers.length)]);
+
+                book.setId(String.valueOf(System.currentTimeMillis()));
+                //折扣
+                Random randomDiscount  =new Random();
+                book.setDiscount(randomDiscount.nextInt(10)+1);
+
+                books.add(book);
+                try {
+                    this.session.save(book);
+
+                } catch (Exception e) {
+                   continue;
+                }
+            }
+            //存redis
+       this.redisSave(books);
+
+
+
+    }
+    public void redisSave(List<Book>books){
+
+        Jedis jedis =JedisUtil.getJedis();
+        //批量操作使用管道
+        Pipeline pipeline = jedis.pipelined();
         try {
-           map = jedis.hgetAll(userId);
+            for (Book book : books) {
+                pipeline.sadd(book.getPublisher(),book.getName());
+                pipeline.zadd("star",book.getStar(),book.getName());
+                pipeline.zadd("price",book.getPrice(),book.getName());
+                pipeline.sadd(book.getType(),book.getName());
+                pipeline.sadd(book.getWrap(),book.getName());
+                pipeline.zadd("discount",book.getDiscount(),book.getName());
+            }
+            pipeline.sync();
         } catch (Exception e) {
-            e.printStackTrace();
+            logger.error("",e);
         } finally {
-            JedisUtil.returnJedis(jedis);
+            try {
+                pipeline.close();
+            } catch (IOException e) {
+                e.printStackTrace();
+            }
         }
-        return map;
+    }
+    public String bookNames(){
+        //读取文件
+        String path = "F:\\test.txt";
+        File file = new File(path);
+        FileInputStream is  =null;
+        //读取的字符
+        StringBuffer sb = new StringBuffer();
+        //返回的结果
+        try {
+            is = new FileInputStream(file);
+            //读
+            BufferedReader reader = new BufferedReader(new InputStreamReader(is,"UTF-8"));
+            String temp;
+           while ((temp=reader.readLine())!=null){
+                  if(!StringUtils.isEmpty(temp)){
+                   sb.append(temp.trim());
+               }
+
+           }
+
+
+        } catch (IOException e) {
+            logger.error("",e);
+        } finally {
+            try {
+                is.close();
+            } catch (IOException e) {
+                e.printStackTrace();
+            }
+        }
+        return  sb.toString();
     }
 }
