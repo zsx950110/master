@@ -17,6 +17,10 @@
     <!-- service implementation, as same as regu    lar local bean -->
   <!--<bean id="toDoService" class="provider.serviceImpl.ToDoServiceImpl"/>
     <dubbo:service interface="common.service.IToDoService" ref="toDoService"/>-->
-    <!--配置扫描包-->
-   <dubbo:annotation package="provider.serviceImpl"/>
+   <bean id="operations" class="provider.serviceImpl.Operations"/>
+    <dubbo:service interface="common.service.IOperationService" ref="operations"  timeout= "50000000"/>
+    <!--配置扫描包，此处包扫描暂时有问题，如果是包扫描 则consumer在调用时拿不到-->
+
+  <!-- <dubbo:annotation package="provider.serviceImpl"/>-->
+
 </beans>

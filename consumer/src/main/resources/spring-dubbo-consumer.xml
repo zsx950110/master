@@ -12,10 +12,17 @@
     <dubbo:registry protocol="zookeeper" address="127.0.0.1:2181"/>
     <!-- generate proxy for the remote service, then demoService can be used in the same way as the
     local regular interface -->
- <dubbo:reference id="toDoService" check="false" interface="common.service.IToDoService" />
+ <!--<dubbo:reference id="toDoService" check="false" interface="common.service.IToDoService" />-->
     <dubbo:consumer check="false"/>
     <!--扫描包-->
-  <dubbo:annotation package="zsx.dubbo"/>
+ <dubbo:annotation package="zsx.dubbo.*"/>
+    <!--测试包跟源码包不在一个路径下-->
+ <dubbo:annotation package="dubbo.test"/>
+
+<!--
+    <dubbo:reference id="operationService" check="false" interface="common.service.IOperationService" />
+-->
+
 
 
 </beans>

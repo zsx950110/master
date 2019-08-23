@@ -241,7 +241,7 @@ public class Operations {
     public void shoppingCartAdd(String userId, String bookId) {
 
         Jedis jedis = JedisUtil.getJedis();
-        boolean notExists = StringUtils.isEmpty(jedis.hget(userId, bookId));
+        boolean notExists =false;//StringUtils.isEmpty(jedis.hget(userId, bookId));
         try {
             if (notExists) {
                 Map<String, String> map = new HashMap<>();
@@ -264,7 +264,7 @@ public class Operations {
         Jedis jedis = JedisUtil.getJedis();
         //判断是否存在
         String get = jedis.hget(userId, bookId);
-        boolean isExists = StringUtils.isEmpty(get);
+        boolean isExists = false;//StringUtils.isEmpty(get);
         if (!isExists) {
             boolean isZero = Integer.valueOf(get) <= 0;
             try {
@@ -384,9 +384,9 @@ public class Operations {
             BufferedReader reader = new BufferedReader(new InputStreamReader(is,"UTF-8"));
             String temp;
            while ((temp=reader.readLine())!=null){
-                  if(!StringUtils.isEmpty(temp)){
+                 /* if(!StringUtils.isEmpty(temp)){
                    sb.append(temp.trim());
-               }
+               }*/
 
            }
 

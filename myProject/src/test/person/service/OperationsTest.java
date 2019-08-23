@@ -1,30 +1,18 @@
 package person.service;
 
 import com.alibaba.fastjson.JSON;
-import com.sun.org.apache.bcel.internal.generic.RETURN;
-import org.hibernate.Query;
-import org.hibernate.Session;
 import org.junit.Test;
 import org.junit.runner.RunWith;
 import org.springframework.beans.factory.annotation.Autowired;
-import org.springframework.stereotype.Service;
 import org.springframework.test.context.ContextConfiguration;
 import org.springframework.test.context.junit4.SpringJUnit4ClassRunner;
-import org.springframework.util.StringUtils;
 import person.pojo.ToDo;
-import person.util.*;
+import person.util.JedisUtil;
 import redis.clients.jedis.Jedis;
-import redis.clients.jedis.JedisPubSub;
-import redis.clients.jedis.Pipeline;
-import redis.clients.jedis.Transaction;
 
-import javax.persistence.criteria.CriteriaBuilder;
-import java.io.*;
-import java.lang.ref.WeakReference;
 import java.util.*;
-import java.util.concurrent.*;
-
-import static java.util.concurrent.TimeUnit.SECONDS;
+import java.util.concurrent.ExecutorService;
+import java.util.concurrent.Executors;
 
 @RunWith(SpringJUnit4ClassRunner.class)
 @ContextConfiguration(locations = "classpath:application-context.xml")

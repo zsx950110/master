@@ -21,6 +21,11 @@
   </properties>
 
   <dependencies>
+<!--  <dependency>
+      <groupId>zsx.dubbo</groupId>
+      <artifactId>common</artifactId>
+      <version>1.0-SNAPSHOT</version>
+    </dependency>-->
 
     <!-- spring需要的jar包 -->
     <dependency>
@@ -57,7 +62,7 @@
     <dependency>
       <groupId>org.springframework</groupId>
       <artifactId>spring-aspects</artifactId>
-      <version>${spring.version}</version>
+      <version>4.1.3.RELEASE</version>
     </dependency>
 
     <dependency>
@@ -66,7 +71,12 @@
       <version>${spring.version}</version>
 
     </dependency>
+    <dependency>
+      <groupId>org.springframework</groupId>
+      <artifactId>spring-web</artifactId>
+      <version>${spring.version}</version>
 
+    </dependency>
     <dependency>
       <groupId>org.springframework</groupId>
       <artifactId>spring-orm</artifactId>
@@ -192,11 +202,7 @@
       <artifactId>spring-context</artifactId>
       <version>4.1.3.RELEASE</version>
     </dependency>
-    <dependency>
-      <groupId>org.springframework</groupId>
-      <artifactId>spring-context</artifactId>
-      <version>4.1.3.RELEASE</version>
-    </dependency>
+
     <!--AOP切点的依赖  -->
     <dependency>
       <groupId>org.aspectj</groupId>
@@ -255,6 +261,12 @@
       <groupId>com.101tec</groupId>
       <artifactId>zkclient</artifactId>
       <version>0.10</version>
+    </dependency>
+    <dependency>
+      <groupId>junit</groupId>
+      <artifactId>junit</artifactId>
+      <version>4.12</version>
+      <scope>test</scope>
     </dependency>
 
 

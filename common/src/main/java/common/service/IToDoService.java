@@ -1,6 +1,7 @@
 package common.service;
 
-import common.vo.ToDo;
+
+import common.pojo.ToDo;
 
 public interface IToDoService {
     ToDo getToDoByTaskId(String id);

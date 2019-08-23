@@ -7,55 +7,42 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="90387377-8f95-4072-9f9f-2e35a55687e0" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/consumer/src/test/dubbo/test/consumerTest.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/provider/dubbo_test.provider.iml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/artifacts/common_war_exploded.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/artifacts/common_war_exploded.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/artifacts/consumer_war.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/artifacts/consumer_war.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/artifacts/consumer_war_exploded.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/artifacts/consumer_war_exploded.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/artifacts/myProject_war_exploded.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/artifacts/myProject_war_exploded.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/compiler.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/compiler.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/encodings.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/encodings.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__commons_logging_commons_logging_1_1_3.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_javassist_javassist_3_20_0_GA.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_springframework_spring_aop_4_3_16_RELEASE.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_springframework_spring_beans_4_3_16_RELEASE.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_springframework_spring_beans_4_3_7_RELEASE.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_springframework_spring_context_4_3_16_RELEASE.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_springframework_spring_core_4_0_9_RELEASE.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_springframework_spring_core_4_3_16_RELEASE.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_springframework_spring_core_4_3_7_RELEASE.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_springframework_spring_expression_4_3_16_RELEASE.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_springframework_spring_jdbc_4_3_7_RELEASE.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_springframework_spring_orm_4_3_7_RELEASE.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_springframework_spring_test_4_0_9_RELEASE.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_springframework_spring_tx_4_3_7_RELEASE.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_springframework_spring_web_4_3_7_RELEASE.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_springframework_spring_webmvc_4_3_7_RELEASE.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__junit_junit_3_8_1.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_slf4j_slf4j_api_1_6_1.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_slf4j_slf4j_log4j12_1_6_1.xml" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/modules.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/modules.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/common/common.iml" beforeDir="false" afterPath="$PROJECT_DIR$/common/dubbo_test.common.iml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/common/dubbo_test.common.iml" beforeDir="false" afterPath="$PROJECT_DIR$/common/dubbo_test.common.iml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/common/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/common/pom.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/common/src/main/java/common/vo/ToDo.java" beforeDir="false" afterPath="$PROJECT_DIR$/common/src/main/java/common/vo/ToDo.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/consumer/consumer.iml" beforeDir="false" afterPath="$PROJECT_DIR$/consumer/dubbo_test.consumer.iml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/common/src/main/java/common/service/IToDoService.java" beforeDir="false" afterPath="$PROJECT_DIR$/common/src/main/java/common/service/IToDoService.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/common/src/main/java/common/vo/ToDo.hbm.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/common/src/main/java/common/vo/ToDo.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/consumer/dubbo_test.consumer.iml" beforeDir="false" afterPath="$PROJECT_DIR$/consumer/dubbo_test.consumer.iml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/consumer/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/consumer/pom.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/consumer/src/main/java/zsx/dubbo/consumerTest.java" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/consumer/src/main/resources/spring-dubbo-consumer.xml" beforeDir="false" afterPath="$PROJECT_DIR$/consumer/src/main/resources/spring-dubbo-consumer.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/consumer/src/main/webapp/WEB-INF/applicationContext.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/consumer/src/main/webapp/WEB-INF/log4j.xml" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/consumer/src/main/webapp/WEB-INF/web.xml" beforeDir="false" afterPath="$PROJECT_DIR$/consumer/src/main/webapp/WEB-INF/web.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/consumer/src/test/dubbo/test/consumerTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/consumer/src/test/dubbo/test/consumerTest.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/myProject/myProject.iml" beforeDir="false" afterPath="$PROJECT_DIR$/myProject/myProject.iml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/myProject/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/myProject/pom.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/myProject/src/main/java/person/controller/TestController.java" beforeDir="false" afterPath="$PROJECT_DIR$/myProject/src/main/java/person/controller/TestController.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/myProject/src/main/java/person/service/Operations.java" beforeDir="false" afterPath="$PROJECT_DIR$/myProject/src/main/java/person/service/Operations.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/myProject/src/main/java/person/test/MainTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/myProject/src/main/java/person/test/MainTest.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/myProject/src/main/resources/add.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/myProject/src/main/java/person/test/RedisLock.java" beforeDir="false" afterPath="$PROJECT_DIR$/myProject/src/main/java/person/test/RedisLock.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/myProject/src/main/java/person/util/ConvertData.java" beforeDir="false" afterPath="$PROJECT_DIR$/myProject/src/main/java/person/util/ConvertData.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/myProject/src/main/resources/application-context.xml" beforeDir="false" afterPath="$PROJECT_DIR$/myProject/src/main/resources/application-context.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/myProject/src/main/resources/indexphoto.jsp" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/myProject/src/main/resources/viewer.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/myProject/src/main/resources/viewer.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/myProject/src/main/webapp/indexphoto.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/myProject/src/main/webapp/indexphoto.jsp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/myProject/src/test/person/service/OperationsTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/myProject/src/test/person/service/OperationsTest.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/myProjectCommon/MVC2Distributed.myProjectCommon.iml" beforeDir="false" afterPath="$PROJECT_DIR$/myProjectCommon/myProjectCommon.iml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/myProjectCommon/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/myProjectCommon/pom.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/myProjectConsumer/MVC2Distributed.myProjectConsumer.iml" beforeDir="false" afterPath="$PROJECT_DIR$/myProjectConsumer/myProjectConsumer.iml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/myProjectProvider/provider/myProjectProvider.iml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/myProjectProvider/provider/pom.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/provider/dubbo_test.provider.iml" beforeDir="false" afterPath="$PROJECT_DIR$/provider/dubbo_test.provider.iml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/provider/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/provider/pom.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/provider/provider.iml" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/provider/src/main/java/provider/MainTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/provider/src/main/java/provider/MainTest.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/provider/src/main/java/provider/serviceImpl/ToDoServiceImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/provider/src/main/java/provider/serviceImpl/ToDoServiceImpl.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/provider/src/main/resources/spring-dubbo-provider.xml" beforeDir="false" afterPath="$PROJECT_DIR$/provider/src/main/resources/spring-dubbo-provider.xml" afterDir="false" />
@@ -85,46 +72,52 @@
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/myProject/src/main/resources/application-context.xml">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="1057">
-              <caret line="52" column="19" selection-start-line="52" selection-start-column="19" selection-end-line="52" selection-end-column="19" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/myProject/src/main/resources/log4j.properties">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="-5">
-              <caret line="9" column="32" selection-start-line="9" selection-start-column="32" selection-end-line="9" selection-end-column="32" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/myProject/src/main/webapp/WEB-INF/web.xml">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="246">
-              <caret line="66" column="17" selection-start-line="66" selection-start-column="17" selection-end-line="66" selection-end-column="17" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/myProjectCommon/pom.xml">
+        <entry file="file://$PROJECT_DIR$/consumer/src/test/dubbo/test/consumerTest.java">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="125">
-              <caret line="128" column="32" selection-start-line="128" selection-start-column="32" selection-end-line="128" selection-end-column="32" />
+              <caret line="38" column="42" selection-start-line="38" selection-start-column="42" selection-end-line="38" selection-end-column="42" />
+              <folding>
+                <element signature="imports" expanded="true" />
+              </folding>
             </state>
           </provider>
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/myProjectConsumer/pom.xml">
+        <entry file="file://$PROJECT_DIR$/provider/src/main/java/provider/MainTest.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="109">
-              <caret line="34" selection-start-line="34" selection-end-line="34" />
+            <state relative-caret-position="50">
+              <caret line="2" column="39" selection-start-line="2" selection-start-column="7" selection-end-line="2" selection-end-column="39" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/consumer/src/main/java/zsx/dubbo/controller/ConsumerController.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="113">
+              <caret line="23" selection-start-line="23" selection-end-line="23" />
+              <folding>
+                <element signature="imports" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/consumer/pom.xml">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="166">
+              <caret line="197" column="20" selection-start-line="197" selection-start-column="20" selection-end-line="197" selection-end-column="20" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/provider/src/main/java/provider/util/MainTest.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="125">
+              <caret line="5" column="44" selection-start-line="5" selection-start-column="44" selection-end-line="5" selection-end-column="44" />
             </state>
           </provider>
         </entry>
@@ -132,15 +125,406 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/provider/src/main/java/provider/serviceImpl/ToDoServiceImpl.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="200">
-              <caret line="12" column="31" selection-start-line="12" selection-start-column="31" selection-end-line="12" selection-end-column="31" />
+            <state relative-caret-position="25">
+              <caret line="2" column="2" selection-start-line="2" selection-start-column="2" selection-end-line="2" selection-end-column="2" />
+              <folding>
+                <element signature="imports" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/provider/src/main/java/provider/serviceImpl/Operations.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="125">
+              <caret line="23" selection-start-line="23" selection-end-line="23" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/provider/src/main/resources/spring-dubbo-provider.xml">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="123">
+              <caret line="21" column="48" selection-start-line="21" selection-start-column="48" selection-end-line="21" selection-end-column="48" />
             </state>
           </provider>
         </entry>
       </file>
       <file pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/myProjectProvider/provider/pom.xml">
-          <provider selected="true" editor-type-id="text-editor" />
+        <entry file="file://$PROJECT_DIR$/provider/pom.xml">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="116">
+              <caret line="143" column="34" selection-start-line="143" selection-start-column="34" selection-end-line="143" selection-end-column="34" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="uml://MAVEN/zsx.dubbo:common:1.0-SNAPSHOT">
+          <provider selected="true" editor-type-id="UmlEditorProvider">
+            <state>
+              <ID>MAVEN</ID>
+              <OriginalElement>zsx.dubbo:common:1.0-SNAPSHOT</OriginalElement>
+              <nodes>
+                <node x="0.0" y="363.25">zsx.dubbo:common:1.0-SNAPSHOT</node>
+                <node x="144.5" y="542.5">log4j:log4j:jar:1.2.17</node>
+                <node x="123.0" y="642.375">org.slf4j:slf4j-log4j12:jar:1.5.2</node>
+                <node x="303.5" y="833.954081632653">org.slf4j:slf4j-log4j12:jar:1.5.2/org.slf4j:slf4j-api:jar:1.5.2</node>
+                <node x="312.0" y="492.9540816326531">org.slf4j:slf4j-log4j12:jar:1.5.2/log4j:log4j:jar:1.2.14</node>
+                <node x="115.5" y="102.0">org.apache.poi:poi-scratchpad:jar:3.17</node>
+                <node x="317.5" y="24.07908163265307">org.apache.poi:poi-scratchpad:jar:3.17/org.apache.poi:poi:jar:3.17</node>
+                <node x="434.5" y="2.125">org.apache.poi:poi-scratchpad:jar:3.17/org.apache.poi:poi:jar:3.17/commons-codec:commons-codec:jar:1.10</node>
+                <node x="417.5" y="43.125">org.apache.poi:poi-scratchpad:jar:3.17/org.apache.poi:poi:jar:3.17/org.apache.commons:commons-collections4:jar:4.1</node>
+                <node x="119.0" y="583.5">javax.validation:validation-api:jar:1.1.0.Final</node>
+                <node x="127.5" y="266.0">org.springframework:spring-test:jar:4.3.18.RELEASE</node>
+                <node x="293.5" y="129.20408163265307">org.springframework:spring-test:jar:4.3.18.RELEASE/org.springframework:spring-core:jar:4.3.18.RELEASE</node>
+                <node x="146.0" y="445.25">junit:junit:jar:4.12</node>
+                <node x="285.5" y="445.25">junit:junit:jar:4.12/org.hamcrest:hamcrest-core:jar:1.3</node>
+                <node x="119.0" y="501.5">org.aspectj:aspectjweaver:jar:1.8.4</node>
+                <node x="123.0" y="404.25">commons-io:commons-io:jar:2.5</node>
+                <node x="146.0" y="184.0">redis.clients:jedis:jar:2.9.0</node>
+                <node x="279.5" y="85.57908163265307">redis.clients:jedis:jar:2.9.0/org.apache.commons:commons-pool2:jar:2.4.2</node>
+                <node x="106.0" y="225.0">commons-logging:commons-logging:jar:1.2</node>
+                <node x="94.0" y="143.0">commons-logging:commons-logging-api:jar:1.1</node>
+                <node x="140.0" y="363.25">com.alibaba:dubbo:jar:2.5.2</node>
+                <node x="303.5" y="329.45543217286934">com.alibaba:dubbo:jar:2.5.2/org.javassist:javassist:jar:3.15.0-GA</node>
+                <node x="311.5" y="370.45543217286934">com.alibaba:dubbo:jar:2.5.2/org.jboss.netty:netty:jar:3.2.5.Final</node>
+                <node x="137.0" y="914.579081632653">com.101tec:zkclient:jar:0.10</node>
+                <node x="303.5" y="909.329081632653">com.101tec:zkclient:jar:0.10/org.slf4j:slf4j-api:jar:1.6.1</node>
+                <node x="129.0" y="686.875">org.apache.zookeeper:zookeeper:jar:3.4.8</node>
+                <node x="303.5" y="772.954081632653">org.apache.zookeeper:zookeeper:jar:3.4.8/org.slf4j:slf4j-api:jar:1.5.2</node>
+                <node x="290.5" y="649.954081632653">org.apache.zookeeper:zookeeper:jar:3.4.8/org.slf4j:slf4j-log4j12:jar:1.6.1</node>
+                <node x="312.0" y="608.954081632653">org.apache.zookeeper:zookeeper:jar:3.4.8/log4j:log4j:jar:1.2.16</node>
+                <node x="314.5" y="690.954081632653">org.apache.zookeeper:zookeeper:jar:3.4.8/jline:jline:jar:0.9.94</node>
+                <node x="311.5" y="731.954081632653">org.apache.zookeeper:zookeeper:jar:3.4.8/io.netty:netty:jar:3.7.0.Final</node>
+                <node x="105.0" y="61.0">org.apache.curator:curator-framework:jar:4.2.0</node>
+                <node x="288.0" y="170.20408163265307">org.apache.curator:curator-framework:jar:4.2.0/org.apache.curator:curator-client:jar:4.2.0</node>
+                <node x="296.5" y="567.954081632653">org.apache.curator:curator-framework:jar:4.2.0/org.apache.curator:curator-client:jar:4.2.0/org.apache.zookeeper:zookeeper:jar:3.5.4-beta</node>
+                <node x="465.0" y="164.95408163265307">org.apache.curator:curator-framework:jar:4.2.0/org.apache.curator:curator-client:jar:4.2.0/com.google.guava:guava:jar:27.0.1-jre</node>
+                <node x="630.5" y="219.75">org.apache.curator:curator-framework:jar:4.2.0/org.apache.curator:curator-client:jar:4.2.0/com.google.guava:guava:jar:27.0.1-jre/com.google.guava:failureaccess:jar:1.0.1</node>
+                <node x="622.0" y="260.75">org.apache.curator:curator-framework:jar:4.2.0/org.apache.curator:curator-client:jar:4.2.0/com.google.guava:guava:jar:27.0.1-jre/com.google.guava:listenablefuture:jar:9999.0-empty-to-avoid-conflict-with-guava</node>
+                <node x="649.0" y="178.75">org.apache.curator:curator-framework:jar:4.2.0/org.apache.curator:curator-client:jar:4.2.0/com.google.guava:guava:jar:27.0.1-jre/com.google.code.findbugs:jsr305:jar:3.0.2</node>
+                <node x="629.5" y="301.75">org.apache.curator:curator-framework:jar:4.2.0/org.apache.curator:curator-client:jar:4.2.0/com.google.guava:guava:jar:27.0.1-jre/org.checkerframework:checker-qual:jar:2.5.2</node>
+                <node x="596.5" y="55.75">org.apache.curator:curator-framework:jar:4.2.0/org.apache.curator:curator-client:jar:4.2.0/com.google.guava:guava:jar:27.0.1-jre/com.google.errorprone:error_prone_annotations:jar:2.2.0</node>
+                <node x="612.5" y="137.75">org.apache.curator:curator-framework:jar:4.2.0/org.apache.curator:curator-client:jar:4.2.0/com.google.guava:guava:jar:27.0.1-jre/com.google.j2objc:j2objc-annotations:jar:1.1</node>
+                <node x="590.5" y="96.75">org.apache.curator:curator-framework:jar:4.2.0/org.apache.curator:curator-client:jar:4.2.0/com.google.guava:guava:jar:27.0.1-jre/org.codehaus.mojo:animal-sniffer-annotations:jar:1.17</node>
+                <node x="459.0" y="788.8736494597838">org.apache.curator:curator-framework:jar:4.2.0/org.apache.curator:curator-client:jar:4.2.0/org.slf4j:slf4j-api:jar:1.7.25</node>
+                <node x="115.5" y="0.0">org.apache.curator:curator-recipes:jar:4.2.0</node>
+                <node x="137.0" y="322.25">com.alibaba:fastjson:jar:1.2.47</node>
+              </nodes>
+              <notes />
+              <edges>
+                <edge source="zsx.dubbo:common:1.0-SNAPSHOT" target="org.apache.curator:curator-framework:jar:4.2.0">
+                  <point x="37.0" y="-8.647058823529392" />
+                  <point x="-66.0" y="-0.0" />
+                </edge>
+                <edge source="org.springframework:spring-test:jar:4.3.18.RELEASE/org.springframework:spring-core:jar:4.3.18.RELEASE" target="commons-logging:commons-logging:jar:1.2">
+                  <point x="-45.0" y="-5.25" />
+                  <point x="268.0" y="134.45408163265307" />
+                  <point x="65.0" y="-0.0" />
+                </edge>
+                <edge source="org.slf4j:slf4j-log4j12:jar:1.5.2/log4j:log4j:jar:1.2.14" target="log4j:log4j:jar:1.2.17">
+                  <point x="-26.5" y="-5.25" />
+                  <point x="268.0" y="498.2040816326531" />
+                  <point x="248.0" y="547.75" />
+                  <point x="26.5" y="-5.25" />
+                </edge>
+                <edge source="org.apache.zookeeper:zookeeper:jar:3.4.8" target="org.apache.zookeeper:zookeeper:jar:3.4.8/log4j:log4j:jar:1.2.16">
+                  <point x="42.0" y="-5.25" />
+                  <point x="248.0" y="692.125" />
+                  <point x="268.0" y="624.704081632653" />
+                  <point x="-26.5" y="5.25" />
+                </edge>
+                <edge source="com.101tec:zkclient:jar:0.10/org.slf4j:slf4j-api:jar:1.6.1" target="org.slf4j:slf4j-log4j12:jar:1.5.2/org.slf4j:slf4j-api:jar:1.5.2">
+                  <point x="0.0" y="-10.5" />
+                  <point x="0.0" y="10.5" />
+                </edge>
+                <edge source="zsx.dubbo:common:1.0-SNAPSHOT" target="com.alibaba:fastjson:jar:1.2.47">
+                  <point x="37.0" y="-1.2352941176470722" />
+                  <point x="94.0" y="332.75" />
+                  <point x="-34.0" y="-0.0" />
+                </edge>
+                <edge source="junit:junit:jar:4.12" target="junit:junit:jar:4.12/org.hamcrest:hamcrest-core:jar:1.3">
+                  <point x="25.0" y="-0.0" />
+                  <point x="-53.0" y="-0.0" />
+                </edge>
+                <edge source="zsx.dubbo:common:1.0-SNAPSHOT" target="org.slf4j:slf4j-log4j12:jar:1.5.2">
+                  <point x="37.0" y="7.4117647058823195" />
+                  <point x="94.0" y="652.875" />
+                  <point x="-48.0" y="-0.0" />
+                </edge>
+                <edge source="org.apache.poi:poi-scratchpad:jar:3.17" target="org.apache.poi:poi-scratchpad:jar:3.17/org.apache.poi:poi:jar:3.17">
+                  <point x="55.5" y="-0.0" />
+                  <point x="248.0" y="112.5" />
+                  <point x="268.0" y="34.57908163265307" />
+                  <point x="-21.0" y="-0.0" />
+                </edge>
+                <edge source="zsx.dubbo:common:1.0-SNAPSHOT" target="commons-logging:commons-logging-api:jar:1.1">
+                  <point x="37.0" y="-6.176470588235247" />
+                  <point x="-77.0" y="-0.0" />
+                </edge>
+                <edge source="zsx.dubbo:common:1.0-SNAPSHOT" target="com.alibaba:dubbo:jar:2.5.2">
+                  <point x="37.0" y="-0.0" />
+                  <point x="-31.0" y="-0.0" />
+                </edge>
+                <edge source="com.101tec:zkclient:jar:0.10" target="com.101tec:zkclient:jar:0.10/org.slf4j:slf4j-api:jar:1.6.1">
+                  <point x="34.0" y="-0.0" />
+                  <point x="-35.0" y="5.25" />
+                </edge>
+                <edge source="org.apache.zookeeper:zookeeper:jar:3.4.8/org.slf4j:slf4j-log4j12:jar:1.6.1" target="org.slf4j:slf4j-log4j12:jar:1.5.2">
+                  <point x="-48.0" y="-5.25" />
+                  <point x="268.0" y="655.204081632653" />
+                  <point x="248.0" y="652.875" />
+                  <point x="48.0" y="-0.0" />
+                </edge>
+                <edge source="com.alibaba:dubbo:jar:2.5.2" target="com.alibaba:dubbo:jar:2.5.2/org.javassist:javassist:jar:3.15.0-GA">
+                  <point x="31.0" y="-5.25" />
+                  <point x="248.0" y="368.5" />
+                  <point x="268.0" y="339.95543217286934" />
+                  <point x="-35.0" y="-0.0" />
+                </edge>
+                <edge source="org.apache.poi:poi-scratchpad:jar:3.17/org.apache.poi:poi:jar:3.17" target="org.apache.poi:poi-scratchpad:jar:3.17/org.apache.poi:poi:jar:3.17/org.apache.commons:commons-collections4:jar:4.1">
+                  <point x="21.0" y="5.25" />
+                  <point x="397.5" y="39.82908163265307" />
+                  <point x="-76.5" y="-0.0" />
+                </edge>
+                <edge source="org.apache.zookeeper:zookeeper:jar:3.4.8/org.slf4j:slf4j-api:jar:1.5.2" target="org.slf4j:slf4j-log4j12:jar:1.5.2/org.slf4j:slf4j-api:jar:1.5.2">
+                  <point x="0.0" y="10.5" />
+                  <point x="0.0" y="-10.5" />
+                </edge>
+                <edge source="org.apache.curator:curator-framework:jar:4.2.0/org.apache.curator:curator-client:jar:4.2.0/com.google.guava:guava:jar:27.0.1-jre" target="org.apache.curator:curator-framework:jar:4.2.0/org.apache.curator:curator-client:jar:4.2.0/com.google.guava:guava:jar:27.0.1-jre/org.codehaus.mojo:animal-sniffer-annotations:jar:1.17">
+                  <point x="29.0" y="-6.0" />
+                  <point x="570.5" y="169.45408163265307" />
+                  <point x="-88.0" y="-0.0" />
+                </edge>
+                <edge source="org.apache.zookeeper:zookeeper:jar:3.4.8/org.slf4j:slf4j-api:jar:1.5.2" target="org.apache.curator:curator-framework:jar:4.2.0/org.apache.curator:curator-client:jar:4.2.0/org.slf4j:slf4j-api:jar:1.7.25">
+                  <point x="35.0" y="5.25" />
+                  <point x="397.5" y="788.704081632653" />
+                  <point x="417.5" y="801.9986494597838" />
+                  <point x="-35.0" y="2.625" />
+                </edge>
+                <edge source="zsx.dubbo:common:1.0-SNAPSHOT" target="junit:junit:jar:4.12">
+                  <point x="37.0" y="2.4705882352941444" />
+                  <point x="94.0" y="455.75" />
+                  <point x="-25.0" y="-0.0" />
+                </edge>
+                <edge source="org.apache.curator:curator-framework:jar:4.2.0/org.apache.curator:curator-client:jar:4.2.0/com.google.guava:guava:jar:27.0.1-jre" target="org.apache.curator:curator-framework:jar:4.2.0/org.apache.curator:curator-client:jar:4.2.0/com.google.guava:guava:jar:27.0.1-jre/org.checkerframework:checker-qual:jar:2.5.2">
+                  <point x="29.0" y="9.0" />
+                  <point x="570.5" y="184.45408163265307" />
+                  <point x="590.5" y="312.25" />
+                  <point x="-49.0" y="-0.0" />
+                </edge>
+                <edge source="com.alibaba:dubbo:jar:2.5.2" target="com.alibaba:dubbo:jar:2.5.2/org.jboss.netty:netty:jar:3.2.5.Final">
+                  <point x="31.0" y="5.25" />
+                  <point x="248.0" y="379.0" />
+                  <point x="268.0" y="380.95543217286934" />
+                  <point x="-27.0" y="-0.0" />
+                </edge>
+                <edge source="org.apache.zookeeper:zookeeper:jar:3.4.8" target="org.apache.zookeeper:zookeeper:jar:3.4.8/io.netty:netty:jar:3.7.0.Final">
+                  <point x="42.0" y="5.25" />
+                  <point x="248.0" y="702.625" />
+                  <point x="268.0" y="742.454081632653" />
+                  <point x="-27.0" y="-0.0" />
+                </edge>
+                <edge source="com.101tec:zkclient:jar:0.10/org.slf4j:slf4j-api:jar:1.6.1" target="org.apache.zookeeper:zookeeper:jar:3.4.8/org.slf4j:slf4j-api:jar:1.5.2">
+                  <point x="-35.0" y="-5.25" />
+                  <point x="268.0" y="914.579081632653" />
+                  <point x="268.0" y="788.704081632653" />
+                  <point x="-35.0" y="5.25" />
+                </edge>
+                <edge source="org.apache.curator:curator-framework:jar:4.2.0/org.apache.curator:curator-client:jar:4.2.0/com.google.guava:guava:jar:27.0.1-jre" target="org.apache.curator:curator-framework:jar:4.2.0/org.apache.curator:curator-client:jar:4.2.0/com.google.guava:guava:jar:27.0.1-jre/com.google.guava:listenablefuture:jar:9999.0-empty-to-avoid-conflict-with-guava">
+                  <point x="29.0" y="6.0" />
+                  <point x="570.5" y="181.45408163265307" />
+                  <point x="590.5" y="271.25" />
+                  <point x="-56.5" y="-0.0" />
+                </edge>
+                <edge source="org.apache.curator:curator-framework:jar:4.2.0/org.apache.curator:curator-client:jar:4.2.0" target="org.apache.curator:curator-framework:jar:4.2.0/org.apache.curator:curator-client:jar:4.2.0/org.slf4j:slf4j-api:jar:1.7.25">
+                  <point x="50.5" y="5.25" />
+                  <point x="417.5" y="791.4986494597838" />
+                  <point x="-35.0" y="-7.875" />
+                </edge>
+                <edge source="org.springframework:spring-test:jar:4.3.18.RELEASE" target="org.springframework:spring-test:jar:4.3.18.RELEASE/org.springframework:spring-core:jar:4.3.18.RELEASE">
+                  <point x="43.5" y="-0.0" />
+                  <point x="248.0" y="276.5" />
+                  <point x="268.0" y="144.95408163265307" />
+                  <point x="-45.0" y="5.25" />
+                </edge>
+                <edge source="org.slf4j:slf4j-log4j12:jar:1.5.2" target="org.slf4j:slf4j-log4j12:jar:1.5.2/log4j:log4j:jar:1.2.14">
+                  <point x="48.0" y="-7.0" />
+                  <point x="248.0" y="645.875" />
+                  <point x="268.0" y="508.7040816326531" />
+                  <point x="-26.5" y="5.25" />
+                </edge>
+                <edge source="zsx.dubbo:common:1.0-SNAPSHOT" target="org.apache.curator:curator-recipes:jar:4.2.0">
+                  <point x="37.0" y="-9.882352941176464" />
+                  <point x="94.0" y="10.5" />
+                  <point x="-55.5" y="-0.0" />
+                </edge>
+                <edge source="org.apache.poi:poi-scratchpad:jar:3.17/org.apache.poi:poi:jar:3.17" target="org.apache.poi:poi-scratchpad:jar:3.17/org.apache.poi:poi:jar:3.17/commons-codec:commons-codec:jar:1.10">
+                  <point x="21.0" y="-5.25" />
+                  <point x="397.5" y="29.32908163265307" />
+                  <point x="417.5" y="12.625" />
+                  <point x="-59.5" y="-0.0" />
+                </edge>
+                <edge source="zsx.dubbo:common:1.0-SNAPSHOT" target="redis.clients:jedis:jar:2.9.0">
+                  <point x="37.0" y="-4.941176470588289" />
+                  <point x="94.0" y="194.5" />
+                  <point x="-25.0" y="-0.0" />
+                </edge>
+                <edge source="zsx.dubbo:common:1.0-SNAPSHOT" target="org.apache.zookeeper:zookeeper:jar:3.4.8">
+                  <point x="37.0" y="8.647058823529392" />
+                  <point x="94.0" y="697.375" />
+                  <point x="-42.0" y="-0.0" />
+                </edge>
+                <edge source="org.apache.curator:curator-framework:jar:4.2.0/org.apache.curator:curator-client:jar:4.2.0/org.apache.zookeeper:zookeeper:jar:3.5.4-beta" target="org.apache.zookeeper:zookeeper:jar:3.4.8">
+                  <point x="-42.0" y="5.25" />
+                  <point x="268.0" y="583.704081632653" />
+                  <point x="248.0" y="688.625" />
+                  <point x="42.0" y="-8.75" />
+                </edge>
+                <edge source="org.apache.curator:curator-framework:jar:4.2.0/org.apache.curator:curator-client:jar:4.2.0/com.google.guava:guava:jar:27.0.1-jre" target="org.apache.curator:curator-framework:jar:4.2.0/org.apache.curator:curator-client:jar:4.2.0/com.google.guava:guava:jar:27.0.1-jre/com.google.errorprone:error_prone_annotations:jar:2.2.0">
+                  <point x="29.0" y="-9.0" />
+                  <point x="570.5" y="166.45408163265307" />
+                  <point x="-82.0" y="-0.0" />
+                </edge>
+                <edge source="redis.clients:jedis:jar:2.9.0" target="redis.clients:jedis:jar:2.9.0/org.apache.commons:commons-pool2:jar:2.4.2">
+                  <point x="25.0" y="-0.0" />
+                  <point x="248.0" y="194.5" />
+                  <point x="-59.0" y="-0.0" />
+                </edge>
+                <edge source="zsx.dubbo:common:1.0-SNAPSHOT" target="commons-io:commons-io:jar:2.5">
+                  <point x="37.0" y="1.2352941176470722" />
+                  <point x="94.0" y="414.75" />
+                  <point x="-48.0" y="-0.0" />
+                </edge>
+                <edge source="org.apache.curator:curator-framework:jar:4.2.0/org.apache.curator:curator-client:jar:4.2.0" target="org.apache.curator:curator-framework:jar:4.2.0/org.apache.curator:curator-client:jar:4.2.0/com.google.guava:guava:jar:27.0.1-jre">
+                  <point x="50.5" y="-5.25" />
+                  <point x="-29.0" y="-0.0" />
+                </edge>
+                <edge source="org.apache.curator:curator-framework:jar:4.2.0/org.apache.curator:curator-client:jar:4.2.0" target="org.apache.curator:curator-framework:jar:4.2.0/org.apache.curator:curator-client:jar:4.2.0/org.apache.zookeeper:zookeeper:jar:3.5.4-beta">
+                  <point x="-50.5" y="5.25" />
+                  <point x="268.0" y="185.95408163265307" />
+                  <point x="268.0" y="573.204081632653" />
+                  <point x="-42.0" y="-5.25" />
+                </edge>
+                <edge source="zsx.dubbo:common:1.0-SNAPSHOT" target="com.101tec:zkclient:jar:0.10">
+                  <point x="37.0" y="9.882352941176464" />
+                  <point x="94.0" y="925.079081632653" />
+                  <point x="-34.0" y="-0.0" />
+                </edge>
+                <edge source="org.apache.curator:curator-framework:jar:4.2.0/org.apache.curator:curator-client:jar:4.2.0/org.slf4j:slf4j-api:jar:1.7.25" target="org.apache.zookeeper:zookeeper:jar:3.4.8/org.slf4j:slf4j-api:jar:1.5.2">
+                  <point x="-35.0" y="-2.625" />
+                  <point x="417.5" y="796.7486494597838" />
+                  <point x="397.5" y="778.204081632653" />
+                  <point x="35.0" y="-5.25" />
+                </edge>
+                <edge source="org.apache.zookeeper:zookeeper:jar:3.4.8/log4j:log4j:jar:1.2.16" target="log4j:log4j:jar:1.2.17">
+                  <point x="-26.5" y="-5.25" />
+                  <point x="268.0" y="614.204081632653" />
+                  <point x="248.0" y="558.25" />
+                  <point x="26.5" y="5.25" />
+                </edge>
+                <edge source="org.apache.curator:curator-framework:jar:4.2.0/org.apache.curator:curator-client:jar:4.2.0/com.google.guava:guava:jar:27.0.1-jre" target="org.apache.curator:curator-framework:jar:4.2.0/org.apache.curator:curator-client:jar:4.2.0/com.google.guava:guava:jar:27.0.1-jre/com.google.j2objc:j2objc-annotations:jar:1.1">
+                  <point x="29.0" y="-3.0" />
+                  <point x="570.5" y="172.45408163265307" />
+                  <point x="590.5" y="148.25" />
+                  <point x="-66.0" y="-0.0" />
+                </edge>
+                <edge source="zsx.dubbo:common:1.0-SNAPSHOT" target="javax.validation:validation-api:jar:1.1.0.Final">
+                  <point x="37.0" y="6.176470588235247" />
+                  <point x="94.0" y="594.0" />
+                  <point x="-52.0" y="-0.0" />
+                </edge>
+                <edge source="com.101tec:zkclient:jar:0.10" target="org.apache.zookeeper:zookeeper:jar:3.4.8">
+                  <point x="0.0" y="-10.5" />
+                  <point x="0.0" y="10.5" />
+                </edge>
+                <edge source="zsx.dubbo:common:1.0-SNAPSHOT" target="org.springframework:spring-test:jar:4.3.18.RELEASE">
+                  <point x="37.0" y="-2.4705882352941444" />
+                  <point x="94.0" y="276.5" />
+                  <point x="-43.5" y="-0.0" />
+                </edge>
+                <edge source="org.apache.zookeeper:zookeeper:jar:3.4.8" target="org.apache.zookeeper:zookeeper:jar:3.4.8/org.slf4j:slf4j-log4j12:jar:1.6.1">
+                  <point x="42.0" y="-1.75" />
+                  <point x="248.0" y="695.625" />
+                  <point x="268.0" y="665.704081632653" />
+                  <point x="-48.0" y="5.25" />
+                </edge>
+                <edge source="org.apache.curator:curator-framework:jar:4.2.0" target="org.apache.curator:curator-framework:jar:4.2.0/org.apache.curator:curator-client:jar:4.2.0">
+                  <point x="66.0" y="-0.0" />
+                  <point x="268.0" y="175.45408163265307" />
+                  <point x="-50.5" y="-5.25" />
+                </edge>
+                <edge source="zsx.dubbo:common:1.0-SNAPSHOT" target="org.aspectj:aspectjweaver:jar:1.8.4">
+                  <point x="37.0" y="3.7058823529412166" />
+                  <point x="94.0" y="512.0" />
+                  <point x="-52.0" y="-0.0" />
+                </edge>
+                <edge source="zsx.dubbo:common:1.0-SNAPSHOT" target="log4j:log4j:jar:1.2.17">
+                  <point x="37.0" y="4.941176470588289" />
+                  <point x="94.0" y="553.0" />
+                  <point x="-26.5" y="-0.0" />
+                </edge>
+                <edge source="zsx.dubbo:common:1.0-SNAPSHOT" target="commons-logging:commons-logging:jar:1.2">
+                  <point x="37.0" y="-3.7058823529412166" />
+                  <point x="-65.0" y="-0.0" />
+                </edge>
+                <edge source="zsx.dubbo:common:1.0-SNAPSHOT" target="org.apache.poi:poi-scratchpad:jar:3.17">
+                  <point x="37.0" y="-7.4117647058823195" />
+                  <point x="94.0" y="112.5" />
+                  <point x="-55.5" y="-0.0" />
+                </edge>
+                <edge source="org.apache.curator:curator-framework:jar:4.2.0/org.apache.curator:curator-client:jar:4.2.0/com.google.guava:guava:jar:27.0.1-jre" target="org.apache.curator:curator-framework:jar:4.2.0/org.apache.curator:curator-client:jar:4.2.0/com.google.guava:guava:jar:27.0.1-jre/com.google.code.findbugs:jsr305:jar:3.0.2">
+                  <point x="29.0" y="-0.0" />
+                  <point x="570.5" y="175.45408163265307" />
+                  <point x="590.5" y="189.25" />
+                  <point x="-29.5" y="-0.0" />
+                </edge>
+                <edge source="org.apache.zookeeper:zookeeper:jar:3.4.8" target="org.apache.zookeeper:zookeeper:jar:3.4.8/org.slf4j:slf4j-api:jar:1.5.2">
+                  <point x="42.0" y="8.75" />
+                  <point x="248.0" y="706.125" />
+                  <point x="268.0" y="778.204081632653" />
+                  <point x="-35.0" y="-5.25" />
+                </edge>
+                <edge source="org.apache.curator:curator-framework:jar:4.2.0/org.apache.curator:curator-client:jar:4.2.0/org.slf4j:slf4j-api:jar:1.7.25" target="org.slf4j:slf4j-log4j12:jar:1.5.2/org.slf4j:slf4j-api:jar:1.5.2">
+                  <point x="-35.0" y="7.875" />
+                  <point x="417.5" y="807.2486494597838" />
+                  <point x="397.5" y="844.454081632653" />
+                  <point x="35.0" y="-0.0" />
+                </edge>
+                <edge source="org.slf4j:slf4j-log4j12:jar:1.5.2" target="org.slf4j:slf4j-log4j12:jar:1.5.2/org.slf4j:slf4j-api:jar:1.5.2">
+                  <point x="48.0" y="7.0" />
+                  <point x="248.0" y="659.875" />
+                  <point x="268.0" y="844.454081632653" />
+                  <point x="-35.0" y="-0.0" />
+                </edge>
+                <edge source="org.apache.curator:curator-recipes:jar:4.2.0" target="org.apache.curator:curator-framework:jar:4.2.0">
+                  <point x="0.0" y="10.5" />
+                  <point x="0.0" y="-10.5" />
+                </edge>
+                <edge source="org.apache.zookeeper:zookeeper:jar:3.4.8" target="org.apache.zookeeper:zookeeper:jar:3.4.8/jline:jline:jar:0.9.94">
+                  <point x="42.0" y="1.75" />
+                  <point x="248.0" y="699.125" />
+                  <point x="268.0" y="701.454081632653" />
+                  <point x="-24.0" y="-0.0" />
+                </edge>
+                <edge source="org.apache.curator:curator-framework:jar:4.2.0/org.apache.curator:curator-client:jar:4.2.0/com.google.guava:guava:jar:27.0.1-jre" target="org.apache.curator:curator-framework:jar:4.2.0/org.apache.curator:curator-client:jar:4.2.0/com.google.guava:guava:jar:27.0.1-jre/com.google.guava:failureaccess:jar:1.0.1">
+                  <point x="29.0" y="3.0" />
+                  <point x="570.5" y="178.45408163265307" />
+                  <point x="590.5" y="230.25" />
+                  <point x="-48.0" y="-0.0" />
+                </edge>
+              </edges>
+              <settings layout="Hierarchic Group" zoom="1.7740585774058582" x="243.32455084735824" y="881.2830188679245" />
+              <SelectedNodes>
+                <node>commons-logging:commons-logging:jar:1.2</node>
+              </SelectedNodes>
+              <Categories />
+              <VISIBILITY>All</VISIBILITY>
+            </state>
+          </provider>
         </entry>
       </file>
     </leaf>
@@ -151,42 +535,48 @@
         <option value="FxmlFile" />
         <option value="Enum" />
         <option value="spring-beans.schema" />
-        <option value="Arquillian JUnit Test Class" />
         <option value="Class" />
         <option value="Interface" />
+        <option value="Arquillian JUnit Test Class" />
       </list>
     </option>
   </component>
   <component name="FindInProjectRecents">
     <findStrings>
-      <find>junit</find>
-      <find>t</find>
-      <find>test</find>
-      <find>SimpleDateFormat</find>
-      <find>pipeline</find>
-      <find>welc</find>
-      <find>commons</find>
-      <find>spring-te</find>
-      <find>juni</find>
-      <find>s</find>
-      <find>alibaba</find>
-      <find>dubbo</find>
-      <find>jedis</find>
-      <find>log</find>
-      <find>log4</find>
-      <find>spring</find>
-      <find>spring-o</find>
-      <find>convertProperty</find>
-      <find>spring-web</find>
-      <find>spring-</find>
-      <find>spring-we</find>
-      <find>serv</find>
+      <find>SessionFactory</find>
+      <find>hibernate</find>
+      <find>proper</find>
+      <find>org.hiber</find>
       <find>orm</find>
-      <find>json</find>
-      <find>servlet</find>
+      <find>VERSION</find>
+      <find>junit</find>
+      <find>unit</find>
+      <find>spring-b</find>
+      <find>spring-test</find>
+      <find>javax</find>
+      <find>log4</find>
+      <find>spring-web</find>
+      <find>aspect</find>
+      <find>asp</find>
+      <find>spring-as</find>
+      <find>spring-te</find>
+      <find>ju</find>
+      <find>se</find>
+      <find>context</find>
+      <find>spring-we</find>
+      <find>common</find>
+      <find>spring</find>
+      <find>dubbo</find>
+      <find>zook</find>
+      <find>dub</find>
+      <find>test</find>
+      <find>往</find>
+      <find>StringU</find>
+      <find>1.7</find>
     </findStrings>
     <replaceStrings>
       <replace />
+      <replace>1.8</replace>
     </replaceStrings>
   </component>
   <component name="Git.Settings">
@@ -195,57 +585,57 @@
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
       <list>
-        <option value="$PROJECT_DIR$/common/src/main/java/common/test/StringUtil.java" />
-        <option value="$PROJECT_DIR$/common/src/main/java/common/vo/ToDo.hbm.xml" />
-        <option value="$PROJECT_DIR$/common/src/main/java/common/service/IToDoService.java" />
-        <option value="$PROJECT_DIR$/provider/src/main/java/provider/serviceImpl/UserServiceImpl.java" />
-        <option value="$PROJECT_DIR$/myProject/src/main/java/person/test/testMan.java" />
-        <option value="$PROJECT_DIR$/myProject/src/main/java/person/test/RedisLock.java" />
-        <option value="$PROJECT_DIR$/myProject/src/test/person/service/OperationsTest.java" />
-        <option value="$PROJECT_DIR$/myProject/src/main/resources/search.html" />
-        <option value="$PROJECT_DIR$/myProject/src/main/resources/indexphoto.jsp" />
-        <option value="$PROJECT_DIR$/myProject/src/main/webapp/WEB-INF/web.xml" />
-        <option value="$PROJECT_DIR$/myProject/src/main/webapp/indexphoto.jsp" />
-        <option value="$PROJECT_DIR$/myProject/src/main/java/person/pojo/Book.java" />
-        <option value="$PROJECT_DIR$/myProject/src/main/java/person/pojo/Book.hbm.xml" />
-        <option value="$PROJECT_DIR$/myProject/src/main/java/person/service/OperationsTest.java" />
-        <option value="$PROJECT_DIR$/myProject/src/main/resources/xml/Book.hbm.xml" />
-        <option value="$PROJECT_DIR$/myProject/src/main/java/person/controller/TestController.java" />
-        <option value="$PROJECT_DIR$/myProject/src/main/java/person/test/MainTest.java" />
-        <option value="$PROJECT_DIR$/myProject/src/main/java/person/service/Operations.java" />
-        <option value="$PROJECT_DIR$/consumer/src/main/webapp/WEB-INF/web.xml" />
-        <option value="$PROJECT_DIR$/common/src/main/java/common/vo/ToDo.java" />
-        <option value="$PROJECT_DIR$/consumer/src/main/java/zsx/dubbo/consumerTest.java" />
-        <option value="$PROJECT_DIR$/consumer/src/main/java/zsx/dubbo/test/consumerTest.java" />
-        <option value="$PROJECT_DIR$/provider/web2/WEB-INF/web.xml" />
-        <option value="$PROJECT_DIR$/common/pom.xml" />
-        <option value="$PROJECT_DIR$/consumer/pom.xml" />
-        <option value="$PROJECT_DIR$/provider/src/main/resources/spring-dubbo-provider.xml" />
-        <option value="$PROJECT_DIR$/consumer/src/test/dubbo/test/consumerTest.java" />
-        <option value="$PROJECT_DIR$/consumer/src/main/resources/spring-dubbo-consumer.xml" />
-        <option value="$PROJECT_DIR$/consumer/src/main/java/zsx/dubbo/controller/ConsumerController.java" />
-        <option value="$PROJECT_DIR$/consumer/src/main/java/zsx/dubbo/ConsumerOperation.java" />
-        <option value="$PROJECT_DIR$/provider/src/main/java/provider/MainTest.java" />
-        <option value="$PROJECT_DIR$/provider/src/main/java/provider/serviceImpl/ToDoServiceImpl.java" />
-        <option value="$PROJECT_DIR$/myProjectCommon/myProjectConsumer/pom.xml" />
-        <option value="$PROJECT_DIR$/myProjectCommon/src/main/java/service/rf.java" />
-        <option value="$PROJECT_DIR$/myProjectCommon/src/main/java/util/JedisUtil.java" />
-        <option value="$PROJECT_DIR$/myProject/pom.xml" />
-        <option value="$PROJECT_DIR$/myProjectCommon/src/main/java/service/IOperationService.java" />
-        <option value="$PROJECT_DIR$/provider/pom.xml" />
-        <option value="$PROJECT_DIR$/myProjectProvider/src/main/java/Operations.java" />
-        <option value="$PROJECT_DIR$/myProjectCommon/src/main/java/util/ConvertData.java" />
-        <option value="$PROJECT_DIR$/myProjectProvider/src/main/java/util/ConvertData.java" />
         <option value="$PROJECT_DIR$/myProjectProvider/src/main/resources/xml/ToDo.hbm.xml" />
         <option value="$PROJECT_DIR$/myProjectProvider/src/main/resources/dbConfig.properties" />
         <option value="$PROJECT_DIR$/myProjectConsumer/src/main/java/controller/TestController.java" />
-        <option value="$PROJECT_DIR$/myProjectProvider/pom.xml" />
         <option value="$PROJECT_DIR$/myProjectProvider/src/main/resources/application-context.xml" />
         <option value="$PROJECT_DIR$/myProjectConsumer/pom.xml" />
-        <option value="$PROJECT_DIR$/myProjectCommon/pom.xml" />
         <option value="$PROJECT_DIR$/myProjectProvider/src/main/java/serviceImpl/Operations.java" />
         <option value="$PROJECT_DIR$/myProjectProvider/src/main/java/MainTest.java" />
+        <option value="$PROJECT_DIR$/myProjectProvider/provider/src/main/java/Operations.java" />
+        <option value="$PROJECT_DIR$/myProjectProvider/provider/src/main/java/ServiceImpl/Operations.java" />
+        <option value="$PROJECT_DIR$/myProjectProvider/provider/src/main/java/util/ConvertData.java" />
+        <option value="$PROJECT_DIR$/myProjectProvider/provider/pom.xml" />
+        <option value="$PROJECT_DIR$/myProjectProvider/provider/src/main/resources/application-context.xml" />
+        <option value="$PROJECT_DIR$/myProjectProvider/provider/src/main/java/util/MainTest.java" />
+        <option value="$PROJECT_DIR$/myProjectCommon/pom.xml" />
+        <option value="$PROJECT_DIR$/myProjectProvider/src/main/java/ServiceImpl/Operations.java" />
+        <option value="$PROJECT_DIR$/myProjectProvider/pom.xml" />
+        <option value="$PROJECT_DIR$/myProjectCommon/src/main/java/service/MainTest.java" />
+        <option value="$PROJECT_DIR$/common/src/main/java/common/pojo/TestUser.java" />
+        <option value="$PROJECT_DIR$/common/src/main/java/common/service/IOperationService.java" />
         <option value="$PROJECT_DIR$/myProjectProvider/src/main/java/util/MainTest.java" />
+        <option value="$PROJECT_DIR$/provider/src/main/java/provider/util/Util.java" />
+        <option value="$PROJECT_DIR$/common/src/main/java/common/service/IToDoService.java" />
+        <option value="$PROJECT_DIR$/myProject/src/test/person/service/OperationsTest.java" />
+        <option value="$PROJECT_DIR$/provider/src/test/java/provider/serviceImpl/OperationsTest.java" />
+        <option value="$PROJECT_DIR$/provider/src/main/resources/xml/Book.hbm.xml" />
+        <option value="$PROJECT_DIR$/provider/src/main/resources/xml/ToDo.hbm.xml" />
+        <option value="$PROJECT_DIR$/provider/src/main/resources/dbConfig.properties" />
+        <option value="$PROJECT_DIR$/common/src/main/java/common/pojo/ToDo.java" />
+        <option value="$PROJECT_DIR$/consumer.iml" />
+        <option value="$PROJECT_DIR$/myProject/src/main/resources/logging.properties" />
+        <option value="$PROJECT_DIR$/consumer/src/main/webapp/WEB-INF/web.xml" />
+        <option value="$PROJECT_DIR$/consumer/src/main/java/zsx/dubbo/controller/TestController.java" />
+        <option value="$PROJECT_DIR$/myProject/src/main/java/person/controller/TestController.java" />
+        <option value="$PROJECT_DIR$/myProject/src/main/java/person/util/ConvertData.java" />
+        <option value="$PROJECT_DIR$/myProject/src/main/java/person/test/RedisLock.java" />
+        <option value="$PROJECT_DIR$/myProject/src/main/java/person/service/Operations.java" />
+        <option value="$PROJECT_DIR$/myProject/pom.xml" />
+        <option value="$PROJECT_DIR$/consumer/pom.xml" />
+        <option value="$PROJECT_DIR$/common/pom.xml" />
+        <option value="$PROJECT_DIR$/consumer/src/main/java/zsx/dubbo/ConsumerOperation.java" />
+        <option value="$PROJECT_DIR$/provider/src/main/resources/application-context.xml" />
+        <option value="$PROJECT_DIR$/consumer/src/main/resources/springmvc-servlet.xml" />
+        <option value="$PROJECT_DIR$/provider/src/main/java/provider/serviceImpl/Operations.java" />
+        <option value="$PROJECT_DIR$/provider/src/main/java/provider/MainTest.java" />
+        <option value="$PROJECT_DIR$/consumer/src/main/java/zsx/dubbo/controller/ConsumerController.java" />
+        <option value="$PROJECT_DIR$/consumer/src/main/resources/spring-dubbo-consumer.xml" />
+        <option value="$PROJECT_DIR$/provider/src/main/resources/spring-dubbo-provider.xml" />
+        <option value="$PROJECT_DIR$/consumer/src/test/dubbo/test/consumerTest.java" />
+        <option value="$PROJECT_DIR$/provider/src/main/java/provider/util/MainTest.java" />
+        <option value="$PROJECT_DIR$/provider/src/main/java/provider/serviceImpl/ToDoServiceImpl.java" />
+        <option value="$PROJECT_DIR$/provider/pom.xml" />
       </list>
     </option>
   </component>
@@ -286,15 +676,31 @@
         </path>
         <path>
           <item name="" type="16c1761:MavenProjectsStructure$RootNode" />
-          <item name="myProject Maven Webapp" type="9519ce18:MavenProjectsStructure$ProjectNode" />
+          <item name="common" type="9519ce18:MavenProjectsStructure$ProjectNode" />
+          <item name="Dependencies" type="f4be9f2a:MavenProjectsStructure$DependenciesNode" />
+        </path>
+        <path>
+          <item name="" type="16c1761:MavenProjectsStructure$RootNode" />
+          <item name="common" type="9519ce18:MavenProjectsStructure$ProjectNode" />
+          <item name="Dependencies" type="f4be9f2a:MavenProjectsStructure$DependenciesNode" />
+          <item name="com.alibaba:dubbo:2.5.2" type="c0821a7e:MavenProjectsStructure$DependencyNode" />
+        </path>
+        <path>
+          <item name="" type="16c1761:MavenProjectsStructure$RootNode" />
+          <item name="provider" type="9519ce18:MavenProjectsStructure$ProjectNode" />
+        </path>
+        <path>
+          <item name="" type="16c1761:MavenProjectsStructure$RootNode" />
+          <item name="provider" type="9519ce18:MavenProjectsStructure$ProjectNode" />
+          <item name="Lifecycle" type="58874e2:MavenProjectsStructure$LifecycleNode" />
         </path>
       </expand>
       <select />
     </treeState>
   </component>
   <component name="ProjectFrameBounds" extendedState="6">
-    <option name="x" value="-122" />
-    <option name="y" value="64" />
+    <option name="x" value="1090" />
+    <option name="y" value="6" />
     <option name="width" value="840" />
     <option name="height" value="438" />
   </component>
@@ -309,18 +715,276 @@
     </navigator>
     <panes>
       <pane id="Scope" />
-      <pane id="PackagesPane" />
       <pane id="ProjectPane">
         <subPane>
           <expand>
             <path>
               <item name="workspace" type="b2602c69:ProjectViewProjectNode" />
-              <item name="MVC2Distributed.myProjectCommon and modules" type="9c53a853:ProjectViewModuleGroupNode" />
+              <item name="dubbo_test" type="9c53a853:ProjectViewModuleGroupNode" />
+            </path>
+            <path>
+              <item name="workspace" type="b2602c69:ProjectViewProjectNode" />
+              <item name="dubbo_test" type="9c53a853:ProjectViewModuleGroupNode" />
+              <item name="consumer" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="workspace" type="b2602c69:ProjectViewProjectNode" />
+              <item name="dubbo_test" type="9c53a853:ProjectViewModuleGroupNode" />
+              <item name="provider" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="workspace" type="b2602c69:ProjectViewProjectNode" />
+              <item name="dubbo_test" type="9c53a853:ProjectViewModuleGroupNode" />
+              <item name="provider" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="workspace" type="b2602c69:ProjectViewProjectNode" />
+              <item name="dubbo_test" type="9c53a853:ProjectViewModuleGroupNode" />
+              <item name="provider" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="workspace" type="b2602c69:ProjectViewProjectNode" />
+              <item name="dubbo_test" type="9c53a853:ProjectViewModuleGroupNode" />
+              <item name="provider" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+              <item name="java" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="workspace" type="b2602c69:ProjectViewProjectNode" />
+              <item name="dubbo_test" type="9c53a853:ProjectViewModuleGroupNode" />
+              <item name="provider" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+              <item name="java" type="462c0819:PsiDirectoryNode" />
+              <item name="provider" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="workspace" type="b2602c69:ProjectViewProjectNode" />
+              <item name="dubbo_test" type="9c53a853:ProjectViewModuleGroupNode" />
+              <item name="provider" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+              <item name="java" type="462c0819:PsiDirectoryNode" />
+              <item name="provider" type="462c0819:PsiDirectoryNode" />
+              <item name="serviceImpl" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="workspace" type="b2602c69:ProjectViewProjectNode" />
+              <item name="dubbo_test" type="9c53a853:ProjectViewModuleGroupNode" />
+              <item name="provider" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+              <item name="java" type="462c0819:PsiDirectoryNode" />
+              <item name="provider" type="462c0819:PsiDirectoryNode" />
+              <item name="util" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="workspace" type="b2602c69:ProjectViewProjectNode" />
+              <item name="dubbo_test" type="9c53a853:ProjectViewModuleGroupNode" />
+              <item name="provider" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+              <item name="resources" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="workspace" type="b2602c69:ProjectViewProjectNode" />
+              <item name="dubbo_test" type="9c53a853:ProjectViewModuleGroupNode" />
+              <item name="provider" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="test" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="workspace" type="b2602c69:ProjectViewProjectNode" />
+              <item name="dubbo_test" type="9c53a853:ProjectViewModuleGroupNode" />
+              <item name="provider" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="test" type="462c0819:PsiDirectoryNode" />
+              <item name="java" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="workspace" type="b2602c69:ProjectViewProjectNode" />
+              <item name="External Libraries" type="cb654da1:ExternalLibrariesNode" />
+            </path>
+            <path>
+              <item name="workspace" type="b2602c69:ProjectViewProjectNode" />
+              <item name="External Libraries" type="cb654da1:ExternalLibrariesNode" />
+              <item name="Maven: com.alibaba:dubbo:2.5.2" type="70bed36:NamedLibraryElementNode" />
+            </path>
+            <path>
+              <item name="workspace" type="b2602c69:ProjectViewProjectNode" />
+              <item name="External Libraries" type="cb654da1:ExternalLibrariesNode" />
+              <item name="Maven: com.alibaba:dubbo:2.5.2" type="70bed36:NamedLibraryElementNode" />
+              <item name="dubbo-2.5.2.jar" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="workspace" type="b2602c69:ProjectViewProjectNode" />
+              <item name="External Libraries" type="cb654da1:ExternalLibrariesNode" />
+              <item name="Maven: com.alibaba:dubbo:2.5.2" type="70bed36:NamedLibraryElementNode" />
+              <item name="dubbo-2.5.2.jar" type="462c0819:PsiDirectoryNode" />
+              <item name="alibaba" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="workspace" type="b2602c69:ProjectViewProjectNode" />
+              <item name="External Libraries" type="cb654da1:ExternalLibrariesNode" />
+              <item name="Maven: com.alibaba:dubbo:2.5.2" type="70bed36:NamedLibraryElementNode" />
+              <item name="dubbo-2.5.2.jar" type="462c0819:PsiDirectoryNode" />
+              <item name="alibaba" type="462c0819:PsiDirectoryNode" />
+              <item name="dubbo" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="workspace" type="b2602c69:ProjectViewProjectNode" />
+              <item name="External Libraries" type="cb654da1:ExternalLibrariesNode" />
+              <item name="Maven: com.alibaba:dubbo:2.5.2" type="70bed36:NamedLibraryElementNode" />
+              <item name="dubbo-2.5.2.jar" type="462c0819:PsiDirectoryNode" />
+              <item name="alibaba" type="462c0819:PsiDirectoryNode" />
+              <item name="dubbo" type="462c0819:PsiDirectoryNode" />
+              <item name="common" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="workspace" type="b2602c69:ProjectViewProjectNode" />
+              <item name="External Libraries" type="cb654da1:ExternalLibrariesNode" />
+              <item name="Maven: com.alibaba:dubbo:2.5.2" type="70bed36:NamedLibraryElementNode" />
+              <item name="dubbo-2.5.2.jar" type="462c0819:PsiDirectoryNode" />
+              <item name="alibaba" type="462c0819:PsiDirectoryNode" />
+              <item name="dubbo" type="462c0819:PsiDirectoryNode" />
+              <item name="common" type="462c0819:PsiDirectoryNode" />
+              <item name="utils" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="workspace" type="b2602c69:ProjectViewProjectNode" />
+              <item name="External Libraries" type="cb654da1:ExternalLibrariesNode" />
+              <item name="Maven: com.alibaba:dubbo:2.5.2" type="70bed36:NamedLibraryElementNode" />
+              <item name="dubbo-2.5.2.jar" type="462c0819:PsiDirectoryNode" />
+              <item name="alibaba" type="462c0819:PsiDirectoryNode" />
+              <item name="dubbo" type="462c0819:PsiDirectoryNode" />
+              <item name="container" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="workspace" type="b2602c69:ProjectViewProjectNode" />
+              <item name="External Libraries" type="cb654da1:ExternalLibrariesNode" />
+              <item name="Maven: junit:junit:4.12" type="70bed36:NamedLibraryElementNode" />
+            </path>
+            <path>
+              <item name="workspace" type="b2602c69:ProjectViewProjectNode" />
+              <item name="External Libraries" type="cb654da1:ExternalLibrariesNode" />
+              <item name="Maven: org.springframework:spring-test:4.3.18.RELEASE" type="70bed36:NamedLibraryElementNode" />
+            </path>
+            <path>
+              <item name="workspace" type="b2602c69:ProjectViewProjectNode" />
+              <item name="External Libraries" type="cb654da1:ExternalLibrariesNode" />
+              <item name="Maven: org.springframework:spring-test:4.3.18.RELEASE" type="70bed36:NamedLibraryElementNode" />
+              <item name="spring-test-4.3.18.RELEASE.jar" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="workspace" type="b2602c69:ProjectViewProjectNode" />
+              <item name="External Libraries" type="cb654da1:ExternalLibrariesNode" />
+              <item name="Maven: org.springframework:spring-test:4.3.18.RELEASE" type="70bed36:NamedLibraryElementNode" />
+              <item name="spring-test-4.3.18.RELEASE.jar" type="462c0819:PsiDirectoryNode" />
+              <item name="springframework" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="workspace" type="b2602c69:ProjectViewProjectNode" />
+              <item name="External Libraries" type="cb654da1:ExternalLibrariesNode" />
+              <item name="Maven: org.springframework:spring-test:4.3.18.RELEASE" type="70bed36:NamedLibraryElementNode" />
+              <item name="spring-test-4.3.18.RELEASE.jar" type="462c0819:PsiDirectoryNode" />
+              <item name="springframework" type="462c0819:PsiDirectoryNode" />
+              <item name="test" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="workspace" type="b2602c69:ProjectViewProjectNode" />
+              <item name="External Libraries" type="cb654da1:ExternalLibrariesNode" />
+              <item name="Maven: org.springframework:spring-test:4.3.18.RELEASE" type="70bed36:NamedLibraryElementNode" />
+              <item name="spring-test-4.3.18.RELEASE.jar" type="462c0819:PsiDirectoryNode" />
+              <item name="springframework" type="462c0819:PsiDirectoryNode" />
+              <item name="test" type="462c0819:PsiDirectoryNode" />
+              <item name="context" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="workspace" type="b2602c69:ProjectViewProjectNode" />
+              <item name="External Libraries" type="cb654da1:ExternalLibrariesNode" />
+              <item name="Maven: org.springframework:spring-test:4.3.18.RELEASE" type="70bed36:NamedLibraryElementNode" />
+              <item name="spring-test-4.3.18.RELEASE.jar" type="462c0819:PsiDirectoryNode" />
+              <item name="springframework" type="462c0819:PsiDirectoryNode" />
+              <item name="test" type="462c0819:PsiDirectoryNode" />
+              <item name="context" type="462c0819:PsiDirectoryNode" />
+              <item name="junit4" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="workspace" type="b2602c69:ProjectViewProjectNode" />
+              <item name="External Libraries" type="cb654da1:ExternalLibrariesNode" />
+              <item name="Maven: org.springframework:spring-test:4.3.18.RELEASE" type="70bed36:NamedLibraryElementNode" />
+              <item name="spring-test-4.3.18.RELEASE.jar" type="462c0819:PsiDirectoryNode" />
+              <item name="springframework" type="462c0819:PsiDirectoryNode" />
+              <item name="test" type="462c0819:PsiDirectoryNode" />
+              <item name="context" type="462c0819:PsiDirectoryNode" />
+              <item name="junit4" type="462c0819:PsiDirectoryNode" />
+              <item name="statements" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="workspace" type="b2602c69:ProjectViewProjectNode" />
+              <item name="External Libraries" type="cb654da1:ExternalLibrariesNode" />
+              <item name="Maven: org.springframework:spring-web:4.3.18.RELEASE" type="70bed36:NamedLibraryElementNode" />
+            </path>
+            <path>
+              <item name="workspace" type="b2602c69:ProjectViewProjectNode" />
+              <item name="External Libraries" type="cb654da1:ExternalLibrariesNode" />
+              <item name="Maven: org.springframework:spring-web:4.3.18.RELEASE" type="70bed36:NamedLibraryElementNode" />
+              <item name="spring-web-4.3.18.RELEASE.jar" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="workspace" type="b2602c69:ProjectViewProjectNode" />
+              <item name="External Libraries" type="cb654da1:ExternalLibrariesNode" />
+              <item name="Maven: org.springframework:spring-web:4.3.18.RELEASE" type="70bed36:NamedLibraryElementNode" />
+              <item name="spring-web-4.3.18.RELEASE.jar" type="462c0819:PsiDirectoryNode" />
+              <item name="springframework" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="workspace" type="b2602c69:ProjectViewProjectNode" />
+              <item name="External Libraries" type="cb654da1:ExternalLibrariesNode" />
+              <item name="Maven: org.springframework:spring-web:4.3.18.RELEASE" type="70bed36:NamedLibraryElementNode" />
+              <item name="spring-web-4.3.18.RELEASE.jar" type="462c0819:PsiDirectoryNode" />
+              <item name="springframework" type="462c0819:PsiDirectoryNode" />
+              <item name="web" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="workspace" type="b2602c69:ProjectViewProjectNode" />
+              <item name="External Libraries" type="cb654da1:ExternalLibrariesNode" />
+              <item name="Maven: org.springframework:spring-web:4.3.18.RELEASE" type="70bed36:NamedLibraryElementNode" />
+              <item name="spring-web-4.3.18.RELEASE.jar" type="462c0819:PsiDirectoryNode" />
+              <item name="springframework" type="462c0819:PsiDirectoryNode" />
+              <item name="web" type="462c0819:PsiDirectoryNode" />
+              <item name="bind" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="workspace" type="b2602c69:ProjectViewProjectNode" />
+              <item name="External Libraries" type="cb654da1:ExternalLibrariesNode" />
+              <item name="Maven: org.springframework:spring-web:4.3.18.RELEASE" type="70bed36:NamedLibraryElementNode" />
+              <item name="spring-web-4.3.18.RELEASE.jar" type="462c0819:PsiDirectoryNode" />
+              <item name="springframework" type="462c0819:PsiDirectoryNode" />
+              <item name="web" type="462c0819:PsiDirectoryNode" />
+              <item name="bind" type="462c0819:PsiDirectoryNode" />
+              <item name="annotation" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="workspace" type="b2602c69:ProjectViewProjectNode" />
+              <item name="External Libraries" type="cb654da1:ExternalLibrariesNode" />
+              <item name="Maven: org.springframework:spring-web:4.3.18.RELEASE" type="70bed36:NamedLibraryElementNode" />
+              <item name="spring-web-4.3.18.RELEASE.jar" type="462c0819:PsiDirectoryNode" />
+              <item name="springframework" type="462c0819:PsiDirectoryNode" />
+              <item name="web" type="462c0819:PsiDirectoryNode" />
+              <item name="bind" type="462c0819:PsiDirectoryNode" />
+              <item name="annotation" type="462c0819:PsiDirectoryNode" />
+              <item name="support" type="462c0819:PsiDirectoryNode" />
             </path>
           </expand>
           <select />
         </subPane>
       </pane>
+      <pane id="PackagesPane" />
     </panes>
   </component>
   <component name="PropertiesComponent">
@@ -332,19 +996,20 @@
     <property name="create.test.in.the.same.root" value="true" />
     <property name="jdk.selected.JAVA_MODULE" value="1.8" />
     <property name="last_directory_selection" value="$PROJECT_DIR$/consumer/src/test" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$/provider" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/myProject/src/main/resources" />
     <property name="nodejs_interpreter_path.stuck_in_default_project" value="undefined stuck path" />
     <property name="nodejs_npm_path_reset_for_default_project" value="true" />
     <property name="nodejs_package_manager_path" value="npm" />
-    <property name="project.structure.last.edited" value="Modules" />
+    <property name="project.structure.last.edited" value="Artifacts" />
     <property name="project.structure.proportion" value="0.15" />
     <property name="project.structure.side.proportion" value="0.2" />
     <property name="restartRequiresConfirmation" value="false" />
     <property name="run.code.analysis.last.selected.profile" value="pProject Default" />
-    <property name="settings.editor.selected.configurable" value="editor.preferences.import" />
+    <property name="settings.editor.selected.configurable" value="MavenSettings" />
   </component>
   <component name="RecentsManager">
     <key name="CreateTestDialog.RecentsKey">
+      <recent name="provider.serviceImpl" />
       <recent name="person.service" />
     </key>
     <key name="CreateTestDialog.Recents.Supers">
@@ -357,20 +1022,22 @@
       <recent name="" />
     </key>
     <key name="CopyFile.RECENT_KEYS">
-      <recent name="F:\workspace\myProjectProvider\src\main\resources" />
-      <recent name="F:\workspace\myProjectProvider\src\main\resources\xml" />
-      <recent name="F:\workspace\myProjectCommon\src\main\resources" />
-      <recent name="F:\workspace\myProjectCommon\src\main\java" />
-      <recent name="F:\workspace\provider\web2" />
+      <recent name="F:\workspace\myProject\src\main\resources" />
+      <recent name="F:\workspace\consumer\src\main\webapp" />
+      <recent name="F:\workspace\consumer\src\main\resources" />
+      <recent name="F:\workspace\consumer\src\main\java\zsx\dubbo\controller" />
+      <recent name="F:\workspace\provider\src\main\resources" />
     </key>
     <key name="CopyClassDialog.RECENTS_KEY">
-      <recent name="" />
-      <recent name="controller" />
+      <recent name="provider.util" />
+      <recent name="provider.serviceImpl" />
+      <recent name="common.service" />
+      <recent name="service" />
       <recent name="util" />
-      <recent name="zsx.dubbo.controller" />
-      <recent name="zsx.dubbo" />
     </key>
     <key name="MoveFile.RECENT_KEYS">
+      <recent name="F:\workspace\consumer\src\main\resources" />
+      <recent name="F:\workspace\myProjectProvider\provider\src\main\resources\xml" />
       <recent name="F:\workspace\myProjectCommon" />
       <recent name="F:\workspace\myProject\src\main\resources\xml" />
       <recent name="F:\workspace\myProject\src\main\webapp" />
@@ -389,12 +1056,25 @@
     </option>
   </component>
   <component name="RunManager" selected="Application.MainTest">
-    <configuration name="ConsumerOperation" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+    <configuration name="ConsumerOperation" type="Application" factoryName="Application" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="zsx.dubbo.ConsumerOperation" />
       <module name="dubbo_test.consumer" />
       <extension name="coverage">
         <pattern>
           <option name="PATTERN" value="zsx.dubbo.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="MainTest (1)" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="provider.util.MainTest" />
+      <module name="dubbo_test.provider" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="provider.util.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
@@ -419,20 +1099,23 @@
       <option name="ALTERNATIVE_JRE_PATH" value="1.8" />
       <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="true" />
       <option name="MAIN_CLASS_NAME" value="util.MainTest" />
-      <module name="MVC2Distributed.myProjectProvider" />
+      <module name="myProjectProvider" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="consumerTest" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="dubbo.test.consumerTest" />
-      <module name="dubbo_test.consumer" />
+    <configuration name="OperationsTest.listToDos" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="dubbo_test.provider" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="dubbo.test.*" />
+          <option name="PATTERN" value="provider.serviceImpl.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
+      <option name="PACKAGE_NAME" value="provider.serviceImpl" />
+      <option name="MAIN_CLASS_NAME" value="provider.serviceImpl.OperationsTest" />
+      <option name="METHOD_NAME" value="listToDos" />
+      <option name="TEST_OBJECT" value="method" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
@@ -534,8 +1217,8 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="consumer" type="#com.intellij.j2ee.web.tomcat.TomcatRunConfigurationFactory" factoryName="Local" APPLICATION_SERVER_NAME="Tomcat 8" ALTERNATIVE_JRE_ENABLED="false">
-      <option name="OPEN_IN_BROWSER_URL" value="http://localhost:8081/" />
+    <configuration name="consumer" type="#com.intellij.j2ee.web.tomcat.TomcatRunConfigurationFactory" factoryName="Local" APPLICATION_SERVER_NAME="Tomcat 8" ALTERNATIVE_JRE_ENABLED="true" ALTERNATIVE_JRE_PATH="1.8">
+      <option name="BROWSER_ID" value="98ca6316-2f89-46d9-a9e5-fa9e2b0625b3" />
       <option name="UPDATE_ON_FRAME_DEACTIVATION" value="true" />
       <option name="UPDATE_CLASSES_ON_FRAME_DEACTIVATION" value="true" />
       <deployment>
@@ -547,11 +1230,13 @@
       </deployment>
       <server-settings>
         <option name="BASE_DIRECTORY_NAME" value="Unnamed_workspace_2" />
+        <option name="HTTP_PORT" value="8081" />
+        <option name="JNDI_PORT" value="1088" />
       </server-settings>
+      <log_file alias="Tomcat Host Manager Log" path="%IDEA_RUN:CATALINA_BASE%/logs/host-manager.*" />
       <predefined_log_file enabled="true" id="Tomcat" />
       <predefined_log_file enabled="true" id="Tomcat Catalina" />
       <predefined_log_file id="Tomcat Manager" />
-      <predefined_log_file id="Tomcat Host Manager" />
       <predefined_log_file id="Tomcat Localhost Access" />
       <RunnerSettings RunnerId="Debug">
         <option name="DEBUG_PORT" value="49611" />
@@ -621,6 +1306,7 @@
       </deployment>
       <server-settings>
         <option name="BASE_DIRECTORY_NAME" value="Unnamed_workspace" />
+        <option name="JNDI_PORT" value="1089" />
       </server-settings>
       <predefined_log_file enabled="true" id="Tomcat" />
       <predefined_log_file enabled="true" id="Tomcat Catalina" />
@@ -628,7 +1314,7 @@
       <predefined_log_file id="Tomcat Host Manager" />
       <predefined_log_file id="Tomcat Localhost Access" />
       <RunnerSettings RunnerId="Debug">
-        <option name="DEBUG_PORT" value="58965" />
+        <option name="DEBUG_PORT" value="58966" />
       </RunnerSettings>
       <ConfigurationWrapper VM_VAR="JAVA_OPTS" RunnerId="Cover">
         <option name="USE_ENV_VARIABLES" value="true" />
@@ -682,94 +1368,22 @@
         </option>
       </method>
     </configuration>
-    <configuration name="provider" type="#com.intellij.j2ee.web.tomcat.TomcatRunConfigurationFactory" factoryName="Local" APPLICATION_SERVER_NAME="Tomcat 8" ALTERNATIVE_JRE_ENABLED="false">
-      <option name="OPEN_IN_BROWSER_URL" value="http://localhost:8083/provider/" />
-      <option name="BROWSER_ID" value="98ca6316-2f89-46d9-a9e5-fa9e2b0625b3" />
-      <option name="UPDATING_POLICY" value="redeploy-artifacts" />
-      <deployment>
-        <file path="$PROJECT_DIR$/provider">
-          <settings>
-            <option name="CONTEXT_PATH" value="/provider" />
-          </settings>
-        </file>
-      </deployment>
-      <server-settings>
-        <option name="BASE_DIRECTORY_NAME" value="Unnamed_workspace_4" />
-      </server-settings>
-      <predefined_log_file enabled="true" id="Tomcat" />
-      <predefined_log_file enabled="true" id="Tomcat Catalina" />
-      <predefined_log_file id="Tomcat Manager" />
-      <predefined_log_file id="Tomcat Host Manager" />
-      <predefined_log_file id="Tomcat Localhost Access" />
-      <RunnerSettings RunnerId="Debug">
-        <option name="DEBUG_PORT" value="62327" />
-      </RunnerSettings>
-      <ConfigurationWrapper VM_VAR="JAVA_OPTS" RunnerId="Cover">
-        <option name="USE_ENV_VARIABLES" value="true" />
-        <STARTUP>
-          <option name="USE_DEFAULT" value="true" />
-          <option name="SCRIPT" value="" />
-          <option name="VM_PARAMETERS" value="" />
-          <option name="PROGRAM_PARAMETERS" value="" />
-        </STARTUP>
-        <SHUTDOWN>
-          <option name="USE_DEFAULT" value="true" />
-          <option name="SCRIPT" value="" />
-          <option name="VM_PARAMETERS" value="" />
-          <option name="PROGRAM_PARAMETERS" value="" />
-        </SHUTDOWN>
-      </ConfigurationWrapper>
-      <ConfigurationWrapper VM_VAR="JAVA_OPTS" RunnerId="Debug">
-        <option name="USE_ENV_VARIABLES" value="true" />
-        <STARTUP>
-          <option name="USE_DEFAULT" value="true" />
-          <option name="SCRIPT" value="" />
-          <option name="VM_PARAMETERS" value="" />
-          <option name="PROGRAM_PARAMETERS" value="" />
-        </STARTUP>
-        <SHUTDOWN>
-          <option name="USE_DEFAULT" value="true" />
-          <option name="SCRIPT" value="" />
-          <option name="VM_PARAMETERS" value="" />
-          <option name="PROGRAM_PARAMETERS" value="" />
-        </SHUTDOWN>
-      </ConfigurationWrapper>
-      <ConfigurationWrapper VM_VAR="JAVA_OPTS" RunnerId="Run">
-        <option name="USE_ENV_VARIABLES" value="true" />
-        <STARTUP>
-          <option name="USE_DEFAULT" value="true" />
-          <option name="SCRIPT" value="" />
-          <option name="VM_PARAMETERS" value="" />
-          <option name="PROGRAM_PARAMETERS" value="" />
-        </STARTUP>
-        <SHUTDOWN>
-          <option name="USE_DEFAULT" value="true" />
-          <option name="SCRIPT" value="" />
-          <option name="VM_PARAMETERS" value="" />
-          <option name="PROGRAM_PARAMETERS" value="" />
-        </SHUTDOWN>
-      </ConfigurationWrapper>
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
     <list>
-      <item itemvalue="Application.consumerTest" />
+      <item itemvalue="Application.ConsumerOperation" />
+      <item itemvalue="Application.MainTest (1)" />
+      <item itemvalue="Application.MainTest" />
+      <item itemvalue="JUnit.OperationsTest.listToDos" />
       <item itemvalue="JUnit.consumerTest.mainTest" />
       <item itemvalue="Kotlin script.Unnamed" />
       <item itemvalue="Tomcat Server.consumer" />
-      <item itemvalue="Tomcat Server.provider" />
       <item itemvalue="Tomcat Server.myproject" />
-      <item itemvalue="Application.ConsumerOperation" />
-      <item itemvalue="Application.MainTest" />
     </list>
     <recent_temporary>
       <list>
         <item itemvalue="Application.MainTest" />
-        <item itemvalue="Application.ConsumerOperation" />
-        <item itemvalue="Application.MainTest" />
+        <item itemvalue="Application.MainTest (1)" />
         <item itemvalue="JUnit.consumerTest.mainTest" />
-        <item itemvalue="Application.consumerTest" />
+        <item itemvalue="JUnit.OperationsTest.listToDos" />
       </list>
     </recent_temporary>
   </component>
@@ -788,44 +1402,46 @@
       <workItem from="1565506308939" duration="42881000" />
       <workItem from="1565871937524" duration="2495000" />
       <workItem from="1565874564307" duration="44327000" />
-      <workItem from="1566113480845" duration="41760000" />
+      <workItem from="1566113480845" duration="46062000" />
+      <workItem from="1566379332901" duration="13459000" />
+      <workItem from="1566436231273" duration="43462000" />
     </task>
     <servers />
   </component>
   <component name="TestHistory">
-    <history-entry file="consumerTest_mainTest - 2019.08.18 at 17h 22m 50s.xml">
+    <history-entry file="consumerTest_mainTest - 2019.08.22 at 09h 14m 40s.xml">
       <configuration name="consumerTest.mainTest" configurationId="JUnit" />
     </history-entry>
-    <history-entry file="consumerTest_mainTest - 2019.08.18 at 17h 23m 23s.xml">
+    <history-entry file="consumerTest_mainTest - 2019.08.22 at 09h 27m 52s.xml">
       <configuration name="consumerTest.mainTest" configurationId="JUnit" />
     </history-entry>
-    <history-entry file="consumerTest - 2019.08.18 at 17h 25m 35s.xml">
-      <configuration name="consumerTest" configurationId="JUnit" />
+    <history-entry file="OperationsTest_listToDos - 2019.08.22 at 10h 47m 37s.xml">
+      <configuration name="OperationsTest.listToDos" configurationId="JUnit" />
     </history-entry>
-    <history-entry file="consumerTest - 2019.08.18 at 17h 27m 38s.xml">
-      <configuration name="consumerTest" configurationId="JUnit" />
-    </history-entry>
-    <history-entry file="consumerTest - 2019.08.18 at 17h 37m 17s.xml">
-      <configuration name="consumerTest" configurationId="JUnit" />
-    </history-entry>
-    <history-entry file="consumerTest_mainTest - 2019.08.18 at 17h 41m 49s.xml">
+    <history-entry file="consumerTest_mainTest - 2019.08.23 at 10h 40m 37s.xml">
       <configuration name="consumerTest.mainTest" configurationId="JUnit" />
     </history-entry>
-    <history-entry file="consumerTest_mainTest - 2019.08.18 at 17h 43m 44s.xml">
+    <history-entry file="consumerTest_mainTest - 2019.08.23 at 10h 43m 14s.xml">
       <configuration name="consumerTest.mainTest" configurationId="JUnit" />
     </history-entry>
-    <history-entry file="consumerTest_mainTest - 2019.08.18 at 17h 43m 53s.xml">
+    <history-entry file="consumerTest_mainTest - 2019.08.23 at 10h 43m 46s.xml">
       <configuration name="consumerTest.mainTest" configurationId="JUnit" />
     </history-entry>
-    <history-entry file="consumerTest_mainTest - 2019.08.18 at 17h 44m 18s.xml">
+    <history-entry file="consumerTest_mainTest - 2019.08.23 at 10h 47m 38s.xml">
       <configuration name="consumerTest.mainTest" configurationId="JUnit" />
     </history-entry>
-    <history-entry file="consumerTest_mainTest - 2019.08.18 at 17h 50m 56s.xml">
+    <history-entry file="consumerTest_mainTest - 2019.08.23 at 10h 47m 57s.xml">
+      <configuration name="consumerTest.mainTest" configurationId="JUnit" />
+    </history-entry>
+    <history-entry file="consumerTest_mainTest - 2019.08.23 at 10h 48m 23s.xml">
+      <configuration name="consumerTest.mainTest" configurationId="JUnit" />
+    </history-entry>
+    <history-entry file="consumerTest_mainTest - 2019.08.23 at 10h 49m 06s.xml">
       <configuration name="consumerTest.mainTest" configurationId="JUnit" />
     </history-entry>
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="132852000" />
+    <option name="totallyTimeSpent" value="194075000" />
   </component>
   <component name="TodoView">
     <todo-panel id="selected-file">
@@ -838,8 +1454,9 @@
   </component>
   <component name="ToolWindowManager">
     <frame x="-7" y="-7" width="1295" height="695" extended-state="6" />
+    <editor active="true" />
     <layout>
-      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.48261923" />
+      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.28051737" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info id="Designer" order="2" />
       <window_info id="Image Layers" order="3" />
@@ -849,15 +1466,15 @@
       <window_info id="Web" order="7" side_tool="true" />
       <window_info anchor="bottom" id="Message" order="0" />
       <window_info anchor="bottom" id="Find" order="1" weight="0.3617811" />
-      <window_info anchor="bottom" id="Run" order="2" sideWeight="0.4987874" weight="0.5640074" />
-      <window_info anchor="bottom" id="Debug" order="3" sideWeight="0.4987874" visible="true" weight="0.39517626" />
+      <window_info anchor="bottom" id="Run" order="2" sideWeight="0.4987874" visible="true" weight="0.3469388" />
+      <window_info anchor="bottom" id="Debug" order="3" sideWeight="0.497979" weight="0.1632653" />
       <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
       <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
-      <window_info anchor="bottom" id="TODO" order="6" weight="0.3283859" />
-      <window_info anchor="bottom" id="Application Servers" order="7" weight="0.3283859" />
-      <window_info anchor="bottom" id="Terminal" order="8" weight="0.3283859" />
-      <window_info anchor="bottom" id="Docker" order="9" show_stripe_button="false" />
-      <window_info anchor="bottom" id="Event Log" order="10" sideWeight="0.5012126" side_tool="true" weight="0.32962963" />
+      <window_info anchor="bottom" id="Application Servers" order="6" weight="0.3283859" />
+      <window_info anchor="bottom" id="Terminal" order="7" weight="0.3283859" />
+      <window_info anchor="bottom" id="Docker" order="8" show_stripe_button="false" />
+      <window_info anchor="bottom" id="Event Log" order="9" sideWeight="0.502021" side_tool="true" weight="0.36549166" />
+      <window_info anchor="bottom" id="TODO" order="10" weight="0.3283859" />
       <window_info anchor="bottom" id="Messages" order="11" weight="0.33951762" />
       <window_info anchor="bottom" id="Database Changes" order="12" />
       <window_info anchor="bottom" id="Version Control" order="13" weight="0.3283859" />
@@ -960,6 +1577,54 @@
           <properties />
           <option name="timeStamp" value="90" />
         </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/myProjectProvider/provider/src/main/java/util/MainTest.java</url>
+          <line>6</line>
+          <properties />
+          <option name="timeStamp" value="92" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/myProjectProvider/provider/src/main/java/util/MainTest.java</url>
+          <line>7</line>
+          <properties />
+          <option name="timeStamp" value="93" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/myProjectProvider/src/main/java/util/MainTest.java</url>
+          <line>5</line>
+          <properties />
+          <option name="timeStamp" value="95" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/consumer/src/test/dubbo/test/consumerTest.java</url>
+          <line>26</line>
+          <properties />
+          <option name="timeStamp" value="104" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/provider/src/test/java/provider/serviceImpl/OperationsTest.java</url>
+          <line>19</line>
+          <properties />
+          <option name="timeStamp" value="107" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/consumer/src/main/java/zsx/dubbo/controller/ConsumerController.java</url>
+          <line>23</line>
+          <properties />
+          <option name="timeStamp" value="112" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/consumer/src/main/java/zsx/dubbo/controller/ConsumerController.java</url>
+          <line>22</line>
+          <properties />
+          <option name="timeStamp" value="113" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/consumer/src/main/java/zsx/dubbo/ConsumerOperation.java</url>
+          <line>20</line>
+          <properties />
+          <option name="timeStamp" value="115" />
+        </line-breakpoint>
       </breakpoints>
     </breakpoint-manager>
   </component>
@@ -1016,356 +1681,759 @@
     </expressions>
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/myProjectCommon/myProjectProvider/MVC2Distributed.myProjectProvider.iml">
+    <entry file="file://$PROJECT_DIR$/myProject/src/main/resources/application-context.xml">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="75">
-          <caret line="3" column="19" lean-forward="true" selection-start-line="3" selection-start-column="19" selection-end-line="3" selection-end-column="19" />
+        <state relative-caret-position="100">
+          <caret line="28" column="31" selection-start-line="28" selection-start-column="31" selection-end-line="28" selection-end-column="31" />
+          <folding>
+            <element signature="e#1460#1468#0" expanded="true" />
+            <element signature="e#1506#1519#0" expanded="true" />
+            <element signature="e#1556#1569#0" expanded="true" />
+            <element signature="e#1613#1633#0" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/myProjectCommon/src/main/java/pojo/ToDo.hbm.xml">
+    <entry file="file://$PROJECT_DIR$/consumer/src/main/webapp/WEB-INF/log4j.xml">
       <provider selected="true" editor-type-id="text-editor" />
     </entry>
-    <entry file="file://$PROJECT_DIR$/myProjectCommon/src/main/java/util/test.json">
-      <provider selected="true" editor-type-id="text-editor" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/myProjectCommon/src/main/resources/log4j.properties">
-      <provider selected="true" editor-type-id="text-editor" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/myProject/src/main/java/person/util/CallableTest.java">
+    <entry file="file://$PROJECT_DIR$/consumer/src/main/resources/logging.properties">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="96">
-          <caret line="11" column="13" selection-start-line="11" selection-start-column="13" selection-end-line="11" selection-end-column="13" />
+        <state relative-caret-position="45">
+          <caret line="8" column="22" lean-forward="true" selection-start-line="8" selection-start-column="22" selection-end-line="8" selection-end-column="22" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/myProject/src/main/java/person/util/Consumer.java">
+    <entry file="jar://$MAVEN_REPOSITORY$/org/springframework/spring-web/4.3.18.RELEASE/spring-web-4.3.18.RELEASE.jar!/org/springframework/web/context/ContextLoaderListener.class">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-261">
-          <caret line="13" column="38" selection-start-line="13" selection-start-column="38" selection-end-line="13" selection-end-column="38" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/myProjectCommon/src/main/java/util/Aop.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="225">
-          <caret line="13" column="23" lean-forward="true" selection-start-line="13" selection-start-column="23" selection-end-line="13" selection-end-column="23" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/myProjectCommon/src/main/java/util/CallableTest.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="164">
-          <caret line="12" column="25" lean-forward="true" selection-start-line="12" selection-start-column="25" selection-end-line="12" selection-end-column="25" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/myProjectCommon/src/main/java/util/Consumer.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="96">
-          <caret line="9" column="13" selection-start-line="9" selection-start-column="13" selection-end-line="9" selection-end-column="13" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/myProjectCommon/src/main/java/util/Util.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-54">
-          <caret line="8" column="13" selection-start-line="8" selection-start-column="13" selection-end-line="8" selection-end-column="13" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/myProjectCommon/src/main/java/util/ThreadTest.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="96">
+        <state relative-caret-position="97">
           <caret line="10" column="13" selection-start-line="10" selection-start-column="13" selection-end-line="10" selection-end-column="13" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/myProjectCommon/src/main/java/util/Producer.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-454">
-          <caret line="11" column="23" lean-forward="true" selection-start-line="11" selection-start-column="23" selection-end-line="11" selection-end-column="23" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/myProject/src/main/java/person/util/Aop.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="246">
-          <caret line="58" column="2" selection-start-line="58" selection-start-column="2" selection-end-line="58" selection-end-column="2" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/myProjectCommon/src/main/java/util/ProductEnum.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-100">
-          <caret line="5" column="12" selection-start-line="5" selection-start-column="12" selection-end-line="5" selection-end-column="12" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/myProject/src/main/java/person/util/JedisUtil.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="175">
-          <caret line="7" selection-start-line="7" selection-end-line="8" selection-end-column="31" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/myProjectCommon/src/main/java/util/JedisUtil.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-250">
-          <caret line="11" column="20" selection-start-line="11" selection-start-column="20" selection-end-line="11" selection-end-column="20" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/myProjectCommon/src/main/java/pojo/ToDo.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="141">
-          <caret line="11" column="13" selection-start-line="11" selection-start-column="13" selection-end-line="11" selection-end-column="13" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/myProjectCommon/src/main/java/pojo/Comment.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="141">
-          <caret line="11" column="13" selection-start-line="11" selection-start-column="13" selection-end-line="11" selection-end-column="13" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/myProjectCommon/src/main/java/pojo/Book.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-684">
-          <caret line="13" column="28" selection-start-line="13" selection-start-column="28" selection-end-line="13" selection-end-column="28" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/myProjectCommon/src/main/java/pojo/DbaObject.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="141">
-          <caret line="11" column="13" selection-start-line="11" selection-start-column="13" selection-end-line="11" selection-end-column="13" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/myProject/src/main/resources/xml/Book.hbm.xml">
-      <provider selected="true" editor-type-id="text-editor" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/myProjectCommon/src/main/java/pojo/TestUser.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="225">
-          <caret line="15" column="5" selection-start-line="15" selection-start-column="5" selection-end-line="15" selection-end-column="5" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/consumer/pom.xml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-1314">
-          <caret line="62" column="16" selection-start-line="62" selection-start-column="16" selection-end-line="62" selection-end-column="16" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/provider/pom.xml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="325">
-          <caret line="16" column="6" selection-start-line="16" selection-start-column="6" selection-end-line="44" selection-end-column="21" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="jar://$MAVEN_REPOSITORY$/com/alibaba/dubbo/2.5.2/dubbo-2.5.2.jar!/com/alibaba/dubbo/common/utils/StringUtils.class">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="141">
-          <caret line="35" column="26" selection-start-line="35" selection-start-column="26" selection-end-line="35" selection-end-column="26" />
-          <folding>
-            <element signature="e#1236#1237#0" expanded="true" />
-            <element signature="e#1291#1292#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="jar://$MAVEN_REPOSITORY$/org/springframework/spring-orm/4.3.18.RELEASE/spring-orm-4.3.18.RELEASE.jar!/org/springframework/orm/hibernate4/LocalSessionFactoryBean.class">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="112">
-          <caret line="28" column="13" selection-start-line="28" selection-start-column="13" selection-end-line="28" selection-end-column="13" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="jar://$MAVEN_REPOSITORY$/org/springframework/spring/2.5.6.SEC03/spring-2.5.6.SEC03.jar!/org/springframework/beans/factory/config/PropertyPlaceholderConfigurer.class">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-94">
-          <caret line="21" column="28" selection-start-line="21" selection-start-column="28" selection-end-line="21" selection-end-column="28" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="jar://$MAVEN_REPOSITORY$/org/springframework/spring-beans/4.3.18.RELEASE/spring-beans-4.3.18.RELEASE.jar!/org/springframework/beans/factory/config/PlaceholderConfigurerSupport.class">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="31">
-          <caret line="11" column="52" lean-forward="true" selection-start-line="11" selection-start-column="52" selection-end-line="11" selection-end-column="52" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="jar://$MAVEN_REPOSITORY$/org/springframework/spring-beans/4.3.18.RELEASE/spring-beans-4.3.18.RELEASE.jar!/org/springframework/beans/factory/config/PropertyPlaceholderConfigurer.class">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="81">
-          <caret line="16" column="56" selection-start-line="16" selection-start-column="56" selection-end-line="16" selection-end-column="56" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/myProject/src/main/java/person/util/ConvertData.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="175">
-          <caret line="7" column="53" selection-start-line="7" selection-start-column="53" selection-end-line="7" selection-end-column="53" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/myProjectCommon/myProjectProvider/src/main/resources/xml/ToDo.hbm.xml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="175">
-          <caret line="34" column="28" selection-start-line="34" selection-start-column="28" selection-end-line="34" selection-end-column="28" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/myProjectCommon/myProjectProvider/src/main/resources/hibernate.cfg.xml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="94">
-          <caret line="7" column="46" selection-start-line="7" selection-start-column="46" selection-end-line="7" selection-end-column="46" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/myProjectCommon/myProjectProvider/src/main/resources/log4j.properties">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="175">
-          <caret line="7" column="33" selection-start-line="7" selection-start-column="33" selection-end-line="7" selection-end-column="33" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/myProject/pom.xml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="143">
-          <caret line="193" column="17" selection-start-line="189" selection-start-column="3" selection-end-line="193" selection-end-column="17" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/myProjectCommon/src/main/java/service/IOperationService.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="225">
-          <caret line="12" column="16" selection-start-line="12" selection-start-column="16" selection-end-line="12" selection-end-column="16" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/myProjectConsumer/src/main/java/controller/TestController.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="162">
-          <caret line="62" column="44" selection-start-line="62" selection-start-column="44" selection-end-line="62" selection-end-column="44" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/provider/src/main/resources/spring-dubbo-provider.xml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="300">
-          <caret line="21" column="8" selection-start-line="21" selection-start-column="8" selection-end-line="21" selection-end-column="8" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/myProjectCommon/myProjectProvider/src/main/resources/dbConfig.properties">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="25">
-          <caret line="1" column="12" selection-start-line="1" selection-start-column="12" selection-end-line="1" selection-end-column="12" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/myProjectCommon/myProjectProvider/src/main/resources/application-context.xml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="77">
-          <caret line="87" selection-start-line="87" selection-end-line="87" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/myProjectConsumer/pom.xml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="109">
-          <caret line="34" selection-start-line="34" selection-end-line="34" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/myProjectCommon/pom.xml">
+    <entry file="file://$MAVEN_REPOSITORY$/org/springframework/spring-webmvc/4.3.18.RELEASE/spring-webmvc-4.3.18.RELEASE.pom">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="125">
-          <caret line="128" column="32" selection-start-line="128" selection-start-column="32" selection-end-line="128" selection-end-column="32" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/myProjectCommon/myProjectProvider/src/main/resources/spring-dubbo-provider.xml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="170">
-          <caret line="11" column="26" selection-start-line="11" selection-start-column="26" selection-end-line="11" selection-end-column="26" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/myProject/src/main/resources/application-context.xml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1057">
-          <caret line="52" column="19" selection-start-line="52" selection-start-column="19" selection-end-line="52" selection-end-column="19" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/myProject/src/main/resources/log4j.properties">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-5">
-          <caret line="9" column="32" selection-start-line="9" selection-start-column="32" selection-end-line="9" selection-end-column="32" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/myProjectCommon/myProjectProvider/src/main/java/util/ConvertData.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="225">
-          <caret line="9" column="47" selection-start-line="9" selection-start-column="47" selection-end-line="9" selection-end-column="47" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/myProjectCommon/myProjectProvider/src/main/java/serviceImpl/Operations.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="127">
-          <caret line="12" column="17" selection-start-line="12" selection-start-column="17" selection-end-line="12" selection-end-column="17" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/myProjectCommon/myProjectProvider/pom.xml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="100">
-          <caret line="14" column="20" selection-start-line="14" selection-start-column="20" selection-end-line="14" selection-end-column="20" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/myProjectCommon/myProjectProvider/src/main/java/util/MainTest.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="75">
-          <caret line="6" column="9" selection-start-line="6" selection-start-column="9" selection-end-line="6" selection-end-column="9" />
+          <caret line="47" column="29" lean-forward="true" selection-start-line="47" selection-start-column="29" selection-end-line="47" selection-end-column="29" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/myProject/src/main/webapp/WEB-INF/web.xml">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="246">
-          <caret line="66" column="17" selection-start-line="66" selection-start-column="17" selection-end-line="66" selection-end-column="17" />
+        <state relative-caret-position="53">
+          <caret line="80" selection-end-line="82" selection-end-column="10" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/consumer/src/main/webapp/WEB-INF/web.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="125">
+          <caret line="59" column="26" selection-start-line="59" selection-start-column="26" selection-end-line="59" selection-end-column="26" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://$MAVEN_REPOSITORY$/org/springframework/spring-beans/4.3.18.RELEASE/spring-beans-4.3.18.RELEASE.jar!/org/springframework/beans/factory/xml/spring-beans-3.0.xsd">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/common/src/main/java/common/pojo/Book.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="110">
+          <caret line="10" column="13" selection-start-line="10" selection-start-column="13" selection-end-line="10" selection-end-column="13" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/common/src/main/java/common/service/IOperationService.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="192">
+          <caret line="13" column="13" selection-start-line="13" selection-start-column="13" selection-end-line="13" selection-end-column="13" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/common/src/main/java/common/util/ProductEnum.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="50">
+          <caret line="2" column="12" selection-start-line="2" selection-start-column="12" selection-end-line="2" selection-end-column="12" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/common/src/main/java/common/util/JedisUtil.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="110">
+          <caret line="18" column="13" selection-start-line="18" selection-start-column="13" selection-end-line="18" selection-end-column="13" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/common/src/main/java/common/test/StringUtil.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="110">
+          <caret line="5" column="13" selection-start-line="5" selection-start-column="13" selection-end-line="5" selection-end-column="13" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/common/src/main/resources/log4j.properties">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$MAVEN_REPOSITORY$/com/alibaba/dubbo/2.5.2/dubbo-2.5.2.pom">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="134">
+          <caret line="46" column="30" selection-start-line="46" selection-start-column="24" selection-end-line="46" selection-end-column="30" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/consumer/dubbo_test.consumer.iml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-70">
+          <caret line="71" column="65" selection-start-line="71" selection-start-column="65" selection-end-line="71" selection-end-column="65" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/consumer/target/test-classes/dubbo/test/consumerTest.class">
+      <provider selected="true" editor-type-id="text-editor">
+        <state>
+          <folding>
+            <element signature="e#0#1437#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/myProject/src/main/resources/springmvc-servlet.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="175">
+          <caret line="7" column="38" selection-end-line="52" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/myProject/src/main/java/person/util/ConvertData.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="210">
+          <caret line="11" column="6" selection-start-line="11" selection-start-column="6" selection-end-line="11" selection-end-column="6" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/myProject/src/main/java/person/test/RedisLock.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="250">
+          <caret line="77" column="68" selection-start-line="77" selection-start-column="68" selection-end-line="77" selection-end-column="68" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/myProject/src/main/java/person/util/Consumer.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="171">
+          <caret line="11" column="13" selection-start-line="11" selection-start-column="13" selection-end-line="11" selection-end-column="13" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/myProject/src/main/java/person/util/CallableTest.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="171">
+          <caret line="11" column="13" selection-start-line="11" selection-start-column="13" selection-end-line="11" selection-end-column="13" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/myProject/src/main/java/person/test/MainTest.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="100">
+          <caret line="18" column="13" selection-start-line="18" selection-start-column="13" selection-end-line="18" selection-end-column="13" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/myProject/src/main/java/person/controller/batchImportSql.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="100">
+          <caret line="7" column="13" selection-start-line="7" selection-start-column="13" selection-end-line="7" selection-end-column="13" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/myProject/src/main/java/person/controller/TestController.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="152">
+          <caret line="36" column="11" selection-start-line="36" selection-start-column="11" selection-end-line="36" selection-end-column="11" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/myProject/src/main/java/person/service/Operations.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="7">
+          <caret line="389" selection-start-line="389" selection-end-line="389" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/myProject/pom.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="200">
+          <caret line="23" column="4" selection-start-line="23" selection-end-line="27" selection-end-column="20" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://$APPLICATION_HOME_DIR$/plugins/maven/lib/maven.jar!/schemas/maven-4.0.0.xsd">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="110">
+          <caret line="78" column="6" selection-start-line="78" selection-start-column="6" selection-end-line="78" selection-end-column="6" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/consumer/src/main/java/zsx/dubbo/controller/TestController.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="256">
+          <caret line="24" column="14" selection-start-line="24" selection-start-column="14" selection-end-line="24" selection-end-column="14" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/provider/src/main/resources/hibernate.cfg.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="350">
+          <caret line="14" column="26" selection-start-line="14" selection-start-column="26" selection-end-line="14" selection-end-column="26" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/common/pom.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="141">
+          <caret line="54" selection-start-line="54" selection-end-line="54" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/provider/src/test/java/provider/serviceImpl/OperationsTest.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="163">
+          <caret line="13" column="13" selection-start-line="13" selection-start-column="13" selection-end-line="13" selection-end-column="13" />
+          <folding>
+            <element signature="imports" expanded="true" />
+            <element signature="e#563#564#0" expanded="true" />
+            <element signature="e#601#602#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/provider/src/main/resources/application-context.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="125">
+          <caret line="82" column="24" lean-forward="true" selection-start-line="82" selection-start-column="24" selection-end-line="82" selection-end-column="24" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://$MAVEN_REPOSITORY$/org/springframework/spring-web/4.3.18.RELEASE/spring-web-4.3.18.RELEASE.jar!/org/springframework/web/bind/annotation/support/HandlerMethodInvoker.class">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="96">
+          <caret line="160" selection-start-line="160" selection-end-line="160" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/consumer/src/main/java/zsx/dubbo/ConsumerOperation.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="388">
+          <caret line="29" column="8" selection-start-line="29" selection-start-column="8" selection-end-line="29" selection-end-column="8" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/consumer/src/main/resources/springmvc-servlet.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-28">
+          <caret line="49" column="31" lean-forward="true" selection-start-line="49" selection-start-column="31" selection-end-line="49" selection-end-column="31" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://$MAVEN_REPOSITORY$/junit/junit/4.12/junit-4.12.jar!/org/junit/internal/runners/model/ReflectiveCallable.class">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="96">
+          <caret line="17" selection-start-line="17" selection-end-line="17" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://$MAVEN_REPOSITORY$/org/springframework/spring-test/4.3.18.RELEASE/spring-test-4.3.18.RELEASE.jar!/org/springframework/test/context/junit4/statements/RunAfterTestMethodCallbacks.class">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="546">
+          <caret line="32" column="34" selection-start-line="32" selection-start-column="34" selection-end-line="32" selection-end-column="34" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/consumer/src/main/resources/spring-dubbo-consumer.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="136">
+          <caret line="18" column="22" selection-start-line="18" selection-start-column="22" selection-end-line="18" selection-end-column="22" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/consumer/src/test/dubbo/test/consumerTest.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="125">
+          <caret line="38" column="42" selection-start-line="38" selection-start-column="42" selection-end-line="38" selection-end-column="42" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://$MAVEN_REPOSITORY$/com/alibaba/dubbo/2.5.2/dubbo-2.5.2.jar!/com/alibaba/dubbo/container/Main.class">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="210">
+          <caret line="29" column="23" selection-start-line="29" selection-start-column="23" selection-end-line="29" selection-end-column="23" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/consumer/src/main/java/zsx/dubbo/controller/ConsumerController.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="113">
+          <caret line="23" selection-start-line="23" selection-end-line="23" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/provider/src/main/java/provider/util/MainTest.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="125">
+          <caret line="5" column="44" selection-start-line="5" selection-start-column="44" selection-end-line="5" selection-end-column="44" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://$MAVEN_REPOSITORY$/com/alibaba/dubbo/2.5.2/dubbo-2.5.2.jar!/com/alibaba/dubbo/common/utils/StringUtils.class">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="96">
+          <caret line="25" column="19" selection-start-line="25" selection-start-column="19" selection-end-line="25" selection-end-column="19" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/provider/src/main/java/provider/serviceImpl/Operations.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="125">
+          <caret line="23" selection-start-line="23" selection-end-line="23" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/provider/src/main/java/provider/serviceImpl/ToDoServiceImpl.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="200">
-          <caret line="12" column="31" selection-start-line="12" selection-start-column="31" selection-end-line="12" selection-end-column="31" />
+        <state relative-caret-position="25">
+          <caret line="2" column="2" selection-start-line="2" selection-start-column="2" selection-end-line="2" selection-end-column="2" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/myProjectProvider/provider/pom.xml">
-      <provider selected="true" editor-type-id="text-editor" />
+    <entry file="file://$PROJECT_DIR$/provider/src/main/java/provider/MainTest.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="50">
+          <caret line="2" column="39" selection-start-line="2" selection-start-column="7" selection-end-line="2" selection-end-column="39" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/consumer/pom.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="166">
+          <caret line="197" column="20" selection-start-line="197" selection-start-column="20" selection-end-line="197" selection-end-column="20" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="uml://MAVEN/zsx.dubbo:common:1.0-SNAPSHOT">
+      <provider selected="true" editor-type-id="UmlEditorProvider">
+        <state>
+          <ID>MAVEN</ID>
+          <OriginalElement>zsx.dubbo:common:1.0-SNAPSHOT</OriginalElement>
+          <nodes>
+            <node x="0.0" y="363.25">zsx.dubbo:common:1.0-SNAPSHOT</node>
+            <node x="144.5" y="542.5">log4j:log4j:jar:1.2.17</node>
+            <node x="123.0" y="642.375">org.slf4j:slf4j-log4j12:jar:1.5.2</node>
+            <node x="303.5" y="833.954081632653">org.slf4j:slf4j-log4j12:jar:1.5.2/org.slf4j:slf4j-api:jar:1.5.2</node>
+            <node x="312.0" y="492.9540816326531">org.slf4j:slf4j-log4j12:jar:1.5.2/log4j:log4j:jar:1.2.14</node>
+            <node x="115.5" y="102.0">org.apache.poi:poi-scratchpad:jar:3.17</node>
+            <node x="317.5" y="24.07908163265307">org.apache.poi:poi-scratchpad:jar:3.17/org.apache.poi:poi:jar:3.17</node>
+            <node x="434.5" y="2.125">org.apache.poi:poi-scratchpad:jar:3.17/org.apache.poi:poi:jar:3.17/commons-codec:commons-codec:jar:1.10</node>
+            <node x="417.5" y="43.125">org.apache.poi:poi-scratchpad:jar:3.17/org.apache.poi:poi:jar:3.17/org.apache.commons:commons-collections4:jar:4.1</node>
+            <node x="119.0" y="583.5">javax.validation:validation-api:jar:1.1.0.Final</node>
+            <node x="127.5" y="266.0">org.springframework:spring-test:jar:4.3.18.RELEASE</node>
+            <node x="293.5" y="129.20408163265307">org.springframework:spring-test:jar:4.3.18.RELEASE/org.springframework:spring-core:jar:4.3.18.RELEASE</node>
+            <node x="146.0" y="445.25">junit:junit:jar:4.12</node>
+            <node x="285.5" y="445.25">junit:junit:jar:4.12/org.hamcrest:hamcrest-core:jar:1.3</node>
+            <node x="119.0" y="501.5">org.aspectj:aspectjweaver:jar:1.8.4</node>
+            <node x="123.0" y="404.25">commons-io:commons-io:jar:2.5</node>
+            <node x="146.0" y="184.0">redis.clients:jedis:jar:2.9.0</node>
+            <node x="279.5" y="85.57908163265307">redis.clients:jedis:jar:2.9.0/org.apache.commons:commons-pool2:jar:2.4.2</node>
+            <node x="106.0" y="225.0">commons-logging:commons-logging:jar:1.2</node>
+            <node x="94.0" y="143.0">commons-logging:commons-logging-api:jar:1.1</node>
+            <node x="140.0" y="363.25">com.alibaba:dubbo:jar:2.5.2</node>
+            <node x="303.5" y="329.45543217286934">com.alibaba:dubbo:jar:2.5.2/org.javassist:javassist:jar:3.15.0-GA</node>
+            <node x="311.5" y="370.45543217286934">com.alibaba:dubbo:jar:2.5.2/org.jboss.netty:netty:jar:3.2.5.Final</node>
+            <node x="137.0" y="914.579081632653">com.101tec:zkclient:jar:0.10</node>
+            <node x="303.5" y="909.329081632653">com.101tec:zkclient:jar:0.10/org.slf4j:slf4j-api:jar:1.6.1</node>
+            <node x="129.0" y="686.875">org.apache.zookeeper:zookeeper:jar:3.4.8</node>
+            <node x="303.5" y="772.954081632653">org.apache.zookeeper:zookeeper:jar:3.4.8/org.slf4j:slf4j-api:jar:1.5.2</node>
+            <node x="290.5" y="649.954081632653">org.apache.zookeeper:zookeeper:jar:3.4.8/org.slf4j:slf4j-log4j12:jar:1.6.1</node>
+            <node x="312.0" y="608.954081632653">org.apache.zookeeper:zookeeper:jar:3.4.8/log4j:log4j:jar:1.2.16</node>
+            <node x="314.5" y="690.954081632653">org.apache.zookeeper:zookeeper:jar:3.4.8/jline:jline:jar:0.9.94</node>
+            <node x="311.5" y="731.954081632653">org.apache.zookeeper:zookeeper:jar:3.4.8/io.netty:netty:jar:3.7.0.Final</node>
+            <node x="105.0" y="61.0">org.apache.curator:curator-framework:jar:4.2.0</node>
+            <node x="288.0" y="170.20408163265307">org.apache.curator:curator-framework:jar:4.2.0/org.apache.curator:curator-client:jar:4.2.0</node>
+            <node x="296.5" y="567.954081632653">org.apache.curator:curator-framework:jar:4.2.0/org.apache.curator:curator-client:jar:4.2.0/org.apache.zookeeper:zookeeper:jar:3.5.4-beta</node>
+            <node x="465.0" y="164.95408163265307">org.apache.curator:curator-framework:jar:4.2.0/org.apache.curator:curator-client:jar:4.2.0/com.google.guava:guava:jar:27.0.1-jre</node>
+            <node x="630.5" y="219.75">org.apache.curator:curator-framework:jar:4.2.0/org.apache.curator:curator-client:jar:4.2.0/com.google.guava:guava:jar:27.0.1-jre/com.google.guava:failureaccess:jar:1.0.1</node>
+            <node x="622.0" y="260.75">org.apache.curator:curator-framework:jar:4.2.0/org.apache.curator:curator-client:jar:4.2.0/com.google.guava:guava:jar:27.0.1-jre/com.google.guava:listenablefuture:jar:9999.0-empty-to-avoid-conflict-with-guava</node>
+            <node x="649.0" y="178.75">org.apache.curator:curator-framework:jar:4.2.0/org.apache.curator:curator-client:jar:4.2.0/com.google.guava:guava:jar:27.0.1-jre/com.google.code.findbugs:jsr305:jar:3.0.2</node>
+            <node x="629.5" y="301.75">org.apache.curator:curator-framework:jar:4.2.0/org.apache.curator:curator-client:jar:4.2.0/com.google.guava:guava:jar:27.0.1-jre/org.checkerframework:checker-qual:jar:2.5.2</node>
+            <node x="596.5" y="55.75">org.apache.curator:curator-framework:jar:4.2.0/org.apache.curator:curator-client:jar:4.2.0/com.google.guava:guava:jar:27.0.1-jre/com.google.errorprone:error_prone_annotations:jar:2.2.0</node>
+            <node x="612.5" y="137.75">org.apache.curator:curator-framework:jar:4.2.0/org.apache.curator:curator-client:jar:4.2.0/com.google.guava:guava:jar:27.0.1-jre/com.google.j2objc:j2objc-annotations:jar:1.1</node>
+            <node x="590.5" y="96.75">org.apache.curator:curator-framework:jar:4.2.0/org.apache.curator:curator-client:jar:4.2.0/com.google.guava:guava:jar:27.0.1-jre/org.codehaus.mojo:animal-sniffer-annotations:jar:1.17</node>
+            <node x="459.0" y="788.8736494597838">org.apache.curator:curator-framework:jar:4.2.0/org.apache.curator:curator-client:jar:4.2.0/org.slf4j:slf4j-api:jar:1.7.25</node>
+            <node x="115.5" y="0.0">org.apache.curator:curator-recipes:jar:4.2.0</node>
+            <node x="137.0" y="322.25">com.alibaba:fastjson:jar:1.2.47</node>
+          </nodes>
+          <notes />
+          <edges>
+            <edge source="zsx.dubbo:common:1.0-SNAPSHOT" target="org.apache.curator:curator-framework:jar:4.2.0">
+              <point x="37.0" y="-8.647058823529392" />
+              <point x="-66.0" y="-0.0" />
+            </edge>
+            <edge source="org.springframework:spring-test:jar:4.3.18.RELEASE/org.springframework:spring-core:jar:4.3.18.RELEASE" target="commons-logging:commons-logging:jar:1.2">
+              <point x="-45.0" y="-5.25" />
+              <point x="268.0" y="134.45408163265307" />
+              <point x="65.0" y="-0.0" />
+            </edge>
+            <edge source="org.slf4j:slf4j-log4j12:jar:1.5.2/log4j:log4j:jar:1.2.14" target="log4j:log4j:jar:1.2.17">
+              <point x="-26.5" y="-5.25" />
+              <point x="268.0" y="498.2040816326531" />
+              <point x="248.0" y="547.75" />
+              <point x="26.5" y="-5.25" />
+            </edge>
+            <edge source="org.apache.zookeeper:zookeeper:jar:3.4.8" target="org.apache.zookeeper:zookeeper:jar:3.4.8/log4j:log4j:jar:1.2.16">
+              <point x="42.0" y="-5.25" />
+              <point x="248.0" y="692.125" />
+              <point x="268.0" y="624.704081632653" />
+              <point x="-26.5" y="5.25" />
+            </edge>
+            <edge source="com.101tec:zkclient:jar:0.10/org.slf4j:slf4j-api:jar:1.6.1" target="org.slf4j:slf4j-log4j12:jar:1.5.2/org.slf4j:slf4j-api:jar:1.5.2">
+              <point x="0.0" y="-10.5" />
+              <point x="0.0" y="10.5" />
+            </edge>
+            <edge source="zsx.dubbo:common:1.0-SNAPSHOT" target="com.alibaba:fastjson:jar:1.2.47">
+              <point x="37.0" y="-1.2352941176470722" />
+              <point x="94.0" y="332.75" />
+              <point x="-34.0" y="-0.0" />
+            </edge>
+            <edge source="junit:junit:jar:4.12" target="junit:junit:jar:4.12/org.hamcrest:hamcrest-core:jar:1.3">
+              <point x="25.0" y="-0.0" />
+              <point x="-53.0" y="-0.0" />
+            </edge>
+            <edge source="zsx.dubbo:common:1.0-SNAPSHOT" target="org.slf4j:slf4j-log4j12:jar:1.5.2">
+              <point x="37.0" y="7.4117647058823195" />
+              <point x="94.0" y="652.875" />
+              <point x="-48.0" y="-0.0" />
+            </edge>
+            <edge source="org.apache.poi:poi-scratchpad:jar:3.17" target="org.apache.poi:poi-scratchpad:jar:3.17/org.apache.poi:poi:jar:3.17">
+              <point x="55.5" y="-0.0" />
+              <point x="248.0" y="112.5" />
+              <point x="268.0" y="34.57908163265307" />
+              <point x="-21.0" y="-0.0" />
+            </edge>
+            <edge source="zsx.dubbo:common:1.0-SNAPSHOT" target="commons-logging:commons-logging-api:jar:1.1">
+              <point x="37.0" y="-6.176470588235247" />
+              <point x="-77.0" y="-0.0" />
+            </edge>
+            <edge source="zsx.dubbo:common:1.0-SNAPSHOT" target="com.alibaba:dubbo:jar:2.5.2">
+              <point x="37.0" y="-0.0" />
+              <point x="-31.0" y="-0.0" />
+            </edge>
+            <edge source="com.101tec:zkclient:jar:0.10" target="com.101tec:zkclient:jar:0.10/org.slf4j:slf4j-api:jar:1.6.1">
+              <point x="34.0" y="-0.0" />
+              <point x="-35.0" y="5.25" />
+            </edge>
+            <edge source="org.apache.zookeeper:zookeeper:jar:3.4.8/org.slf4j:slf4j-log4j12:jar:1.6.1" target="org.slf4j:slf4j-log4j12:jar:1.5.2">
+              <point x="-48.0" y="-5.25" />
+              <point x="268.0" y="655.204081632653" />
+              <point x="248.0" y="652.875" />
+              <point x="48.0" y="-0.0" />
+            </edge>
+            <edge source="com.alibaba:dubbo:jar:2.5.2" target="com.alibaba:dubbo:jar:2.5.2/org.javassist:javassist:jar:3.15.0-GA">
+              <point x="31.0" y="-5.25" />
+              <point x="248.0" y="368.5" />
+              <point x="268.0" y="339.95543217286934" />
+              <point x="-35.0" y="-0.0" />
+            </edge>
+            <edge source="org.apache.poi:poi-scratchpad:jar:3.17/org.apache.poi:poi:jar:3.17" target="org.apache.poi:poi-scratchpad:jar:3.17/org.apache.poi:poi:jar:3.17/org.apache.commons:commons-collections4:jar:4.1">
+              <point x="21.0" y="5.25" />
+              <point x="397.5" y="39.82908163265307" />
+              <point x="-76.5" y="-0.0" />
+            </edge>
+            <edge source="org.apache.zookeeper:zookeeper:jar:3.4.8/org.slf4j:slf4j-api:jar:1.5.2" target="org.slf4j:slf4j-log4j12:jar:1.5.2/org.slf4j:slf4j-api:jar:1.5.2">
+              <point x="0.0" y="10.5" />
+              <point x="0.0" y="-10.5" />
+            </edge>
+            <edge source="org.apache.curator:curator-framework:jar:4.2.0/org.apache.curator:curator-client:jar:4.2.0/com.google.guava:guava:jar:27.0.1-jre" target="org.apache.curator:curator-framework:jar:4.2.0/org.apache.curator:curator-client:jar:4.2.0/com.google.guava:guava:jar:27.0.1-jre/org.codehaus.mojo:animal-sniffer-annotations:jar:1.17">
+              <point x="29.0" y="-6.0" />
+              <point x="570.5" y="169.45408163265307" />
+              <point x="-88.0" y="-0.0" />
+            </edge>
+            <edge source="org.apache.zookeeper:zookeeper:jar:3.4.8/org.slf4j:slf4j-api:jar:1.5.2" target="org.apache.curator:curator-framework:jar:4.2.0/org.apache.curator:curator-client:jar:4.2.0/org.slf4j:slf4j-api:jar:1.7.25">
+              <point x="35.0" y="5.25" />
+              <point x="397.5" y="788.704081632653" />
+              <point x="417.5" y="801.9986494597838" />
+              <point x="-35.0" y="2.625" />
+            </edge>
+            <edge source="zsx.dubbo:common:1.0-SNAPSHOT" target="junit:junit:jar:4.12">
+              <point x="37.0" y="2.4705882352941444" />
+              <point x="94.0" y="455.75" />
+              <point x="-25.0" y="-0.0" />
+            </edge>
+            <edge source="org.apache.curator:curator-framework:jar:4.2.0/org.apache.curator:curator-client:jar:4.2.0/com.google.guava:guava:jar:27.0.1-jre" target="org.apache.curator:curator-framework:jar:4.2.0/org.apache.curator:curator-client:jar:4.2.0/com.google.guava:guava:jar:27.0.1-jre/org.checkerframework:checker-qual:jar:2.5.2">
+              <point x="29.0" y="9.0" />
+              <point x="570.5" y="184.45408163265307" />
+              <point x="590.5" y="312.25" />
+              <point x="-49.0" y="-0.0" />
+            </edge>
+            <edge source="com.alibaba:dubbo:jar:2.5.2" target="com.alibaba:dubbo:jar:2.5.2/org.jboss.netty:netty:jar:3.2.5.Final">
+              <point x="31.0" y="5.25" />
+              <point x="248.0" y="379.0" />
+              <point x="268.0" y="380.95543217286934" />
+              <point x="-27.0" y="-0.0" />
+            </edge>
+            <edge source="org.apache.zookeeper:zookeeper:jar:3.4.8" target="org.apache.zookeeper:zookeeper:jar:3.4.8/io.netty:netty:jar:3.7.0.Final">
+              <point x="42.0" y="5.25" />
+              <point x="248.0" y="702.625" />
+              <point x="268.0" y="742.454081632653" />
+              <point x="-27.0" y="-0.0" />
+            </edge>
+            <edge source="com.101tec:zkclient:jar:0.10/org.slf4j:slf4j-api:jar:1.6.1" target="org.apache.zookeeper:zookeeper:jar:3.4.8/org.slf4j:slf4j-api:jar:1.5.2">
+              <point x="-35.0" y="-5.25" />
+              <point x="268.0" y="914.579081632653" />
+              <point x="268.0" y="788.704081632653" />
+              <point x="-35.0" y="5.25" />
+            </edge>
+            <edge source="org.apache.curator:curator-framework:jar:4.2.0/org.apache.curator:curator-client:jar:4.2.0/com.google.guava:guava:jar:27.0.1-jre" target="org.apache.curator:curator-framework:jar:4.2.0/org.apache.curator:curator-client:jar:4.2.0/com.google.guava:guava:jar:27.0.1-jre/com.google.guava:listenablefuture:jar:9999.0-empty-to-avoid-conflict-with-guava">
+              <point x="29.0" y="6.0" />
+              <point x="570.5" y="181.45408163265307" />
+              <point x="590.5" y="271.25" />
+              <point x="-56.5" y="-0.0" />
+            </edge>
+            <edge source="org.apache.curator:curator-framework:jar:4.2.0/org.apache.curator:curator-client:jar:4.2.0" target="org.apache.curator:curator-framework:jar:4.2.0/org.apache.curator:curator-client:jar:4.2.0/org.slf4j:slf4j-api:jar:1.7.25">
+              <point x="50.5" y="5.25" />
+              <point x="417.5" y="791.4986494597838" />
+              <point x="-35.0" y="-7.875" />
+            </edge>
+            <edge source="org.springframework:spring-test:jar:4.3.18.RELEASE" target="org.springframework:spring-test:jar:4.3.18.RELEASE/org.springframework:spring-core:jar:4.3.18.RELEASE">
+              <point x="43.5" y="-0.0" />
+              <point x="248.0" y="276.5" />
+              <point x="268.0" y="144.95408163265307" />
+              <point x="-45.0" y="5.25" />
+            </edge>
+            <edge source="org.slf4j:slf4j-log4j12:jar:1.5.2" target="org.slf4j:slf4j-log4j12:jar:1.5.2/log4j:log4j:jar:1.2.14">
+              <point x="48.0" y="-7.0" />
+              <point x="248.0" y="645.875" />
+              <point x="268.0" y="508.7040816326531" />
+              <point x="-26.5" y="5.25" />
+            </edge>
+            <edge source="zsx.dubbo:common:1.0-SNAPSHOT" target="org.apache.curator:curator-recipes:jar:4.2.0">
+              <point x="37.0" y="-9.882352941176464" />
+              <point x="94.0" y="10.5" />
+              <point x="-55.5" y="-0.0" />
+            </edge>
+            <edge source="org.apache.poi:poi-scratchpad:jar:3.17/org.apache.poi:poi:jar:3.17" target="org.apache.poi:poi-scratchpad:jar:3.17/org.apache.poi:poi:jar:3.17/commons-codec:commons-codec:jar:1.10">
+              <point x="21.0" y="-5.25" />
+              <point x="397.5" y="29.32908163265307" />
+              <point x="417.5" y="12.625" />
+              <point x="-59.5" y="-0.0" />
+            </edge>
+            <edge source="zsx.dubbo:common:1.0-SNAPSHOT" target="redis.clients:jedis:jar:2.9.0">
+              <point x="37.0" y="-4.941176470588289" />
+              <point x="94.0" y="194.5" />
+              <point x="-25.0" y="-0.0" />
+            </edge>
+            <edge source="zsx.dubbo:common:1.0-SNAPSHOT" target="org.apache.zookeeper:zookeeper:jar:3.4.8">
+              <point x="37.0" y="8.647058823529392" />
+              <point x="94.0" y="697.375" />
+              <point x="-42.0" y="-0.0" />
+            </edge>
+            <edge source="org.apache.curator:curator-framework:jar:4.2.0/org.apache.curator:curator-client:jar:4.2.0/org.apache.zookeeper:zookeeper:jar:3.5.4-beta" target="org.apache.zookeeper:zookeeper:jar:3.4.8">
+              <point x="-42.0" y="5.25" />
+              <point x="268.0" y="583.704081632653" />
+              <point x="248.0" y="688.625" />
+              <point x="42.0" y="-8.75" />
+            </edge>
+            <edge source="org.apache.curator:curator-framework:jar:4.2.0/org.apache.curator:curator-client:jar:4.2.0/com.google.guava:guava:jar:27.0.1-jre" target="org.apache.curator:curator-framework:jar:4.2.0/org.apache.curator:curator-client:jar:4.2.0/com.google.guava:guava:jar:27.0.1-jre/com.google.errorprone:error_prone_annotations:jar:2.2.0">
+              <point x="29.0" y="-9.0" />
+              <point x="570.5" y="166.45408163265307" />
+              <point x="-82.0" y="-0.0" />
+            </edge>
+            <edge source="redis.clients:jedis:jar:2.9.0" target="redis.clients:jedis:jar:2.9.0/org.apache.commons:commons-pool2:jar:2.4.2">
+              <point x="25.0" y="-0.0" />
+              <point x="248.0" y="194.5" />
+              <point x="-59.0" y="-0.0" />
+            </edge>
+            <edge source="zsx.dubbo:common:1.0-SNAPSHOT" target="commons-io:commons-io:jar:2.5">
+              <point x="37.0" y="1.2352941176470722" />
+              <point x="94.0" y="414.75" />
+              <point x="-48.0" y="-0.0" />
+            </edge>
+            <edge source="org.apache.curator:curator-framework:jar:4.2.0/org.apache.curator:curator-client:jar:4.2.0" target="org.apache.curator:curator-framework:jar:4.2.0/org.apache.curator:curator-client:jar:4.2.0/com.google.guava:guava:jar:27.0.1-jre">
+              <point x="50.5" y="-5.25" />
+              <point x="-29.0" y="-0.0" />
+            </edge>
+            <edge source="org.apache.curator:curator-framework:jar:4.2.0/org.apache.curator:curator-client:jar:4.2.0" target="org.apache.curator:curator-framework:jar:4.2.0/org.apache.curator:curator-client:jar:4.2.0/org.apache.zookeeper:zookeeper:jar:3.5.4-beta">
+              <point x="-50.5" y="5.25" />
+              <point x="268.0" y="185.95408163265307" />
+              <point x="268.0" y="573.204081632653" />
+              <point x="-42.0" y="-5.25" />
+            </edge>
+            <edge source="zsx.dubbo:common:1.0-SNAPSHOT" target="com.101tec:zkclient:jar:0.10">
+              <point x="37.0" y="9.882352941176464" />
+              <point x="94.0" y="925.079081632653" />
+              <point x="-34.0" y="-0.0" />
+            </edge>
+            <edge source="org.apache.curator:curator-framework:jar:4.2.0/org.apache.curator:curator-client:jar:4.2.0/org.slf4j:slf4j-api:jar:1.7.25" target="org.apache.zookeeper:zookeeper:jar:3.4.8/org.slf4j:slf4j-api:jar:1.5.2">
+              <point x="-35.0" y="-2.625" />
+              <point x="417.5" y="796.7486494597838" />
+              <point x="397.5" y="778.204081632653" />
+              <point x="35.0" y="-5.25" />
+            </edge>
+            <edge source="org.apache.zookeeper:zookeeper:jar:3.4.8/log4j:log4j:jar:1.2.16" target="log4j:log4j:jar:1.2.17">
+              <point x="-26.5" y="-5.25" />
+              <point x="268.0" y="614.204081632653" />
+              <point x="248.0" y="558.25" />
+              <point x="26.5" y="5.25" />
+            </edge>
+            <edge source="org.apache.curator:curator-framework:jar:4.2.0/org.apache.curator:curator-client:jar:4.2.0/com.google.guava:guava:jar:27.0.1-jre" target="org.apache.curator:curator-framework:jar:4.2.0/org.apache.curator:curator-client:jar:4.2.0/com.google.guava:guava:jar:27.0.1-jre/com.google.j2objc:j2objc-annotations:jar:1.1">
+              <point x="29.0" y="-3.0" />
+              <point x="570.5" y="172.45408163265307" />
+              <point x="590.5" y="148.25" />
+              <point x="-66.0" y="-0.0" />
+            </edge>
+            <edge source="zsx.dubbo:common:1.0-SNAPSHOT" target="javax.validation:validation-api:jar:1.1.0.Final">
+              <point x="37.0" y="6.176470588235247" />
+              <point x="94.0" y="594.0" />
+              <point x="-52.0" y="-0.0" />
+            </edge>
+            <edge source="com.101tec:zkclient:jar:0.10" target="org.apache.zookeeper:zookeeper:jar:3.4.8">
+              <point x="0.0" y="-10.5" />
+              <point x="0.0" y="10.5" />
+            </edge>
+            <edge source="zsx.dubbo:common:1.0-SNAPSHOT" target="org.springframework:spring-test:jar:4.3.18.RELEASE">
+              <point x="37.0" y="-2.4705882352941444" />
+              <point x="94.0" y="276.5" />
+              <point x="-43.5" y="-0.0" />
+            </edge>
+            <edge source="org.apache.zookeeper:zookeeper:jar:3.4.8" target="org.apache.zookeeper:zookeeper:jar:3.4.8/org.slf4j:slf4j-log4j12:jar:1.6.1">
+              <point x="42.0" y="-1.75" />
+              <point x="248.0" y="695.625" />
+              <point x="268.0" y="665.704081632653" />
+              <point x="-48.0" y="5.25" />
+            </edge>
+            <edge source="org.apache.curator:curator-framework:jar:4.2.0" target="org.apache.curator:curator-framework:jar:4.2.0/org.apache.curator:curator-client:jar:4.2.0">
+              <point x="66.0" y="-0.0" />
+              <point x="268.0" y="175.45408163265307" />
+              <point x="-50.5" y="-5.25" />
+            </edge>
+            <edge source="zsx.dubbo:common:1.0-SNAPSHOT" target="org.aspectj:aspectjweaver:jar:1.8.4">
+              <point x="37.0" y="3.7058823529412166" />
+              <point x="94.0" y="512.0" />
+              <point x="-52.0" y="-0.0" />
+            </edge>
+            <edge source="zsx.dubbo:common:1.0-SNAPSHOT" target="log4j:log4j:jar:1.2.17">
+              <point x="37.0" y="4.941176470588289" />
+              <point x="94.0" y="553.0" />
+              <point x="-26.5" y="-0.0" />
+            </edge>
+            <edge source="zsx.dubbo:common:1.0-SNAPSHOT" target="commons-logging:commons-logging:jar:1.2">
+              <point x="37.0" y="-3.7058823529412166" />
+              <point x="-65.0" y="-0.0" />
+            </edge>
+            <edge source="zsx.dubbo:common:1.0-SNAPSHOT" target="org.apache.poi:poi-scratchpad:jar:3.17">
+              <point x="37.0" y="-7.4117647058823195" />
+              <point x="94.0" y="112.5" />
+              <point x="-55.5" y="-0.0" />
+            </edge>
+            <edge source="org.apache.curator:curator-framework:jar:4.2.0/org.apache.curator:curator-client:jar:4.2.0/com.google.guava:guava:jar:27.0.1-jre" target="org.apache.curator:curator-framework:jar:4.2.0/org.apache.curator:curator-client:jar:4.2.0/com.google.guava:guava:jar:27.0.1-jre/com.google.code.findbugs:jsr305:jar:3.0.2">
+              <point x="29.0" y="-0.0" />
+              <point x="570.5" y="175.45408163265307" />
+              <point x="590.5" y="189.25" />
+              <point x="-29.5" y="-0.0" />
+            </edge>
+            <edge source="org.apache.zookeeper:zookeeper:jar:3.4.8" target="org.apache.zookeeper:zookeeper:jar:3.4.8/org.slf4j:slf4j-api:jar:1.5.2">
+              <point x="42.0" y="8.75" />
+              <point x="248.0" y="706.125" />
+              <point x="268.0" y="778.204081632653" />
+              <point x="-35.0" y="-5.25" />
+            </edge>
+            <edge source="org.apache.curator:curator-framework:jar:4.2.0/org.apache.curator:curator-client:jar:4.2.0/org.slf4j:slf4j-api:jar:1.7.25" target="org.slf4j:slf4j-log4j12:jar:1.5.2/org.slf4j:slf4j-api:jar:1.5.2">
+              <point x="-35.0" y="7.875" />
+              <point x="417.5" y="807.2486494597838" />
+              <point x="397.5" y="844.454081632653" />
+              <point x="35.0" y="-0.0" />
+            </edge>
+            <edge source="org.slf4j:slf4j-log4j12:jar:1.5.2" target="org.slf4j:slf4j-log4j12:jar:1.5.2/org.slf4j:slf4j-api:jar:1.5.2">
+              <point x="48.0" y="7.0" />
+              <point x="248.0" y="659.875" />
+              <point x="268.0" y="844.454081632653" />
+              <point x="-35.0" y="-0.0" />
+            </edge>
+            <edge source="org.apache.curator:curator-recipes:jar:4.2.0" target="org.apache.curator:curator-framework:jar:4.2.0">
+              <point x="0.0" y="10.5" />
+              <point x="0.0" y="-10.5" />
+            </edge>
+            <edge source="org.apache.zookeeper:zookeeper:jar:3.4.8" target="org.apache.zookeeper:zookeeper:jar:3.4.8/jline:jline:jar:0.9.94">
+              <point x="42.0" y="1.75" />
+              <point x="248.0" y="699.125" />
+              <point x="268.0" y="701.454081632653" />
+              <point x="-24.0" y="-0.0" />
+            </edge>
+            <edge source="org.apache.curator:curator-framework:jar:4.2.0/org.apache.curator:curator-client:jar:4.2.0/com.google.guava:guava:jar:27.0.1-jre" target="org.apache.curator:curator-framework:jar:4.2.0/org.apache.curator:curator-client:jar:4.2.0/com.google.guava:guava:jar:27.0.1-jre/com.google.guava:failureaccess:jar:1.0.1">
+              <point x="29.0" y="3.0" />
+              <point x="570.5" y="178.45408163265307" />
+              <point x="590.5" y="230.25" />
+              <point x="-48.0" y="-0.0" />
+            </edge>
+          </edges>
+          <settings layout="Hierarchic Group" zoom="1.7740585774058582" x="243.32455084735824" y="881.2830188679245" />
+          <SelectedNodes>
+            <node>commons-logging:commons-logging:jar:1.2</node>
+          </SelectedNodes>
+          <Categories />
+          <VISIBILITY>All</VISIBILITY>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/provider/src/main/resources/spring-dubbo-provider.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="123">
+          <caret line="21" column="48" selection-start-line="21" selection-start-column="48" selection-end-line="21" selection-end-column="48" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/provider/pom.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="116">
+          <caret line="143" column="34" selection-start-line="143" selection-start-column="34" selection-end-line="143" selection-end-column="34" />
+        </state>
+      </provider>
     </entry>
   </component>
   <component name="masterDetails">
     <states>
+      <state key="ArquillianSettingsConfigurable.UI">
+        <settings>
+          <splitter-proportions>
+            <option name="proportions">
+              <list>
+                <option value="0.2" />
+              </list>
+            </option>
+          </splitter-proportions>
+        </settings>
+      </state>
       <state key="ArtifactsStructureConfigurable.UI">
         <settings>
           <artifact-editor />
@@ -1374,6 +2442,7 @@
             <option name="proportions">
               <list>
                 <option value="0.2" />
+                <option value="0.5" />
               </list>
             </option>
           </splitter-proportions>
@@ -1404,6 +2473,7 @@
       </state>
       <state key="JdkListConfigurable.UI">
         <settings>
+          <last-edited>1.6</last-edited>
           <splitter-proportions>
             <option name="proportions">
               <list>
@@ -1415,7 +2485,7 @@
       </state>
       <state key="ModuleStructureConfigurable.UI">
         <settings>
-          <last-edited>myProjectProvider|MVC2Distributed.myProjectCommon and modules</last-edited>
+          <last-edited>consumer</last-edited>
           <splitter-proportions>
             <option name="proportions">
               <list>
@@ -1439,6 +2509,7 @@
       </state>
       <state key="ProjectLibrariesConfigurable.UI">
         <settings>
+          <last-edited>Maven: antlr:antlr:2.7.7</last-edited>
           <splitter-proportions>
             <option name="proportions">
               <list>
@@ -1449,5 +2520,8 @@
         </settings>
       </state>
     </states>
+  </component>
+  <component name="mavenExecuteGoalHistory">
+    <option value="" />
   </component>
 </project>

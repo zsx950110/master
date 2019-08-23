@@ -3,12 +3,136 @@
          xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
          xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
     <modelVersion>4.0.0</modelVersion>
-
+    <properties>   <spring.version> 4.3.18.RELEASE</spring.version></properties>
     <groupId>zsx.dubbo</groupId>
     <artifactId>common</artifactId>
     <packaging>jar</packaging>
     <version>1.0-SNAPSHOT</version>
 
+<dependencies>
+    <!-- log4j需要的jar包 -->
+    <dependency>
+        <groupId>log4j</groupId>
+        <artifactId>log4j</artifactId>
+        <version>1.2.17</version>
+    </dependency>
+   <!-- <dependency>
+        <groupId>org.springframework</groupId>
+        <artifactId>spring</artifactId>
+        <version> 4.3.18.RELEASE</version>
+    </dependency>-->
+    <dependency>
+        <groupId>org.slf4j</groupId>
+        <artifactId>slf4j-log4j12</artifactId>
+        <version>1.5.2</version>
+
+    </dependency>
+    <!-- 单元测试需要的jar包 -->
+
+    <!--word文档读取-->
+    <dependency>
+        <groupId>org.apache.poi</groupId>
+        <artifactId>poi-scratchpad</artifactId>
+        <version>3.17</version>
+    </dependency>
+
+
+    <dependency>
+        <groupId>javax.validation</groupId>
+        <artifactId>validation-api</artifactId>
+        <version>1.1.0.Final</version>
+    </dependency>
+
+ <!-- <dependency>
+        <groupId>org.springframework</groupId>
+        <artifactId>spring-aspects</artifactId>
+        <version>${spring.version}</version>
+    </dependency>-->
+    <dependency>
+        <groupId>org.springframework</groupId>
+        <artifactId>spring-test</artifactId>
+        <version>${spring.version}</version>
+
+    </dependency>
+
+    <dependency>
+        <groupId>junit</groupId>
+        <artifactId>junit</artifactId>
+        <version>4.12</version>
+
+    </dependency>
+    <!--AOP切点的依赖  -->
+    <dependency>
+        <groupId>org.aspectj</groupId>
+        <artifactId>aspectjweaver</artifactId>
+        <version>1.8.4</version>
+    </dependency>
+
+
+    <dependency>
+        <groupId>commons-io</groupId>
+        <artifactId>commons-io</artifactId>
+        <version>2.5</version>
+    </dependency>
+    <!--Jedis的依赖-->
+    <dependency>
+        <groupId>redis.clients</groupId>
+        <artifactId>jedis</artifactId>
+        <version>2.9.0</version>
+    </dependency>
+    <dependency>
+        <groupId>commons-logging</groupId>
+        <artifactId>commons-logging</artifactId>
+        <version>1.2</version>
+    </dependency>
+    <dependency>
+        <groupId>commons-logging</groupId>
+        <artifactId>commons-logging-api</artifactId>
+        <version>1.1</version>
+    </dependency>
+
+    <dependency>
+        <groupId>com.alibaba</groupId>
+        <artifactId>dubbo</artifactId>
+        <version>2.5.2</version>
+        <exclusions>
+            <exclusion>
+                <groupId>org.springframework</groupId>
+                <artifactId>spring</artifactId>
+            </exclusion>
+        </exclusions>
+    </dependency>
+
+    <!-- https://mvnrepository.com/artifact/com.101tec/zkclient -->
+    <dependency>
+        <groupId>com.101tec</groupId>
+        <artifactId>zkclient</artifactId>
+        <version>0.10</version>
+    </dependency>
+
+    <dependency>
+        <groupId>org.apache.zookeeper</groupId>
+        <artifactId>zookeeper</artifactId>
+        <version>3.4.8</version>
+    </dependency>
+    <!--zk配合使用-->
+    <dependency>
+        <groupId>org.apache.curator</groupId>
+        <artifactId>curator-framework</artifactId>
+        <version>4.2.0</version>
+    </dependency>
+    <dependency>
+        <groupId>org.apache.curator</groupId>
+        <artifactId>curator-recipes</artifactId>
+        <version>4.2.0</version>
+    </dependency>
+    <!-- https://mvnrepository.com/artifact/com.alibaba/fastjson -->
+    <dependency>
+        <groupId>com.alibaba</groupId>
+        <artifactId>fastjson</artifactId>
+        <version>1.2.47</version>
+    </dependency>
+</dependencies>
 
 
 

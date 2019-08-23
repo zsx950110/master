@@ -1,12 +1,12 @@
 package provider.serviceImpl;
 
-import com.alibaba.dubbo.config.annotation.Service;
+//import com.alibaba.dubbo.config.annotation.Service;
+import common.pojo.ToDo;
 import common.service.IToDoService;
-import common.vo.ToDo;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 
-@Service //dubbo的service，做两件事 创建bean ，以接口暴露，相当于原来配置的bean和暴露
+//@Service //dubbo的service，做两件事 创建bean ，以接口暴露，相当于原来配置的bean和暴露
 public class ToDoServiceImpl implements IToDoService {
     Logger logger = LoggerFactory.getLogger(ToDoServiceImpl.class);
     public ToDo getToDoByTaskId(String id) {

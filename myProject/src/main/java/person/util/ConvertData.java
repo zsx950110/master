@@ -9,7 +9,7 @@ public class ConvertData extends PropertyPlaceholderConfigurer {
     private  final String PASSWORD="password";
     private  final String PASSWORD_VALUE="acs";
 
-    @Override
+    //@Override
     protected String convertProperty(String propertyName, String propertyValue){
 
         System.out.println("属性："+propertyName+"--属性值："+propertyValue);

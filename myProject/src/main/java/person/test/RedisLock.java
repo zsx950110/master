@@ -48,7 +48,7 @@ public class RedisLock {
     }
     //多个线程并发调一个方法
     static void change(String name){
-        Jedis  jedis= JedisUtil.getJedis();
+   /*     Jedis  jedis= JedisUtil.getJedis();
         if (tryLock(jedis,name)){
             System.out.println("当前线程为："+name);
             for (int i =0;i<10;i++){
@@ -66,13 +66,13 @@ public class RedisLock {
             }
         }
 
-
+*/
     }
 //加锁
-    public static   boolean tryLock(Jedis jedis,String threadName){
+  /*  public static   boolean tryLock(Jedis jedis,String threadName){
 
         String re = jedis.set(LOCK_NAME,threadName,"NX","EX",TIME);
-        if(StringUtils.isEmpty(re)){
+     if(StringUtils.isEmpty(re)){
             //如果没有获得则持续获得
             while (StringUtils.isEmpty(re)){
                 re = jedis.set(LOCK_NAME,threadName,"NX","EX",TIME);
@@ -84,7 +84,7 @@ public class RedisLock {
             return true;
         }
         return  false;
-    }
+    }*/
     //释放锁
     public static boolean releaseLock(Jedis jedis,String threadName){
         //获得锁当前持有的线程名

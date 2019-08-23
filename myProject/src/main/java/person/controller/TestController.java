@@ -11,7 +11,7 @@ import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.context.support.ClassPathXmlApplicationContext;
 import org.springframework.stereotype.Controller;
 import org.springframework.transaction.annotation.Transactional;
-import org.springframework.util.StringUtils;
+
 import org.springframework.web.bind.annotation.PathVariable;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.ResponseBody;
@@ -30,6 +30,9 @@ import javax.servlet.http.HttpServletRequest;
 import javax.servlet.http.HttpServletResponse;
 import java.io.*;
 import java.util.*;
+
+import static org.springframework.util.StringUtils.*;
+
 
 @Controller
 
@@ -217,13 +220,11 @@ public class TestController {
     @ResponseBody
     @RequestMapping("/listDbaObjects/{pageSize}/{pageNum}")
     public String listDbaObjects(HttpServletRequest request, @PathVariable String pageSize, @PathVariable String pageNum) {
-        if (StringUtils.isEmpty(pageSize)) {
+
             pageSize = "10";
-        }
+
         System.out.println("in");
-        if (StringUtils.isEmpty(pageNum)) {
-            pageNum = "1";
-        }
+
 
         List<Object[]> list = operations.listDbaObject(Integer.valueOf(pageSize), Integer.valueOf(pageNum));
         return JSON.toJSONString(list);

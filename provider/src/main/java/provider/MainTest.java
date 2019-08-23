@@ -1,27 +1,31 @@
 package provider;
 
 import com.alibaba.dubbo.container.Main;
+import org.springframework.context.ApplicationContext;
+import org.springframework.context.support.ClassPathXmlApplicationContext;
+import org.springframework.orm.hibernate4.HibernateTransactionManager;
+import org.springframework.transaction.TransactionDefinition;
+import provider.serviceImpl.Operations;
 
 import java.io.IOException;
+
 public class MainTest {
     public static void main(String[] args) {
-     /*  ApplicationContext applicationContext = new ClassPathXmlApplicationContext("classpath:spring-dubbo-provider.xml");
+       ApplicationContext applicationContext = new ClassPathXmlApplicationContext("classpath:application-context.xml");
         String[] beanDefinitionNames = applicationContext.getBeanDefinitionNames();
+       Operations operations  =(Operations)applicationContext.getBean("operations");
 
+       operations.listToDos();
         System.out.println("开始展示beanname");
         for (String beanDefinitionName : beanDefinitionNames) {
             System.out.println(beanDefinitionName);
-        }*/
-     //   Main.main(args);
+        }
+        System.out.println("开始调用main。。。。。");
+        //      Main.main(args);
         try {
-            //阻塞使得provider能一直连这zk
-            System.out.println("阻塞中。。。");
-            System.in.read(); // press any key to exit
-
-            System.out.println("结束阻塞。。。。");
+            System.in.read();
         } catch (IOException e) {
             e.printStackTrace();
         }
-        System.out.println("加载成功");
     }
 }

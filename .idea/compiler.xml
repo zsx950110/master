@@ -1,6 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="CompilerConfiguration">
+    <option name="USE_RELEASE_OPTION" value="false" />
     <annotationProcessing>
       <profile name="Maven default annotation processors profile" enabled="true">
         <sourceOutputDir name="target/generated-sources/annotations" />
@@ -9,30 +10,23 @@
         <module name="workspace" />
         <module name="dubbo_test.provider" />
         <module name="dubbo_test.consumer" />
-        <module name="myProjectProvider" />
         <module name="myProject" />
         <module name="dubbo_test.common" />
         <module name="java-redis-search" />
         <module name="consumer" />
-        <module name="MVC2Distributed.myProjectConsumer" />
       </profile>
     </annotationProcessing>
-    <bytecodeTargetLevel>
-      <module name="consumer" target="1.5" />
-      <module name="dubbo_test.common" target="1.5" />
-      <module name="dubbo_test.consumer" target="1.5" />
-      <module name="dubbo_test.provider" target="1.5" />
-      <module name="dubbocommon" target="1.5" />
+    <bytecodeTargetLevel target="6">
+      <module name="consumer" target="6" />
+      <module name="dubbo_test.common" target="1.7" />
+      <module name="dubbo_test.consumer" target="1.7" />
+      <module name="dubbo_test.provider" target="1.8" />
       <module name="java-redis-search" target="1.6" />
-      <module name="MVC2Distributed.myProjectCommon" target="1.7" />
-      <module name="MVC2Distributed.myProjectConsumer" target="1.5" />
-      <module name="MVC2Distributed.myProjectProvider" target="1.5" />
       <module name="myProject" target="1.7" />
-      <module name="myProjectProvider" target="1.7" />
-      <module name="workspace" target="1.5" />
     </bytecodeTargetLevel>
   </component>
   <component name="JavacSettings">
+    <option name="PREFER_TARGET_JDK_COMPILER" value="false" />
     <option name="ADDITIONAL_OPTIONS_OVERRIDE">
       <module name="java-redis-search" options="-sourcepath F:\workspace\java10000-java-redis-search-master\java-redis-search/src/main/java" />
     </option>
