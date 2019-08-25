@@ -1,6 +1,7 @@
 package person.service;
 
 import com.alibaba.fastjson.JSON;
+import org.apache.commons.collections4.map.HashedMap;
 import org.junit.Test;
 import org.junit.runner.RunWith;
 import org.springframework.beans.factory.annotation.Autowired;
@@ -10,6 +11,7 @@ import person.pojo.ToDo;
 import person.util.JedisUtil;
 import redis.clients.jedis.Jedis;
 
+import java.io.IOException;
 import java.util.*;
 import java.util.concurrent.ExecutorService;
 import java.util.concurrent.Executors;
@@ -37,7 +39,8 @@ public class OperationsTest {
 
     @Test
     public void deleteTest() {
-        operations.deleteData("111");
+        operations.deleteData("19061615231447000831");
+
     }
 
     @Test
@@ -73,7 +76,7 @@ public class OperationsTest {
         operations.viewPage(1000, 270);
     }
     static ExecutorService fixedThreadPool22 = Executors.newFixedThreadPool(10);
-    @Test
+
     public static void main(String[] args) {
        String date1 = "2019-08-13";
       // SimpleDateFormat dateFormat = new  SimpleDateFormat("yyyy/MM/dd");
@@ -94,7 +97,7 @@ public class OperationsTest {
     }
     //发布文章模拟
     @Test
-    private static void  publish(){
+    public  void  publish(){
         ToDo toDo = new ToDo();
         toDo.setAcceptTime(new Date());
         toDo.setAccount("23");
@@ -140,6 +143,43 @@ public class OperationsTest {
         }
 
         JedisUtil.returnJedis(jedis);
+    }
+
+
+    //模拟多条件查询通过redis返回提高查询效率
+    @Test
+    public void bookNames(){
+        List<String> type = new ArrayList<>();
+        type.add("java");
+        type.add("python");
+        List<String> publishers = new ArrayList<>();
+        publishers.add("商务印书馆");
+        publishers.add("国家图书馆出版社");
+        List<String> wrap = new ArrayList<>();
+        wrap.add("平装");
+        wrap.add("精装");
+        List<Map<String,Integer>> star = new ArrayList<>();
+        //星星
+        Map<String,Integer>  starMap1= new HashedMap<>();
+        starMap1.put("max",3);
+        starMap1.put("min",1);
+        star.add(starMap1);
+        //折扣
+        List<Map<String,Integer>> discount = new ArrayList<>();
+        Map<String,Integer>  discountMap= new HashedMap<>();
+        discountMap.put("max",5);
+        discountMap.put("min",3);
+        Map<String,Integer>  discountMap2= new HashedMap<>();
+        discountMap2.put("max",10);
+        discountMap2.put("min",7);
+        discount.add(discountMap2);
+       List<String> names  = operations.searchBookByCondition(type,publishers,null,wrap,star,discount);
+        System.out.println("查询出的总数为："+names.size());
+        for (String name : names) {
+            System.out.println(name);
+        }
+
+
     }
 
 

@@ -2,6 +2,8 @@ package person.service;
 
 import com.alibaba.fastjson.JSON;
 import com.alibaba.fastjson.JSONArray;
+import com.sun.scenario.effect.impl.sw.sse.SSEBlend_SRC_OUTPeer;
+import org.apache.commons.collections4.map.HashedMap;
 import org.apache.poi.hwpf.HWPFDocument;
 import org.hibernate.*;
 
@@ -11,7 +13,9 @@ import org.slf4j.LoggerFactory;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.context.support.ClassPathXmlApplicationContext;
 import org.springframework.stereotype.Service;
+import org.springframework.transaction.annotation.Propagation;
 import org.springframework.transaction.annotation.Transactional;
+import org.springframework.util.CollectionUtils;
 import org.springframework.util.StringUtils;
 import person.pojo.Book;
 import person.pojo.TestUser;
@@ -41,13 +45,15 @@ public class Operations {
 
     public Operations() {
     }
-
+    //重启新事务
+@Transactional(propagation = Propagation.REQUIRES_NEW)
     public void insertData() {
 
         TestUser testUser = new TestUser();
         testUser.setId(new Date().toString());
-        testUser.setName("李1333s四");
+        testUser.setName("蛐蛐儿242群二群四");
         session.save(testUser);
+
           /*  String hql  = "update T_myTest set FnAME='zsdsdsds' where FID =:id";
 
             Query query = session.createSQLQuery(hql).setParameter("id","111");
@@ -83,10 +89,10 @@ public class Operations {
 
     public void deleteData(String id) {
         this.session = sessionFactory.getCurrentSession();
-        String hql = "delete from TestUser where id =:id";
+        String hql = "delete from ToDo where id =:id";
         //  String hql  = "update T_myTest set FNAME='存储' where FID =:id";
-        Query query = session.createQuery(hql).setParameter("id", "111");
-        System.out.println(listData().toString());
+        Query query = session.createQuery(hql).setParameter("id", id);
+
 
         // query=null;
 
@@ -95,7 +101,8 @@ public class Operations {
         } catch (Exception e) {
             e.printStackTrace();
         }
-        insertData();
+
+            this.insertData();
 
     }
 
@@ -241,7 +248,7 @@ public class Operations {
     public void shoppingCartAdd(String userId, String bookId) {
 
         Jedis jedis = JedisUtil.getJedis();
-        boolean notExists =false;//StringUtils.isEmpty(jedis.hget(userId, bookId));
+        boolean notExists = false;//StringUtils.isEmpty(jedis.hget(userId, bookId));
         try {
             if (notExists) {
                 Map<String, String> map = new HashMap<>();
@@ -291,77 +298,77 @@ public class Operations {
         //书分类
         String[] types = new String[]{"java", "python", "Linux", "PHP", "IOS", "汇编", "JavaScript", "mysql", "oracle"};
         //出版社
-        String[] publishers = new String[]{"商务印书馆 ", "科学出版社 ", "国家图书馆出版社 ", "中央编译出版社 ", "译林出版社 ", "北京科学技术出版社 ", "社科文献出版社", "中央编译出版社 ", "生活·读书·新知三联书店 ","中国金融出版社"};
+        String[] publishers = new String[]{"商务印书馆 ", "科学出版社 ", "国家图书馆出版社 ", "中央编译出版社 ", "译林出版社 ", "北京科学技术出版社 ", "社科文献出版社", "中央编译出版社 ", "生活·读书·新知三联书店 ", "中国金融出版社"};
         //价格直接给一个随机数范围
-        String[] wrappers = new String[]{"平装","精装","软精装","简装"};
+        String[] wrappers = new String[]{"平装", "精装", "软精装", "简装"};
         //评分1-5随机
         //折扣1-10随机数
-       String names= this.bookNames();
+        String names = this.bookNames();
         //每一本书保存时都按照查询条件去保存
-      List<Book> books = new ArrayList<>();
-            for (int i =0; i<names.length()-4;i++){
-                Book book = new Book();
-                //名字
-                Random randomName  =new Random();
-                int r = randomName.nextInt(names.length()-4);
-                book.setName(names.substring(r,r+4));
-                //出版方
-                Random randomP  =new Random();
-                book.setPublisher(publishers[randomP.nextInt(publishers.length)]);
+        List<Book> books = new ArrayList<>();
+        for (int i = 0; i < names.length() - 4; i++) {
+            Book book = new Book();
+            //名字
+            Random randomName = new Random();
+            int r = randomName.nextInt(names.length() - 4);
+            book.setName(names.substring(r, r + 4));
+            //出版方
+            Random randomP = new Random();
+            book.setPublisher(publishers[randomP.nextInt(publishers.length)]);
 
-                //评分
-                Random randomStar  =new Random();
-                //0-4，加1变为1-5
-                book.setStar(randomStar.nextInt(5)+1);
+            //评分
+            Random randomStar = new Random();
+            //0-4，加1变为1-5
+            book.setStar(randomStar.nextInt(5) + 1);
 
-                //价格
-                Random randomPrice  =new Random();
-                book.setPrice(randomPrice.nextDouble());
+            //价格
+            Random randomPrice = new Random();
+            book.setPrice(randomPrice.nextDouble());
 
-                //类型
-                Random randomType  =new Random();
-                book.setType(types[randomType.nextInt(types.length)]);
+            //类型
+            Random randomType = new Random();
+            book.setType(types[randomType.nextInt(types.length)]);
 
-                //包装
-                Random randomWrap  =new Random();
-                book.setWrap(wrappers[randomWrap.nextInt(wrappers.length)]);
+            //包装
+            Random randomWrap = new Random();
+            book.setWrap(wrappers[randomWrap.nextInt(wrappers.length)]);
 
-                book.setId(String.valueOf(System.currentTimeMillis()));
-                //折扣
-                Random randomDiscount  =new Random();
-                book.setDiscount(randomDiscount.nextInt(10)+1);
+            book.setId(String.valueOf(System.currentTimeMillis()));
+            //折扣
+            Random randomDiscount = new Random();
+            book.setDiscount(randomDiscount.nextInt(10) + 1);
 
-                books.add(book);
-                try {
-                    this.session.save(book);
+            books.add(book);
+            try {
+                this.session.save(book);
 
-                } catch (Exception e) {
-                   continue;
-                }
+            } catch (Exception e) {
+                continue;
             }
-            //存redis
-       this.redisSave(books);
-
+        }
+        //存redis
+        this.redisSave(books);
 
 
     }
-    public void redisSave(List<Book>books){
 
-        Jedis jedis =JedisUtil.getJedis();
+    public void redisSave(List<Book> books) {
+
+        Jedis jedis = JedisUtil.getJedis();
         //批量操作使用管道
         Pipeline pipeline = jedis.pipelined();
         try {
             for (Book book : books) {
-                pipeline.sadd(book.getPublisher(),book.getName());
-                pipeline.zadd("star",book.getStar(),book.getName());
-                pipeline.zadd("price",book.getPrice(),book.getName());
-                pipeline.sadd(book.getType(),book.getName());
-                pipeline.sadd(book.getWrap(),book.getName());
-                pipeline.zadd("discount",book.getDiscount(),book.getName());
+                pipeline.sadd(book.getPublisher(), book.getName());
+                pipeline.zadd("star", book.getStar(), book.getName());
+                pipeline.zadd("price", book.getPrice(), book.getName());
+                pipeline.sadd(book.getType(), book.getName());
+                pipeline.sadd(book.getWrap(), book.getName());
+                pipeline.zadd("discount", book.getDiscount(), book.getName());
             }
             pipeline.sync();
         } catch (Exception e) {
-            logger.error("",e);
+            logger.error("", e);
         } finally {
             try {
                 pipeline.close();
@@ -370,29 +377,109 @@ public class Operations {
             }
         }
     }
-    public String bookNames(){
+
+    //根据查询条件返回书名
+    public List<String> searchBookByCondition(List<String> type, List<String> publisher,
+                                            List<Map<String,Integer>> price, List<String> wrap, List<Map<String,Integer>>  star, List<Map<String,Integer>>  discount) {
+        //返回
+        List<String> books = new ArrayList<>();
+        //单条件查并集，之后求交集
+        books = this.intersection(books,listUnion(type));
+        books = this.intersection(books,listUnion(publisher));
+        books = this.intersection(books,listUnion(wrap));
+        //价格
+        Map<String, List<Map<String,Integer>>>priceMap = new HashedMap<>();
+        priceMap.put("price",price);
+       books  = this.intersection(books,this.listNumberCondition(priceMap));
+        //星星
+        Map<String, List<Map<String,Integer>>>starMap = new HashedMap<>();
+        starMap.put("star",star);
+        books  = this.intersection(books,this.listNumberCondition(starMap));
+        //折扣
+        Map<String, List<Map<String,Integer>>>discountMap = new HashedMap<>();
+        discountMap.put("discount",discount);
+        books  = this.intersection(books,this.listNumberCondition(discountMap));
+        return books;
+    }
+    //求交集
+    public List<String> intersection(List<String> books,List<String> parts){
+        if(parts.isEmpty()||books.isEmpty()){
+            books.addAll(parts);
+        }else{
+            books.retainAll(parts);
+        }
+        return  books;
+    }
+
+    //统一查询条件求并集
+    public List<String> listUnion(List<String>conditions){
+        if(!CollectionUtils.isEmpty(conditions)){
+            Jedis jedis = JedisUtil.getJedis();
+            //用于中间存储结果
+            Set<String> temp = new HashSet<>();
+            //list转为数组，用于union的参数
+            String[] strings = new String[conditions.size()];
+            strings= conditions.toArray(strings);
+            temp = jedis.sunion(strings);
+            JedisUtil.returnJedis(jedis);
+            return new ArrayList<>(temp);
+        }else {
+            return new ArrayList<>();
+        }
+
+    }
+    //参数的key是zset中的key，即筛选条件，value是对应的最大值和最小值
+    public List<String> listNumberCondition(Map<String,List<Map<String,Integer>>> rangesMap){
+        if(!CollectionUtils.isEmpty(rangesMap)){
+            Jedis jedis = JedisUtil.getJedis();
+            Set<String> temp = new HashSet<>();
+            //外层循环的key其实只有一个
+            for (String s : rangesMap.keySet()) {
+                List<Map<String,Integer>> ranges  =rangesMap.get(s);
+                //对同一类查询条件的不同范围值进行遍历
+                if(!CollectionUtils.isEmpty(ranges)){
+                    for (Map<String, Integer> map : ranges) {
+                        int min = map.get("min");
+                        int max = map.get("max");
+                        //同一种查询条件不同范围是互斥的，不会覆盖
+                        temp.addAll(jedis.zrangeByScore(s,String.valueOf(min),String.valueOf(max)));
+                    }
+                }
+
+            }
+            JedisUtil.returnJedis(jedis);
+            return  new ArrayList<>(temp);
+        }else{
+            return  new ArrayList<>();
+        }
+
+
+    }
+
+    //用来随机生成书名
+    public String bookNames() {
         //读取文件
         String path = "F:\\test.txt";
         File file = new File(path);
-        FileInputStream is  =null;
+        FileInputStream is = null;
         //读取的字符
         StringBuffer sb = new StringBuffer();
         //返回的结果
         try {
             is = new FileInputStream(file);
             //读
-            BufferedReader reader = new BufferedReader(new InputStreamReader(is,"UTF-8"));
+            BufferedReader reader = new BufferedReader(new InputStreamReader(is, "UTF-8"));
             String temp;
-           while ((temp=reader.readLine())!=null){
+            while ((temp = reader.readLine()) != null) {
                  /* if(!StringUtils.isEmpty(temp)){
                    sb.append(temp.trim());
                }*/
 
-           }
+            }
 
 
         } catch (IOException e) {
-            logger.error("",e);
+            logger.error("", e);
         } finally {
             try {
                 is.close();
@@ -400,6 +487,6 @@ public class Operations {
                 e.printStackTrace();
             }
         }
-        return  sb.toString();
+        return sb.toString();
     }
 }

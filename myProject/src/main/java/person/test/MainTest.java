@@ -1,20 +1,12 @@
 package person.test;
 
-import org.apache.poi.hwpf.HWPFDocument;
-import org.hibernate.internal.SessionFactoryImpl;
-import org.springframework.util.StringUtils;
 import person.service.Operations;
 import person.util.JedisUtil;
 import redis.clients.jedis.Jedis;
 import redis.clients.jedis.Pipeline;
 
-import java.io.File;
-import java.io.FileInputStream;
 import java.io.IOException;
-import java.io.InputStream;
-import java.util.*;
-import java.util.concurrent.ExecutorService;
-import java.util.concurrent.Executors;
+import java.util.Set;
 
 public class MainTest {
     public static void main(String[] args) {
