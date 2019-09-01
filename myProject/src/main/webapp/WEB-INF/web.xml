@@ -61,7 +61,18 @@
     <filter-name>encoding</filter-name>
     <url-pattern>*.action</url-pattern>
   </filter-mapping>
-
+    <!--sso拦截器-->
+<filter>
+    <filter-name>ssoFilter</filter-name>
+    <filter-class>person.controller.SSOFilter</filter-class>
+</filter>
+    <filter-mapping>
+        <filter-name>ssoFilter</filter-name>
+        <url-pattern>*.jsp</url-pattern>
+        <url-pattern>*.html</url-pattern>
+        <url-pattern>*.ctrl</url-pattern>
+        <url-pattern>*.jsp</url-pattern>
+    </filter-mapping>
   <!-- 加载Spring框架中的log4j监听器Log4jConfigListener -->
   <!-- 配置log4j配置文件路径 -->
   <context-param>
