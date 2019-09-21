@@ -9,7 +9,7 @@
    <!-- <dubbo:registry address="multicast://239.5.6.7:1234"/>-->
     <!-- 使用zookeeper注册中心暴露服务地址 -->
     <dubbo:registry protocol="zookeeper" address="127.0.0.1:2181"/>
-    <!-- 用dubbo协议在20880端口暴露服务 -->
+    <!-- 用dubbo协议在20880端口暴露服务 ，协议配置，由服务提供者决定，消费者被动接受-->
     <dubbo:protocol name="dubbo" port="2090"/>
 
     <!-- use dubbo protocol to export service on port 20880 -->
@@ -17,10 +17,16 @@
     <!-- service implementation, as same as regu    lar local bean -->
   <!--<bean id="toDoService" class="provider.serviceImpl.ToDoServiceImpl"/>
     <dubbo:service interface="common.service.IToDoService" ref="toDoService"/>-->
+
    <bean id="operations" class="provider.serviceImpl.Operations"/>
-    <dubbo:service interface="common.service.IOperationService" ref="operations"  timeout= "50000000"/>
+
+    <!--服务配置，用于暴露一个服务，定义服务的原信息，一个服务可以多个协议暴露，一个服务也可以注册到多个注册中心-->
+
+   <dubbo:service interface="common.service.IOperationService" ref="operations"  timeout= "50000000"/>
+
     <!--配置扫描包，此处包扫描暂时有问题，如果是包扫描 则consumer在调用时拿不到-->
 
-  <!-- <dubbo:annotation package="provider.serviceImpl"/>-->
+<!--<dubbo:annotation package="provider.serviceImpl"/>-->
+
 
 </beans>

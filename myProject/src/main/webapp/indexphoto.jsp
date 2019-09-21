@@ -22,5 +22,6 @@
 <button onclick="seePic()">查看大pdf</button>
 <button onclick="view()">查看hhpdf</button>
 <a href="search.html">搜索页面</a>
+<a href="http://localhost:8080/cas/logout?service=http://localhost:8082/myProject">注销</a>
 </body>
 </html>

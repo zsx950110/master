@@ -8,22 +8,21 @@
         <sourceTestOutputDir name="target/generated-test-sources/test-annotations" />
         <outputRelativeToContentRoot value="true" />
         <module name="workspace" />
-        <module name="dubbo_test.provider" />
-        <module name="dubbo_test.consumer" />
-        <module name="myProject" />
-        <module name="dubbo_test.common" />
+        <module name="common" />
         <module name="sso" />
         <module name="consumer" />
       </profile>
     </annotationProcessing>
     <bytecodeTargetLevel target="6">
-      <module name="consumer" target="6" />
+      <module name="common" target="1.7" />
+      <module name="consumer" target="1.7" />
       <module name="dubbo_test.common" target="1.7" />
       <module name="dubbo_test.consumer" target="1.7" />
       <module name="dubbo_test.provider" target="1.8" />
       <module name="java-redis-search" target="1.6" />
       <module name="myProject" target="1.7" />
       <module name="sso" target="1.7" />
+      <module name="test" target="1.7" />
     </bytecodeTargetLevel>
   </component>
   <component name="JavacSettings">

@@ -1,5 +1,38 @@
 $(function () {
 
+    //密码框的监听
+    $('#userpwd').bind('input propertychange', function()
+    {    var regex=/<a\s+href\s*=\s*".*"\s*>.+?<\/\s*a\s*>\s*/g;
+       /* var vv = "<"
+
+        alert(vv.replace(regex,""))
+        return ;*/
+        var  multi = "---匹配非空，只要匹配到 就算文本框不为空/[^\s]/" +
+            ""+
+        "---匹配英文字母，从头到尾都必须是英文，中间如果有非字母，则本次匹配只能匹配到非字母，而无法匹配到 结尾，就返回false" +
+            ""+
+        "---验证日期格式为-- /^[1-9]\d{3}-((0?[1-9])|([1][0-2]))-((0?[1-9])|([12]\d)|(3[01]))$/";
+        var v = $(this).val()
+        //去掉文字中的空格
+
+      //  $('#info').html("<span>"+str+"<span/>")
+     //   return;
+       var pos = regex.test($(this).val())
+      //  alert(pos)
+        if (!pos){
+            $('#info').html("<span style='color: #ff442a'>输入不符合规则<span/>")
+
+        }else{
+          //  var regex1 = /(?:0*)(\d*)/
+            $('#info').html("<span><span/>")
+           // alert(regex1.exec(v)[1])
+
+
+
+
+        }
+    })
+
     $('#button,#Retrievenow,#denglou').css('opacity', 0.7).hover(function () {
         $(this).stop().fadeTo(650, 1);
     }, function () {

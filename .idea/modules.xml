@@ -2,10 +2,9 @@
 <project version="4">
   <component name="ProjectModuleManager">
     <modules>
+      <module fileurl="file://$PROJECT_DIR$/common/common.iml" filepath="$PROJECT_DIR$/common/common.iml" />
+      <module fileurl="file://$PROJECT_DIR$/consumer/consumer.iml" filepath="$PROJECT_DIR$/consumer/consumer.iml" />
       <module fileurl="file://$PROJECT_DIR$/consumer.iml" filepath="$PROJECT_DIR$/consumer.iml" />
-      <module fileurl="file://$PROJECT_DIR$/common/dubbo_test.common.iml" filepath="$PROJECT_DIR$/common/dubbo_test.common.iml" />
-      <module fileurl="file://$PROJECT_DIR$/consumer/dubbo_test.consumer.iml" filepath="$PROJECT_DIR$/consumer/dubbo_test.consumer.iml" />
-      <module fileurl="file://$PROJECT_DIR$/provider/dubbo_test.provider.iml" filepath="$PROJECT_DIR$/provider/dubbo_test.provider.iml" />
       <module fileurl="file://$PROJECT_DIR$/myProject/myProject.iml" filepath="$PROJECT_DIR$/myProject/myProject.iml" />
       <module fileurl="file://$PROJECT_DIR$/sso/sso.iml" filepath="$PROJECT_DIR$/sso/sso.iml" />
     </modules>

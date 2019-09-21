@@ -26,11 +26,11 @@
       <artifactId>common</artifactId>
       <version>1.0-SNAPSHOT</version>
     </dependency>-->
-    <dependency>
+  <!--  <dependency>
       <groupId>person.zsx</groupId>
       <artifactId>sso</artifactId>
       <version>1.0-SNAPSHOT</version>
-    </dependency>
+    </dependency>-->
     <!-- spring需要的jar包 -->
     <dependency>
       <groupId>org.springframework</groupId>
@@ -262,6 +262,12 @@
       <artifactId>junit</artifactId>
       <version>4.12</version>
       <scope>test</scope>
+    </dependency>
+    <dependency>
+      <groupId>org.springframework</groupId>
+      <artifactId>spring-beans</artifactId>
+      <version>4.3.18.RELEASE</version>
+      <scope>compile</scope>
     </dependency>
 
 
