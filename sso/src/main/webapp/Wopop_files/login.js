@@ -2,7 +2,7 @@ $(function () {
 
     //密码框的监听
     $('#userpwd').bind('input propertychange', function()
-    {    var regex=/<a\s+href\s*=\s*".*"\s*>.+?<\/\s*a\s*>\s*/g;
+    {    var regex=/\b[A-Za-z]+\b/g;
        /* var vv = "<"
 
         alert(vv.replace(regex,""))
@@ -23,6 +23,18 @@ $(function () {
             $('#info').html("<span style='color: #ff442a'>输入不符合规则<span/>")
 
         }else{
+          //  http://www.zhufengpeixun.com/qianduanjishuziliao/javaScriptzhuanti/2015-06-08/327.html
+            var str = "TRUmp iS sO StuPId".replace(regex,function () {
+                //每一个匹配到的内容[0],[1]匹配到的字符第一个字符输入字符中的位置，[2]表示输入字符
+                var lower = arguments[0].toLowerCase()
+                //再调用一次将首字母转为大写
+                lower = lower.replace(/^[a-z]/,function () {
+                    return arguments[0].toUpperCase()
+                })
+                return lower
+
+            })
+            alert(str)
           //  var regex1 = /(?:0*)(\d*)/
             $('#info').html("<span><span/>")
            // alert(regex1.exec(v)[1])

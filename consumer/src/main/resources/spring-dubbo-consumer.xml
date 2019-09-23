@@ -7,7 +7,8 @@
 
    <!-- <dubbo:registry address="multicast://239.5.6.7:1234" check="false"/>-->
     <!--本地多播有问题，改为zk注册中心，注册中心启动时check默认为true-->
-    <dubbo:registry protocol="zookeeper" address="127.0.0.1:2181" />
+  <!--  <dubbo:registry protocol="zookeeper" address="127.0.0.1:2181" />
+    -->
     <!--启动时检查暂时不起作用-->
    <!-- <dubbo:registry check="false"/>-->
     <!--关闭所有服务的启动时检查，配置暂时不起作用-->
@@ -25,10 +26,13 @@
     <!--测试包跟源码包不在一个路径下-->
  <dubbo:annotation package="dubbo.test"/>
 
-<!--服务引用，用于创建远程服务代理-->
-<!--
-    <dubbo:reference id="operationService"  check="true"  interface="common.service.IOperationService" />
--->
+<!--服务引用，用于创建远程服务代理， url表示直连模式下 该服务的被导出的位置，registry表示多注册中心下，该消费的服务位于哪个注册中心-->
+
+    <dubbo:reference id="operationService"  check="true"  interface="common.service.IOperationService" url="dubbo://192.168.1.109:2090" group = "useful" >
+        <!--开启异步调用服务，消费者可以并行调用服务，-->
+        <dubbo:method name="listToDos" async="true"/>
+    </dubbo:reference>
+
 
 
 

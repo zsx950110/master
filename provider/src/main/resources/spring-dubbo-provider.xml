@@ -7,8 +7,11 @@
     <dubbo:application name="demo-provider"/>
     <!-- use multicast registry center to export service -->
    <!-- <dubbo:registry address="multicast://239.5.6.7:1234"/>-->
-    <!-- 使用zookeeper注册中心暴露服务地址 -->
-    <dubbo:registry protocol="zookeeper" address="127.0.0.1:2181"/>
+    <!-- 使用zookeeper注册中心暴露服务地址 127.0.0.1:2181 ，register="false"配置表示该服务只订阅（服务有可能依赖其他稳定的服务），禁止注册，避免正在开发中的服务注册之后，被其他consumer调用导致出错-->
+    <!--<dubbo:registry id="zkRegistry" protocol="zookeeper" address="127.0.0.1:2181" register="false"/>-->
+    <!--address为N/A表示不使用注册中心，使用的是直连，服务方启动时可以搜索日志：
+     Export dubbo service xxx to url dubbo://192.168.43.125:2090，该url可以作为消费方特定这个服务的配置 -->
+    <dubbo:registry  address="N/A"/>
     <!-- 用dubbo协议在20880端口暴露服务 ，协议配置，由服务提供者决定，消费者被动接受-->
     <dubbo:protocol name="dubbo" port="2090"/>
 
@@ -19,11 +22,14 @@
     <dubbo:service interface="common.service.IToDoService" ref="toDoService"/>-->
 
    <bean id="operations" class="provider.serviceImpl.Operations"/>
+   <bean id="operations1" class="provider.serviceImpl.Operations1"/>
 
-    <!--服务配置，用于暴露一个服务，定义服务的原信息，一个服务可以多个协议暴露，一个服务也可以注册到多个注册中心-->
+    <!--服务配置，用于暴露一个服务，定义服务的原信息，一个服务可以多个协议暴露，一个服务也可以注册到多个注册中心,registry就表示当前接口注册的注册中心-->
 
-   <dubbo:service interface="common.service.IOperationService" ref="operations"  timeout= "50000000"/>
 
+    <!--同一个接口多个实现类时，如果不分组也不做任务区分，则消费者在调用时会默认调用spring首先加载的那个bean（写在上面的，目前测试是这样），一般通过group分组区分-->
+    <dubbo:service interface="common.service.IOperationService" ref="operations"  group="useful" timeout= "50000000" />
+    <dubbo:service interface="common.service.IOperationService" ref="operations1"  group="useless" timeout= "50000000" />
     <!--配置扫描包，此处包扫描暂时有问题，如果是包扫描 则consumer在调用时拿不到-->
 
 <!--<dubbo:annotation package="provider.serviceImpl"/>-->
