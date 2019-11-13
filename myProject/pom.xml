@@ -7,7 +7,8 @@
   <groupId>person.zsx</groupId>
   <artifactId>myProject</artifactId>
   <version>1.0-SNAPSHOT</version>
-  <packaging>war</packaging>
+
+    <packaging>jar</packaging>
 
   <name>myProject Maven Webapp</name>
   <!-- FIXME change it to the project's website -->
@@ -143,12 +144,17 @@
       <artifactId>fastjson</artifactId>
       <version>1.2.47</version>
     </dependency>
-    <dependency>
+  <dependency>
     <groupId>org.slf4j</groupId>
     <artifactId>slf4j-log4j12</artifactId>
-    <version>1.5.2</version>
-
+    <version>1.6.6</version>
   </dependency>
+    <!-- https://mvnrepository.com/artifact/org.slf4j/slf4j-api -->
+    <dependency>
+      <groupId>org.slf4j</groupId>
+      <artifactId>slf4j-api</artifactId>
+      <version>1.6.6</version>
+    </dependency>
     <!-- 单元测试需要的jar包 -->
     <dependency>
       <groupId>junit</groupId>
@@ -269,6 +275,26 @@
       <version>4.3.18.RELEASE</version>
       <scope>compile</scope>
     </dependency>
+<!--kafka的pom-->
+    <!-- https://mvnrepository.com/artifact/org.apache.kafka/kafka-clients -->
+    <dependency>
+      <groupId>org.apache.kafka</groupId>
+      <artifactId>kafka-clients</artifactId>
+      <version>2.1.0</version>
+    </dependency>
+    <!-- https://mvnrepository.com/artifact/org.apache.kafka/kafka -->
+    <dependency>
+      <groupId>org.apache.kafka</groupId>
+      <artifactId>kafka_2.12</artifactId>
+      <version>2.1.0</version>
+    </dependency>
+    <!-- https://mvnrepository.com/artifact/cglib/cglib，自己测试用，如果使用spring得注释掉，否则可能发生jar冲突-->
+    <dependency>
+      <groupId>cglib</groupId>
+      <artifactId>cglib</artifactId>
+      <version>3.2.5</version>
+    </dependency>
+
 
 
   </dependencies>
@@ -309,6 +335,16 @@
         </plugin>
       </plugins>
     </pluginManagement>
+    <plugins>
+      <plugin>
+        <groupId>org.apache.maven.plugins</groupId>
+        <artifactId>maven-compiler-plugin</artifactId>
+        <configuration>
+          <source>8</source>
+          <target>8</target>
+        </configuration>
+      </plugin>
+    </plugins>
   </build>
 
 </project>

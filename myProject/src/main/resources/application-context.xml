@@ -1,10 +1,15 @@
 <?xml version="1.0" encoding="UTF-8"?>
+
+<!--XML schema就是XSD，符合xml文件结构，可以用通用的xml解析器解析，要声明命名空间-->
+<!--以下的location指明了xml schema文档存储位置，包括两个部分，上面是命名空间的URI,另一个部分是
+该空间对应的文档位置或者URL-->
 <beans xmlns="http://www.springframework.org/schema/beans"
 	   xmlns:mvc="http://www.springframework.org/schema/mvc"
 	   xmlns:tx="http://www.springframework.org/schema/tx"
 	   xmlns:contenxt="http://www.springframework.org/schema/context"
 	   xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
 	   xmlns:aop="http://www.springframework.org/schema/aop"
+
 	   xsi:schemaLocation="
         http://www.springframework.org/schema/beans
         http://www.springframework.org/schema/beans/spring-beans.xsd
@@ -17,10 +22,15 @@
    		http://www.springframework.org/schema/aop
     	http://www.springframework.org/schema/aop/spring-aop.xsd ">
 <!--加密解密-->
-<bean id="propertyConfigurer" class="person.util.ConvertData">
+	<bean    class="person.util.ConvertData">
+				<!--  class="org.springframework.beans.factory.config.PropertyPlaceholderConfigurer">-->
+		<property name="ignoreUnresolvablePlaceholders" value="true" />
+		<property name="location" value="classpath:xml/dbConfig.properties"/>
+	</bean>
+<bean id="propertyConfigurer"   class="person.util.ConvertData">
 <!--		  class="org.springframework.beans.factory.config.PropertyPlaceholderConfigurer">-->
 		<property name="ignoreUnresolvablePlaceholders" value="true" />
-		<property name="location" value="classpath:dbConfig.properties"/>
+		<property name="location" value="classpath:xml/dbConfig.properties"/>
 </bean>
 	<!-- 创建dbcp连接池 -->
 	<bean id="dataSource" class="org.apache.commons.dbcp.BasicDataSource" destroy-method="close">

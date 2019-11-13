@@ -1,0 +1,1 @@
+package person.spring.test;public class IOperationImpl   implements  IOperation{    public  void print(String str){        System.out.println("转化开始============"+str);    }}

@@ -1,0 +1,1 @@
+package person.spring.test.jdbcTest;import person.pojo.TestUser;import java.util.List;public interface UserService { void save(TestUser user);List<TestUser> listUsers();}

@@ -1,9 +1,7 @@
 package person.concurrentPractice;
 
 
-import com.sun.scenario.effect.impl.sw.sse.SSEBlend_SRC_OUTPeer;
-import org.apache.dubbo.common.threadpool.support.cached.CachedThreadPool;
-import org.apache.poi.ss.usermodel.DateUtil;
+
 
 import java.util.*;
 import java.util.concurrent.*;
@@ -150,7 +148,56 @@ public class ThreadDemo  implements  Runnable {
      **/
 
     public static void main(String[] args) throws Exception  {
-        LockSupportTest();
+       // System.out.println(System.nanoTime());
+       changeRate();
+    }
+    static int  delay =1;
+    public static void  changeRate() throws ExecutionException, InterruptedException {
+        //给个阻塞队列
+        LinkedBlockingQueue linkedBlockingQueue = new LinkedBlockingQueue(20);
+        ExtendPoolExecutor extendPoolExecutor = new ExtendPoolExecutor(30,30,3,TimeUnit.SECONDS,linkedBlockingQueue);
+       // ScheduledThreadPoolExecutor scheduledThreadPoolExecutor = new ScheduledThreadPoolExecutor(1);
+
+        for (int i=0;i<1;i++) {
+            Thread thread = new Thread() {
+
+                @Override
+                public void run() {
+                 ///   for(;;){
+                        try {
+
+                             TimeUnit.SECONDS.sleep(1000000000);
+
+                            System.out.println("报错之前======" + delay);
+                            int j = 0 / 0;
+                            System.out.println("报错之后=====");
+                        } catch (Exception e) {
+                            e.printStackTrace();
+                            e.printStackTrace();
+                            e.printStackTrace();
+                            e.printStackTrace();
+                            e.printStackTrace();
+
+                        }
+                   // }
+
+
+
+
+
+                }
+
+
+
+
+            };
+         extendPoolExecutor.submit(thread);
+        }
+
+      //  ScheduledFuture<?> scheduledFuture = scheduledThreadPoolExecutor.scheduleAtFixedRate(thread,0,delay,TimeUnit.SECONDS);
+
+        // scheduledExecutorService.scheduleAtFixedRate(thread,0,delay,TimeUnit.SECONDS);
+
     }
 
     /*
@@ -333,12 +380,15 @@ public class ThreadDemo  implements  Runnable {
      * @return
      **/
     private static void testSingledThreadPool(){
-        //ScheduledExecutorService executorService = Executors.newScheduledThreadPool(3);
-        ExecutorService executorService = Executors.newFixedThreadPool(10);
+        ScheduledExecutorService executorService = Executors.newScheduledThreadPool(3);
+
+      //  ExecutorService executorService = Executors.newFixedThreadPool(10);
         for (int i =0;i<10;i++){
             TestCallable  testRunnable = new TestCallable() ;
             //不延迟，每3s执行一次，是说每个3秒就执行一次，thisBeginTime = lastBegintime+period
          Future future =   executorService.submit(testRunnable);
+        // Hashtable;
+
             try {
                 System.out.println(future.get().toString());
             } catch (InterruptedException e) {

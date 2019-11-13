@@ -1,0 +1,1 @@
+package person.spring.test;import org.springframework.core.convert.converter.Converter;public interface IOperation   {    public  void print(String str);  /*  {        System.out.println("转化开始============"+str);    }*/}

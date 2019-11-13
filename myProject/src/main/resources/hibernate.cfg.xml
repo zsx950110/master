@@ -1,15 +1,32 @@
-<?xml version='1.0' encoding='utf-8'?>
 <!DOCTYPE hibernate-configuration PUBLIC
-    "-//Hibernate/Hibernate Configuration DTD//EN"
-    "http://www.hibernate.org/dtd/hibernate-configuration-3.0.dtd">
-<hibernate-configuration>
-  <session-factory>
-    <property name="connection.url"/>
-    <property name="connection.driver_class"/>
-    <!-- <property name="connection.username"/> -->
-    <!-- <property name="connection.password"/> -->
+        "-//Hibernate/Hibernate Configuration DTD 3.0//EN"
+        "http://www.hibernate.org/dtd/hibernate-configuration-3.0.dtd">
 
-    <!-- DB schema will be updated if needed -->
-    <!-- <property name="hibernate.hbm2ddl.auto">update</property> -->
+<hibernate-configuration>
+  <!-- 把name="foo"属性去掉 -->
+  <session-factory>
+    <!--这里是Hibernate框架的基本配置：数据库连接，框架参数的配置，映射文件的配置  -->
+    <!-- 方言，表示Hibernate框架在与某个数据库进行映射，才能自动生成某个数据库特有的SQL语句 -->
+    <property name="dialect">org.hibernate.dialect.MySQLDialect</property>
+    <property name="connection.driver_class">oracle.jdbc.driver.OracleDriver</property>
+    <property name="connection.url">jdbc:mysql://localhost:3306/myschool?characterEncoding=utf-8</property>
+    <property name="connection.username">root</property>
+    <property name="connection.password">root</property>
+
+    <!--Hibernate框架的基本配置  -->
+    <!-- 打印sql语句，一般开发时运用 ，跟踪自动生成的Sql语句-->
+    <property name="show_sql">true</property>
+    <!-- 格式化打印的sql语句，一般开发时运用，便于区分关键字 -->
+    <property name="format_sql">true</property>
+    <!--此属性表示根据当前线程来操作数据，可以提交或者回滚  -->
+    <property name="current_session_context_class">thread</property>
+    <!--数据库中的表结构可以随映射文件的配置发生改变 -->
+    <property name="hbm2ddl.auto">create</property>
+    <!--映射文件加载  -->
+  <!--  <mapping resource="com/zhq/entity/Grade.hbm.xml"/>-->
+    <!--Hibernate4 使用Proxool连接数据库出现 at org.hibernate.engine.jdbc.internal.JdbcServicesImpl.configure(JdbcSer
+    它是用来控制是否应该向JDBC元数据来确定某些设置默认值，
+在数据库某些服务不可用的设置为 *不*，在某些工具中开发是非常有用的-->
+    <property name="hibernate.temp.use_jdbc_metadata_defaults">false</property>
   </session-factory>
 </hibernate-configuration>

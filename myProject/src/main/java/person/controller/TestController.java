@@ -35,7 +35,7 @@ import java.util.*;
 import static org.springframework.util.StringUtils.*;
 
 
-@Controller
+//@Controller
 
 @Transactional
 @RequestMapping("/testController")

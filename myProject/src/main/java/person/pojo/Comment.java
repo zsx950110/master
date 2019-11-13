@@ -17,6 +17,19 @@ private  Integer star;
 private String userId;
 private Date commentDate;
 
+    public Comment() {
+    }
+
+Book book;
+
+    public void setBook(Book book) {
+        this.book = book;
+    }
+
+    public Book getBook() {
+        return book;
+    }
+
     public Date getCommentDate() {
         return commentDate;
     }
