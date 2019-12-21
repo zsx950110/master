@@ -8,8 +8,8 @@ import redis.clients.jedis.Jedis;
 import redis.clients.util.RedisInputStream;
 
 
-@Aspect
-@Component("myAop")
+//@Aspect
+//@Component("myAop")
 public class Aop {
 	private Logger logger = LoggerFactory.getLogger(Aop.class);
 	private Jedis jedis = null;

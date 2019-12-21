@@ -51,7 +51,7 @@ public class Operations {
 
         TestUser testUser = new TestUser();
         testUser.setId(new Date().toString());
-        testUser.setName("蛐蛐儿242群二群四");
+       // testUser.setName("蛐蛐儿242群二群四");
         session.save(testUser);
 
           /*  String hql  = "update T_myTest set FnAME='zsdsdsds' where FID =:id";
@@ -79,7 +79,7 @@ public class Operations {
         Query query = this.session.createQuery(hql);
         List<TestUser> listUsers = query.list();
         for (TestUser listUser : listUsers) {
-            System.out.println(listUser.getName());
+            //System.out.println(listUser.getName());
         }
         if (logger.isInfoEnabled()) {
             logger.info("查询成功！！！");

@@ -187,6 +187,31 @@ public class ToDo {
         this.productId = productId;
     }
 
+    @Override
+    public String toString() {
+        return "ToDo{" +
+                "id='" + id + '\'' +
+                ", assignee='" + assignee + '\'' +
+                ", subject='" + subject + '\'' +
+                ", setCode='" + setCode + '\'' +
+                ", productId='" + productId + '\'' +
+                ", amount='" + amount + '\'' +
+                ", frontOperator='" + frontOperator + '\'' +
+                ", acceptTime=" + acceptTime +
+                ", taskId='" + taskId + '\'' +
+                ", taskType='" + taskType + '\'' +
+                ", executorFlag=" + executorFlag +
+                ", ppUrl='" + ppUrl + '\'' +
+                ", formUrl='" + formUrl + '\'' +
+                ", taskName='" + taskName + '\'' +
+                ", processInstanceId='" + processInstanceId + '\'' +
+                ", createTime=" + createTime +
+                ", account='" + account + '\'' +
+                ", emergency='" + emergency + '\'' +
+                ", chainTypeName='" + chainTypeName + '\'' +
+                '}';
+    }
+
     /**
      * @return the amount
      */

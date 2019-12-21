@@ -114,7 +114,7 @@ public class ThreadDemo  implements  Runnable {
     }
 
     public void run() {
-        for (int i=0;i<10;i++){
+        for (int i=0;i<5;i++){
            // ThreadDemo.getInstance().setName(Thread.currentThread().getName());
             //如果为空则设置初始化值
             if(null == threadDemoThreadLocal.get()){
@@ -128,16 +128,6 @@ public class ThreadDemo  implements  Runnable {
                     "实例地址==="+threadDemoThreadLocal.get().hashCode());
           //  System.out.println("当前线程名："+Thread.currentThread().getName()+"====name=="+   ThreadDemo.getInstance().getName());
         }
-
-        /*System.out.println("线程"  + "的初始value:" + threadDemoThreadLocal.get());
-
-        for (int i = 0; i < 10; i++) {
-           // System.out.println("线程"+Thread.currentThread().getName()+"====="+a++);
-            threadDemoThreadLocal.set(threadDemoThreadLocal.get() + i);
-           System.out.println("当前线程===="+Thread.currentThread().getName()+"==i==="+threadDemoThreadLocal.get());
-        }*/
-
-
     }
     /*
      * @Author zhang shaoxuan
@@ -149,7 +139,8 @@ public class ThreadDemo  implements  Runnable {
 
     public static void main(String[] args) throws Exception  {
        // System.out.println(System.nanoTime());
-       changeRate();
+        System.out.println(getAppropriateDate().toString());
+        System.out.println((6+1)/2);
     }
     static int  delay =1;
     public static void  changeRate() throws ExecutionException, InterruptedException {
@@ -239,6 +230,10 @@ public class ThreadDemo  implements  Runnable {
         Calendar calendar = Calendar.getInstance();
         System.out.println("不设置值的话默认使用当前系统时间===");
         System.out.println("获取时间DATE类型=="+calendar.getTime());
+        System.out.println(calendar.get(Calendar.MINUTE));
+      //  calendar.set(Calendar.MINUTE,15);
+        calendar.add(Calendar.MINUTE,-1);//加十分钟之后的日期
+        System.out.println("获取时间DATE类型=="+calendar.getTime());
         System.out.println("获取时间的毫秒数类型=="+calendar.getTimeInMillis());
         System.out.println("获取日期所在周的第一天的日期,默认一周第一天是周日=="+calendar.getFirstDayOfWeek());
         //获取值
@@ -256,6 +251,16 @@ public class ThreadDemo  implements  Runnable {
         System.out.println("当前系统的纳秒数=="+String.valueOf(integer.longValue()));
         System.out.println("设定日期是否在当前日期之前，要求参数必须是Calender，否则false=="+calendar1.after(calendar));
 
+    }
+    private  static Date getAppropriateDate(){
+        Calendar calendar = Calendar.getInstance();
+        int n = calendar.get(Calendar.MINUTE)%5;
+        if(n<3){
+            calendar.add(Calendar.MINUTE,-n);
+        }else{
+            calendar.add(Calendar.MINUTE,(5-n));
+        }
+        return calendar.getTime();
     }
 
     /*
@@ -598,9 +603,9 @@ public class ThreadDemo  implements  Runnable {
         Thread thread1 =  new Thread(threadDemo,"thread1");
         Thread thread2 =  new Thread(threadDemo,"thread2");
         Thread thread3 =  new Thread(threadDemo,"thread3");
-        thread3.start();
+       // thread3.start();
         thread1.start();
-        thread2.start();
+     //   thread2.start();
 
     }
 

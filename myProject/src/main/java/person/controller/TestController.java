@@ -22,6 +22,7 @@ import person.pojo.Comment;
 import person.pojo.TestUser;
 import person.pojo.ToDo;
 import person.service.Operations;
+import person.test.WrapperTest;
 import person.util.JedisUtil;
 import redis.clients.jedis.Jedis;
 import redis.clients.jedis.Pipeline;
@@ -257,22 +258,5 @@ public class TestController {
 
     }
 
-    //查看
-    @ResponseBody
-    @RequestMapping("/saveBook")
-    public String saveBook() {
-        Book book = new Book();
-        book.setDiscount(3);
-        book.setId(String.valueOf(System.currentTimeMillis()));
-        book.setType("java");
-        book.setPrice(23.0);
-        book.setWrap("平装");
-        book.setStar(3);
-        book.setName("水浒传");
-        book.setPublisher("人民");
-        operations.saveBook();
-        return "成功";
-
-    }
 
 }

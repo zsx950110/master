@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE mapper  PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN"
+        "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="person.dao.IUserMapper">
+    <select id="getUser" parameterType="String" resultType="person.pojo.TestUser">
+        SELECT * FROM t_user WHERE id = #{id}
+    </select>
+    <insert id="insertUser" parameterType="person.pojo.TestUser" >
+    INSERT INTO `t_user` (`id`, `namess`) VALUES (#{id},#{namess})
+    </insert>
+</mapper>

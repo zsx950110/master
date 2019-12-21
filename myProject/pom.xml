@@ -8,7 +8,8 @@
   <artifactId>myProject</artifactId>
   <version>1.0-SNAPSHOT</version>
 
-    <packaging>jar</packaging>
+<!---->
+  <packaging>pom</packaging>
 
   <name>myProject Maven Webapp</name>
   <!-- FIXME change it to the project's website -->
@@ -21,7 +22,9 @@
     <spring.version> 4.3.18.RELEASE</spring.version>
   </properties>
 
-  <dependencies>
+<dependencies>
+
+
 <!--  <dependency>
       <groupId>zsx.dubbo</groupId>
       <artifactId>common</artifactId>
@@ -289,15 +292,26 @@
       <version>2.1.0</version>
     </dependency>
     <!-- https://mvnrepository.com/artifact/cglib/cglib，自己测试用，如果使用spring得注释掉，否则可能发生jar冲突-->
-    <dependency>
+ <dependency>
       <groupId>cglib</groupId>
       <artifactId>cglib</artifactId>
       <version>3.2.5</version>
     </dependency>
 
+    <!-- https://mvnrepository.com/artifact/mysql/mysql-connector-java -->
+    <dependency>
+      <groupId>mysql</groupId>
+      <artifactId>mysql-connector-java</artifactId>
+      <version>8.0.16</version>
+    </dependency>
 
 
-  </dependencies>
+<dependency>
+  <groupId>cglib</groupId><artifactId>cglib-nodep</artifactId><version>2.2</version>
+</dependency>
+</dependencies>
+
+
 
 
   <build>
