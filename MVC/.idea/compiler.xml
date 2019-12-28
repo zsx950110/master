@@ -6,12 +6,11 @@
         <sourceOutputDir name="target/generated-sources/annotations" />
         <sourceTestOutputDir name="target/generated-test-sources/test-annotations" />
         <outputRelativeToContentRoot value="true" />
-        <module name="consumer" />
-        <module name="common" />
-        <module name="cluster1" />
         <module name="MVC" />
-        <module name="provider" />
       </profile>
     </annotationProcessing>
+    <bytecodeTargetLevel>
+      <module name="MVC" target="1.7" />
+    </bytecodeTargetLevel>
   </component>
 </project>

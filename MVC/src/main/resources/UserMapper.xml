@@ -8,4 +8,10 @@
     <insert id="insertUser" parameterType="person.pojo.TestUser" >
     INSERT INTO `t_user` (`id`, `namess`) VALUES (#{id},#{namess})
     </insert>
+    <update id="updateUser" parameterType="person.pojo.TestUser" >
+    update `t_user`  set id=#{id} where namess=#{namess}
+    </update>
+    <select id="getIdByName" parameterType="String" resultType="String">
+        SELECT id FROM t_user WHERE namess = #{name}
+    </select>
 </mapper>

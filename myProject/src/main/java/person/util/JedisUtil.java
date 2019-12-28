@@ -25,7 +25,7 @@ public class JedisUtil {
     private static JedisPoolConfig config;
     //最大活跃连接
     private static final int MAX_ACTIVE = 5;
-    private static final String ADD = "127.0.0.1";
+    private static final String ADD = "192.168.1.108";
     private static final int PORT = 6379;
     private static Jedis jedis;
     private static Logger logger = LoggerFactory.getLogger(JedisUtil.class);
