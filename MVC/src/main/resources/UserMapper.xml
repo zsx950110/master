@@ -14,4 +14,13 @@
     <select id="getIdByName" parameterType="String" resultType="String">
         SELECT id FROM t_user WHERE namess = #{name}
     </select>
+    <insert id="insertLock" >
+        insert into distributed_lock (thread_name,method_name) values (#{thread},#{method})
+    </insert>
+    <delete id="deleteLockByMethod" parameterType="String">
+        delete  from distributed_lock where method_name = #{method}
+    </delete>
+    <select id="getLockByThreadAndMethod" resultType="String">
+        select id from distributed_lock where method_name=#{method} and thread_name=#{thread}
+    </select>
 </mapper>
