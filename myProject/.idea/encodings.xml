@@ -4,7 +4,11 @@
     <file url="file://$PROJECT_DIR$/../MVC" charset="UTF-8" />
     <file url="file://$PROJECT_DIR$/../cluster1" charset="UTF-8" />
     <file url="file://$PROJECT_DIR$/../consumer" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/../gathering" charset="UTF-8" />
     <file url="file://$PROJECT_DIR$" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/demotest" charset="UTF-8" />
     <file url="file://$PROJECT_DIR$/../provider" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/../transfering" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/../universityHospital" charset="UTF-8" />
   </component>
 </project>

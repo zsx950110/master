@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+       xmlns="http://www.springframework.org/schema/beans" xmlns:dubbo="http://code.alibabatech.com/schema/dubbo"
+       xsi:schemaLocation="http://www.springframework.org/schema/beans http://www.springframework.org/schema/beans/spring-beans-4.3.xsd http://code.alibabatech.com/schema/dubbo http://code.alibabatech.com/schema/dubbo/dubbo.xsd">
+
+    <dubbo:application name="consumer"/>
+
+   <!-- <dubbo:registry address="multicast://239.5.6.7:1234" check="false"/>-->
+    <!--本地多播有问题，改为zk注册中心，注册中心启动时check默认为true-->
+  <!--  <dubbo:registry protocol="zookeeper" address="127.0.0.1:2181" />
+    -->
+    <!--启动时检查暂时不起作用-->
+   <!-- <dubbo:registry check="false"/>-->
+    <!--关闭所有服务的启动时检查，配置暂时不起作用-->
+    <dubbo:consumer check="false"/>
+    <!--使用注解的话，则直接在注解里写check=false-->
+ <!--<dubbo:reference id="toDoService" check="false" interface="common.service.IToDoService" />-->
+
+    <!--扫描包，不能使用通配符，如果是多包可以用逗号分隔开-->
+<dubbo:annotation package="zsx.dubbo.controller"/>
+    <!--以下的配置等价于上面的annotation配置-->
+   <!-- <dubbo:annotation/>
+    <context:component-scan base-package="zsx.dubbo.controller">
+        <context:include-filter type="annotation" expression="com.alibaba.dubbo.config.annotation.Service"/>
+    </context:component-scan>-->
+    <!--测试包跟源码包不在一个路径下-->
+ <dubbo:annotation package="dubbo.test"/>
+
+<!--服务引用，用于创建远程服务代理， url表示直连模式下 该服务的被导出的位置，registry表示多注册中心下，该消费的服务位于哪个注册中心-->
+
+    <dubbo:reference id="operationService"  check="true"  interface="common.service.IOperationService" url="dubbo://192.168.1.109:2090" group = "useful" >
+        <!--开启异步调用服务，消费者可以并行调用服务，-->
+        <dubbo:method name="listToDos" async="true"/>
+    </dubbo:reference>
+
+
+
+
+
+</beans>

@@ -1,0 +1,124 @@
+<!DOCTYPE web-app PUBLIC
+        "-//Sun Microsystems, Inc.//DTD Web Application 2.3//EN"
+        "http://java.sun.com/dtd/web-app_2_3.dtd" >
+
+<web-app xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns="http://java.sun.com/xml/ns/javaee" xsi:schemaLocation="http://java.sun.com/xml/ns/javaee http://java.sun.com/xml/ns/javaee/web-app_2_5.xsd" id="WebApp_ID" version="2.5">
+  <display-name>Archetype Created Web Application</display-name>
+  <!--配置spring核心监听器加载applicationContext.xml-->
+  <listener>
+    <listener-class>org.springframework.web.context.ContextLoaderListener</listener-class>
+  </listener>
+  <context-param>
+    <param-name>contextConfigLocation</param-name>
+    <param-value>classpath:springmvc-servlet.xml,
+        classpath:application-context.xml</param-value>
+
+  </context-param>
+
+  <!--配置springmvc-->
+  <servlet>
+    <servlet-name>springmvc</servlet-name>
+    <servlet-class>org.springframework.web.servlet.DispatcherServlet</servlet-class>
+    <init-param>
+      <param-name>contextConfigLocation</param-name>
+      <param-value>classpath:springmvc-servlet.xml</param-value>
+    </init-param>
+  </servlet>
+
+    <!--解决方案一tomcat默认的servlet名为default，可以放进来静态资源的请求-->
+    <servlet-mapping>
+    <servlet-name>default</servlet-name>
+    <url-pattern>*.css</url-pattern>
+</servlet-mapping>
+    <servlet-mapping>
+        <servlet-name>default</servlet-name>
+        <url-pattern>*.html</url-pattern>
+    </servlet-mapping>
+    <servlet-mapping>
+        <servlet-name>default</servlet-name>
+        <url-pattern>*.png</url-pattern>
+    </servlet-mapping>
+
+    <servlet-mapping>
+        <servlet-name>default</servlet-name>
+        <url-pattern>*.jpg</url-pattern>
+    </servlet-mapping>
+
+    <servlet-mapping>
+        <servlet-name>default</servlet-name>
+        <url-pattern>*.js</url-pattern>
+    </servlet-mapping>
+    <!--只配置这种的servlet会导致静态资源的请求进不来，比如欢迎页设置为.html，则启动报404，servlet的匹配如果
+    匹配到了，就不会再向下匹配，过滤器是只要匹配到就会进去-->
+    <servlet-mapping>
+        <servlet-name>springmvc</servlet-name>
+        <url-pattern>*.ctrl</url-pattern>
+        <url-pattern>*.login</url-pattern>
+    </servlet-mapping>
+<welcome-file-list>
+  <welcome-file>/portal.html</welcome-file>
+</welcome-file-list>
+  <!-- 需要访问的资源不存在 -->
+  <error-page>
+    <error-code>404</error-code>
+    <location>/pages/404.jsp</location>
+  </error-page>
+  <!-- 出现异常 -->
+  <error-page>
+    <error-code>500</error-code>
+    <location>/pages/500.jsp</location>
+  </error-page>
+ <error-page>
+    <exception-type>java.lang.RuntimeException</exception-type>
+    <location>/pages/runtimeex.jsp</location>
+  </error-page>
+  <!-- 服务器内部错误 -->
+
+  <!-- 处理POST提交乱码问题 -->
+  <filter>
+    <filter-name>encoding</filter-name>
+    <filter-class>org.springframework.web.filter.CharacterEncodingFilter</filter-class>
+    <init-param>
+      <param-name>encoding</param-name>
+      <param-value>UTF-8</param-value>
+    </init-param>
+  </filter>
+
+  <filter-mapping>
+    <filter-name>encoding</filter-name>
+    <url-pattern>*.action</url-pattern>
+  </filter-mapping>
+    <filter>
+        <filter-name>ssoFilter</filter-name>
+        <filter-class>person.controller.SSOFilter</filter-class>
+    </filter>
+    <!--所有请求都进过滤器-->
+    <filter-mapping>
+        <filter-name>ssoFilter</filter-name>
+        <!--/不会匹配.jsp，/*会匹配jsp，编码过滤器需要/*-->
+        <!--其他不用过滤，否则对css,img等静态资源的请求也会进过滤器-->
+        <url-pattern>*.jsp</url-pattern>
+        <url-pattern>*.html</url-pattern>
+        <url-pattern>*.ctrl</url-pattern>
+        <url-pattern>*.jsp</url-pattern>
+    </filter-mapping>
+
+  <!-- 加载Spring框架中的log4j监听器Log4jConfigListener -->
+  <!-- 配置log4j配置文件路径 -->
+  <context-param>
+    <param-name>log4jConfigLocation</param-name>
+    <param-value>classpath:log4j.properties</param-value>
+  </context-param>
+  <!-- 60s 检测日志配置 文件变化 -->
+  <context-param>
+    <param-name>log4jRefreshInterval</param-name>
+    <param-value>60000</param-value>
+  </context-param>
+
+  <!-- 配置Log4j监听器 -->
+  <listener>
+    <listener-class>org.springframework.web.util.Log4jConfigListener</listener-class>
+  </listener>
+
+
+</web-app>

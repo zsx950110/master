@@ -1,0 +1,14 @@
+<component name="ArtifactManager">
+  <artifact type="war" name="MVC2Distributed.myProjectCommon:war">
+    <output-path>$PROJECT_DIR$/myProjectCommon/target</output-path>
+    <properties id="maven-jee-properties">
+      <options>
+        <module>MVC2Distributed.myProjectCommon</module>
+        <packaging>war</packaging>
+      </options>
+    </properties>
+    <root id="archive" name="myProjectCommon.war">
+      <element id="artifact" artifact-name="MVC2Distributed.myProjectCommon:war exploded" />
+    </root>
+  </artifact>
+</component>

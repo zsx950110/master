@@ -1,0 +1,1 @@
+package person.spring.test.jdbcTest;import org.springframework.jdbc.core.JdbcTemplate;import person.pojo.TestUser;import java.sql.SQLException;import java.util.List;//@Transactionalpublic  interface UserService {  void save1(TestUser user) throws SQLException;  void save(TestUser user);  List<TestUser> listUsers();  JdbcTemplate getJdbcTemplate();}
