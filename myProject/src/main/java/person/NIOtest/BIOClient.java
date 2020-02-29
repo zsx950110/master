@@ -16,7 +16,6 @@ public class BIOClient {
         InputStream inputStream = null;
         Socket socket = null;
         try {
-          //  while (true){
                 socket = new Socket("127.0.0.1",8090);
                 System.out.println("------请输入文件地址---------:");
                 String temp =  scanner.nextLine();
@@ -26,7 +25,6 @@ public class BIOClient {
                 while(inputStream.read(bytes)>-1){
                     outputStream.write(bytes);
                 }
-          //  }
         } catch (IOException e) {
             e.printStackTrace();
         } finally {
