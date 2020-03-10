@@ -12,6 +12,7 @@ import java.nio.channels.*;
 import java.util.Iterator;
 import java.util.concurrent.ExecutorService;
 import java.util.concurrent.Executors;
+import java.util.concurrent.TimeUnit;
 
 /**
  * @Author: zhangshaoxuan
@@ -83,7 +84,8 @@ public class NIOServer {
     */
     public static void NIOnoblockingServer(){
         ExecutorService executorService = Executors.newFixedThreadPool(5);
-        ServerSocketChannel serverSocketChannel;
+        ServerSocketChannel serverSocketChannel = null;
+        Selector selector = null;
         try {
             //获得服务端通道
              serverSocketChannel = ServerSocketChannel.open();
@@ -92,18 +94,36 @@ public class NIOServer {
              //设置为非阻塞
              serverSocketChannel.configureBlocking(false);
              //获得选择器
-            Selector selector = Selector.open();
-            //通道注册到选择器上,指定接收监听通道事件
+            selector = Selector.open();
+            /**
+             * 通道注册到选择器上,指定接收监听通道事件，第二个参数，是事件，即要注册监听的事件
+             *有四种 ：Connect Accept Read  Write
+             */
             serverSocketChannel.register(selector, SelectionKey.OP_ACCEPT);
-            //轮询这个select()，如果>0,则说明选择器有socket连接就绪
             int i =0;
             System.out.println("----到达while select()前端------");
             //select（）方法如果没有socket连接就会阻塞,目前一直循环不出来，不知道原因
-            while(selector.select()>0){
+            //select()没有连通的socket时返回0
+            while(true){
+                /**
+                 * select()方法阻塞直到有个socket是就绪的
+                 * 返回值表示当前有多少通道就绪
+                 */
+                int s = selector.select();
+                if (s==0){
+                    continue;
+                }
+                System.out.println("s========="+s);
                 System.out.println("--------select（）方法>0-----------");
-                //获取所有选择键，即已经就绪的socket
+                //获取所有的键，其实是获得了这个通道监听到的所有的活跃事件
                 Iterator<SelectionKey> iterator = selector.selectedKeys().iterator();
                 while (iterator.hasNext()){
+                    /**
+                     * selectionKey这个对象里包括以下：
+                     * 上面被注册的事件
+                     * Channel
+                     * Selector
+                     */
                     SelectionKey selectionKey = iterator.next();
                     //Tests whether this key's channel is ready to accept a new socket
                     //     * connection.
@@ -114,18 +134,26 @@ public class NIOServer {
                        //拿到连接时为了读
                        client.register(selector,SelectionKey.OP_READ);
                     }else if (selectionKey.isReadable()){
-                      //  executorService.submit(new NIOServer().new processSelector(selectionKey,i));
+                        //接收的事件放到别的线程中处理
+                       //executorService.submit(new NIOServer().new processSelector(selectionKey,i));
                         new NIOServer().new processSelector(selectionKey,i).run();
-                       // i++;
+
                     }
                     // 10. 取消选择键(已经处理过的事件，就应该取消掉了)
                     iterator.remove();
+                    i++;
                 }
             }
            // executorService.shutdown();
         } catch (Exception e) {
             e.printStackTrace();
         } finally {
+            try {
+                selector.close();
+                serverSocketChannel.close();
+            } catch (IOException e) {
+                e.printStackTrace();
+            }
         }
     }
     class  processSelector implements  Runnable{
@@ -159,9 +187,16 @@ public class NIOServer {
                 e.printStackTrace();
             } finally {
                 try {
-                //    socketChannel.close();
+                    //这里需要等待Client的socketchannel自己断开连接再调用close（）
+                    try {
+                        TimeUnit.SECONDS.sleep(1);
+                    } catch (InterruptedException e) {
+                        e.printStackTrace();
+                    }
                     outChannel.close();
                     fileOutputStream.close();
+                    //这里一定要关闭，否则select（）方法的返回值会一直大于0
+                   // socketChannel.close();
                 } catch (IOException e) {
                     e.printStackTrace();
                 }

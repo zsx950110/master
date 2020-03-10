@@ -1,0 +1,52 @@
+server: 
+  port: 7777
+
+eureka:
+  client:
+    serviceUrl:
+      defaultZone: http://localhost:1111/eureka/
+
+spring:
+  ##################### DB #####################
+  datasource:
+
+      url: jdbc:mysql://127.0.0.1:3306/account_a?characterEncoding=utf-8&serverTimezone=UTC
+      username: root
+      password: 950110xn
+      driver-class-name: com.mysql.jdbc.Driver
+  application:
+    name: transfer-service
+mybatis:
+  mapper-locations : classpath:mapper.xml
+jdbc:
+  # JTA 分布式事务
+  jta:
+    enabled: false
+  # LCN 分布式事务
+  lcn:
+    enabled: true
+ribbon:
+  MaxAutoRetriesNextServer: 0
+
+  tm:
+    manager:
+      url: http://localhost:7970/tx/manager/
+#hmily tcc暂时未测试通
+#org:
+#  dromara:
+#    hmily :
+#      serializer : kryo
+#      recoverDelayTime : 30
+#      retryMax : 30
+#      scheduledDelay : 30
+#      scheduledThreadMax :  10
+#      repositorySupport : db
+#      started: true  #这里 注意 这是事务的发起端需要配置为true
+#      hmilyDbConfig :
+#        driverClassName  : com.mysql.jdbc.Driver
+#        url :  jdbc:mysql://127.0.0.1:3306/tcc?characterEncoding=utf-8&serverTimezone=UTC
+#        username : root
+#        password :  950110xn
+
+
+

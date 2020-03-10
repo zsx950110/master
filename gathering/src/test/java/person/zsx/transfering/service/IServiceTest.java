@@ -18,6 +18,6 @@ public class IServiceTest extends TestBase {
     IService iService;
 @Test
     public void testDoGathering(){
-    iService.doGathering("222",new BigDecimal("20"));
+    iService.doGathering("321",new BigDecimal("20"));
 }
 }

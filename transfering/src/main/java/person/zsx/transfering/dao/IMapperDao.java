@@ -20,7 +20,7 @@ public interface IMapperDao {
      * @Params: 账号
      * @Return  账户余额
      */
-    BigDecimal getBalance(String accountNumber);
+    String getBalance(@Param("accountNumber") String accountNumber);
     /**
      * @Author: zsx
      * @Description: 进行转账

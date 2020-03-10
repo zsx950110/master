@@ -82,7 +82,6 @@ public class NIOClient {
                 } finally {
                     try {
                         socketChannel.close();
-                        System.out.println("----client的channel是否关闭:"+socketChannel.isOpen());
                         fileChannel.close();
                         inputStream.close();
                     } catch (IOException e) {
@@ -100,8 +99,9 @@ public class NIOClient {
     */
     public  static void NIONoBlocking(){
         ExecutorService executorService = Executors.newFixedThreadPool(10);
-        for (int i =0;i<1;i++){
+        for (int i =0;i<10;i++){
             executorService.submit(new NIOClient().new threadNIO(false));
+        //new NIOClient().new threadNIO(false).run();
         }
         executorService.shutdown();
     }

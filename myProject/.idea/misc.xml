@@ -4,9 +4,11 @@
   <component name="FrameworkDetectionExcludesConfiguration">
     <file type="web" url="file://$PROJECT_DIR$/../cluster1" />
     <file type="web" url="file://$PROJECT_DIR$/../consumer" />
+    <file type="web" url="file://$PROJECT_DIR$/../eureka" />
     <file type="web" url="file://$PROJECT_DIR$/../MVC" />
     <file type="web" url="file://$PROJECT_DIR$" />
     <file type="web" url="file://$PROJECT_DIR$/../universityHospital" />
+    <type id="Spring" />
   </component>
   <component name="MavenProjectsManager">
     <option name="originalFiles">
@@ -16,8 +18,20 @@
         <option value="$PROJECT_DIR$/../gathering1/pom.xml" />
         <option value="$PROJECT_DIR$/../transfering/pom.xml" />
         <option value="$PROJECT_DIR$/../universityHospital/pom.xml" />
+        <option value="$PROJECT_DIR$/../eureka/pom.xml" />
+        <option value="$PROJECT_DIR$/../transferingB/pom.xml" />
+        <option value="$PROJECT_DIR$/../zuul/pom.xml" />
+        <option value="$PROJECT_DIR$/../dtx/pom.xml" />
+        <option value="$PROJECT_DIR$/../parent-pom/pom.xml" />
+        <option value="F:/技术文件/tx-manager/tx-lcn/txlcn-tm/pom.xml" />
         <option value="$PROJECT_DIR$/../gathering/pom.xml" />
       </list>
+    </option>
+    <option name="ignoredFiles">
+      <set>
+        <option value="$PROJECT_DIR$/../dtx/pom.xml" />
+        <option value="$PROJECT_DIR$/../maventest/pom.xml" />
+      </set>
     </option>
   </component>
   <component name="ProjectRootManager" version="2" languageLevel="JDK_1_8" project-jdk-name="1.8" project-jdk-type="JavaSDK">

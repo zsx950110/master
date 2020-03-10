@@ -12,7 +12,7 @@
             <result column="position" property="position" jdbcType="VARCHAR" />
 
         </resultMap>-->
-    <select id="getBalance" parameterType="String" resultType="BigDecimal">
+    <select id="getBalance" parameterType="string" resultType="string">
       select balance from balance_table where account_number=#{accountNumber}
     </select>
     <update id="updateAccount" >

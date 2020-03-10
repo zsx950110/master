@@ -17,7 +17,7 @@ import static org.junit.Assert.*;
  */
 public class ServiceImplTest extends TestFather {
 @Autowired
-    IService iService;
+    ServiceImpl iService;
 @Test
     public void testCanTransfer(){
     System.out.println(iService.canTransfer("123",new BigDecimal("20")));

@@ -4,11 +4,20 @@
     <file url="file://$PROJECT_DIR$/../MVC" charset="UTF-8" />
     <file url="file://$PROJECT_DIR$/../cluster1" charset="UTF-8" />
     <file url="file://$PROJECT_DIR$/../consumer" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/../dtx" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/../dtx/dtx-tcc-demo" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/../eureka" charset="UTF-8" />
     <file url="file://$PROJECT_DIR$/../gathering" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/../lcntm" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/../maventest" charset="UTF-8" />
     <file url="file://$PROJECT_DIR$" charset="UTF-8" />
-    <file url="file://$PROJECT_DIR$/demotest" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/../parent-pom" charset="UTF-8" />
     <file url="file://$PROJECT_DIR$/../provider" charset="UTF-8" />
     <file url="file://$PROJECT_DIR$/../transfering" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/../transferingB" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/../txlcn-tm" charset="UTF-8" />
     <file url="file://$PROJECT_DIR$/../universityHospital" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/../zuul" charset="UTF-8" />
+    <file url="file://F:/技术文件/tx-manager/tx-lcn/txlcn-tm" charset="UTF-8" />
   </component>
 </project>
