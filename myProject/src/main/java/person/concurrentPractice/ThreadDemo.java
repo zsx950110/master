@@ -3,6 +3,9 @@ package person.concurrentPractice;
 
 
 
+
+import sun.net.www.http.HttpClient;
+
 import java.util.*;
 import java.util.concurrent.*;
 import java.util.concurrent.atomic.AtomicInteger;
@@ -26,9 +29,10 @@ public class ThreadDemo  implements  Runnable {
     private static   AtomicInteger atomicInteger = new AtomicInteger(0);
     volatile static boolean     isput=false;
     volatile static boolean flag =true;
+    static   BlockingQueue<Integer> blockingQueue = new LinkedBlockingQueue<>();
     //公用线程池
-    private static    LinkedBlockingQueue linkedBlockingQueue = new LinkedBlockingQueue(3);
-    private static  ThreadPoolExecutor threadPoolExecutor = new ThreadPoolExecutor(2,10,60,TimeUnit.SECONDS,linkedBlockingQueue);
+    private static    LinkedBlockingQueue linkedBlockingQueue = new LinkedBlockingQueue(5);
+    private static  ThreadPoolExecutor threadPoolExecutor = new ThreadPoolExecutor(5,20,60,TimeUnit.SECONDS,linkedBlockingQueue);
     final static ThreadLocal<ThreadDemo> threadDemoThreadLocal = new ThreadLocal();
     private static ThreadLocal<Long> longThreadLocal = new ThreadLocal(){
         @Override
@@ -75,13 +79,12 @@ public class ThreadDemo  implements  Runnable {
        **/
     public void write () {
         //锁
-        Lock writeLock = readWriteLock1.writeLock();
+        Lock writeLock = readWriteLock.writeLock();
         System.out.println("线程"+Thread.currentThread().getName()+"进入写方法");
-
         writeLock.lock();
         try {
             System.out.println("线程"+Thread.currentThread().getName()+"获得了写锁");
-            TimeUnit.SECONDS.sleep(2);
+            TimeUnit.SECONDS.sleep(10);
         } catch (InterruptedException e) {
             e.printStackTrace();
         } finally {
@@ -103,7 +106,7 @@ public class ThreadDemo  implements  Runnable {
         readLock.lock();
         try{
             System.out.println("线程"+Thread.currentThread().getName()+"获得了==读==锁");
-            TimeUnit.SECONDS.sleep(10);
+            TimeUnit.SECONDS.sleep(2);
         } catch (InterruptedException e) {
             e.printStackTrace();
         } finally {
@@ -138,14 +141,47 @@ public class ThreadDemo  implements  Runnable {
      **/
 
     public static void main(String[] args) throws Exception  {
-       // System.out.println(System.nanoTime());
-        System.out.println(getAppropriateDate().toString());
-        System.out.println((6+1)/2);
+
+        final  int q = 0;
+       final ThreadDemo threadDemo = new ThreadDemo();
+       final  Double d = 23.0;
+       Boolean f = false;
+       f.booleanValue();
+       for (int i =1;i<=20;i++){
+          // TimeUnit.SECONDS.sleep(1);
+           final  int ii = i;
+           Thread thread = new Thread(){
+
+               @Override
+               public void run() {
+                   try {
+                       System.out.println("---当前线程为：thread--"+ii);
+                       TimeUnit.SECONDS.sleep(16);
+                       System.out.println("--结束");
+
+                   } catch (InterruptedException e) {
+                       e.printStackTrace();
+                   }
+               }
+           };
+
+           threadPoolExecutor.execute(thread);
+           thread.join();
+       }
+        System.out.println("总线程数："+threadPoolExecutor.getPoolSize());
+
+
+        //   for (int i0=0 ;i0<10;i0++){
+       //     final int i = i0;
+
+       // }
+
     }
     static int  delay =1;
     public static void  changeRate() throws ExecutionException, InterruptedException {
         //给个阻塞队列
         LinkedBlockingQueue linkedBlockingQueue = new LinkedBlockingQueue(20);
+
         ExtendPoolExecutor extendPoolExecutor = new ExtendPoolExecutor(30,30,3,TimeUnit.SECONDS,linkedBlockingQueue);
        // ScheduledThreadPoolExecutor scheduledThreadPoolExecutor = new ScheduledThreadPoolExecutor(1);
 
@@ -386,8 +422,7 @@ public class ThreadDemo  implements  Runnable {
      **/
     private static void testSingledThreadPool(){
         ScheduledExecutorService executorService = Executors.newScheduledThreadPool(3);
-
-      //  ExecutorService executorService = Executors.newFixedThreadPool(10);
+        ScheduledThreadPoolExecutor executorService1 = new ScheduledThreadPoolExecutor(3);
         for (int i =0;i<10;i++){
             TestCallable  testRunnable = new TestCallable() ;
             //不延迟，每3s执行一次，是说每个3秒就执行一次，thisBeginTime = lastBegintime+period
@@ -535,18 +570,32 @@ public class ThreadDemo  implements  Runnable {
      * @return
      **/
     public static void readWriteLockTest(){
+
         ExecutorService executorService = Executors.newFixedThreadPool(10);
+        "1".replace('-','/');
         final ThreadDemo threadDemo = new ThreadDemo();
         for (int i =0;i<10;i++){
             Thread thread = new Thread(String.valueOf(i)){
                 @Override
                 public void run() {
-                    if ("pool-1-thread-5".equals(Thread.currentThread().getName())){
+                    if ("pool-2-thread-5".equals(Thread.currentThread().getName())||
+                            "pool-2-thread-7".equals(Thread.currentThread().getName())){
                         //写锁会将同一个ReadWriteLock对象的读和写锁都阻塞
                         threadDemo.write();
                     }else {
                         //读方法会将同一个ReadWriteLock对象的写锁给阻塞
                         threadDemo.read();
+                        synchronized (threadDemo){
+                            while (1==1){
+                                try {
+                                    threadDemo.wait();
+                                } catch (InterruptedException e) {
+                                    e.printStackTrace();
+                                }
+                            }
+                         //   threadDemo.notify();
+                        }
+
                     }
 
                 }
@@ -959,9 +1008,29 @@ inn     **/
         };
         thread0.start();
         thread1.start();
+    }
+    /**
+     * 生产消费模式测试
+     */
+    public static  void produce(Integer integer) throws InterruptedException {
+      //  TimeUnit.SECONDS.sleep(1);
+        System.out.println("进入生产者");
+       // while(flag){
+            blockingQueue.put(integer);
+            System.out.println("生产了一个："+integer);
+         //   flag=false;
 
 
     }
+    public static  void consumer() throws InterruptedException {
+        System.out.println("进入消费者");
+        TimeUnit.SECONDS.sleep(2);
+        while(true){
+            Integer result =    blockingQueue.take();
+            System.out.println("消费了一个："+result);
+            //flag=true;
+        }
 
+    }
 
 }

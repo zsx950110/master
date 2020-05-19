@@ -3,6 +3,8 @@ package person.zsx.transfering.serviceImpl;
 //import com.codingapi.tx.annotation.TxTransaction;
 
 import com.codingapi.txlcn.tc.annotation.LcnTransaction;
+import org.slf4j.Logger;
+import org.slf4j.LoggerFactory;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 import org.springframework.transaction.annotation.Transactional;
@@ -20,13 +22,16 @@ import java.math.BigDecimal;
  */
 @Service
 public class ServiceImpl implements IService {
+    final  static Logger logger = LoggerFactory.getLogger(ServiceImpl.class);
     @Autowired
     IMapperDao iMapperDao;
    @Resource
     IFeignService iFeignService;
     @Override
     public void doGathering(String accountNumber, BigDecimal money) {
+
         iMapperDao.updateAccountB(accountNumber,money);
+
     }
     /**
     * @Author: Zhang Shaoxuan
@@ -37,36 +42,36 @@ public class ServiceImpl implements IService {
     * @Return
     */
     @LcnTransaction//分布式事务
-    @Transactional //本地事务
+    //@Transactional //本地事务
     @Override
     public String gathering(String accountNumberFrom,String accountNumberTo, String money) {
 
         //加钱
-        System.out.println("---------------开始调用加钱服务----------");
+        logger.info("---------------开始调用加钱服务----------");
         this.doGathering(accountNumberTo,new BigDecimal(money));
-        System.out.println("---------------加钱服务调用结束-----------");
+        logger.info("---------------加钱服务调用结束-----------");
         //转钱
-        System.out.println("------开始调用转账服务---------");
+        logger.info("------开始调用转账服务---------");
         String resultT = iFeignService.transfer(accountNumberFrom,money);
-        System.out.println("---------------转账服务调用结束--------");
+        logger.info("---------------转账服务调用结束--------");
         return "execute result :"+ resultT;
     }
     //@Transactional
    // @Override
     public String tryUpdate(String accountNumber, BigDecimal money) {
-        System.out.println("------入账的try，该阶段什么都不做，调用扣款的服务-----");
+        logger.info("------入账的try，该阶段什么都不做，调用扣款的服务-----");
         return iFeignService.transfer(accountNumber,money.toString());
     }
 
     //@Transactional
   //  @Override
     public void confirmUpdate(String accountNumber, BigDecimal money) {
-        System.out.println("--------入账的confirm---------------");
+        logger.info("--------入账的confirm---------------");
        // this.doGathering(accountNumber,money);
     }
 
   //  @Override
     public void cancelUpdate(String accountNumber, BigDecimal money) {
-        System.out.println("--------入账的cancel，该阶段什么都不做--------");
+        logger.info("--------入账的cancel，该阶段什么都不做--------");
     }
 }

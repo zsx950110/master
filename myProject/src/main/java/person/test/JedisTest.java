@@ -1,5 +1,7 @@
 package person.test;
 
+import org.apache.poi.hslf.blip.Bitmap;
+import org.apache.tools.ant.util.DateUtils;
 import org.springframework.util.StringUtils;
 import person.util.JedisUtil;
 import redis.clients.jedis.Jedis;
@@ -22,23 +24,8 @@ public class JedisTest {
 
     public static void main(String[] args) throws  Exception{
         Jedis jedis = JedisUtil.getJedis();
-        Thread thread = new Thread(){
-            Jedis jedis = JedisUtil.getJedis();
-
-            @Override
-            public void run() {
-                try {
-
-                    TimeUnit.SECONDS.sleep(1);
-                 //   jedis.set("string","wwww");
-                    JedisUtil.returnJedis(jedis);
-                } catch (InterruptedException e) {
-                    e.printStackTrace();
-                }
-            }
-        };
-        thread.start();
-        testTransaction(jedis);
+     //   jedis.setex("string",3,"test");
+        testNormal(jedis);
         JedisUtil.returnJedis(jedis);
     }
 
@@ -55,6 +42,7 @@ public class JedisTest {
         jedis.zadd(KEY,2,"zhouqi");
         jedis.zadd(KEY,10+3,"wuba");
         jedis.zadd(KEY,4,"zhengjiu");
+
         for (String s : jedis.zrevrange(KEY,0,4)) {
             System.out.println(s+"得票："+jedis.zscore(KEY,s));
         }
@@ -66,6 +54,7 @@ public class JedisTest {
      */
     public static void  testhash(Jedis jedis){
         final String KEY="hash";
+
       /*  jedis.hset(KEY,"name","zhangsan");
         jedis.hset(KEY,"gender","女");
         jedis.hset(KEY,"age","14");
@@ -150,6 +139,26 @@ public class JedisTest {
                 System.out.println(o.toString());
             }
         }
+    }
+
+    /**
+     * 1请求前对key进行过滤，不是我们定义的key就不去请求redis
+     *
+     * @param jedis
+     */
+    public static String TestNull(Jedis jedis,String key){
+        if(jedis.exists(key)){
+            return jedis.get(key);
+        }else{
+                String result = jedis.get(key);
+                //对空值进行缓存
+            if(StringUtils.isEmpty(result)){
+                jedis.setex(key,30,null) ;
+            }
+            return  "DB_data";
+        }
+
+        //2.对空值也进行缓存，防止短时间内大量请求因为结果为空，而落在DB上
 
 
     }

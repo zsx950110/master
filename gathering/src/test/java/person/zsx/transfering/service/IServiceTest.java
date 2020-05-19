@@ -3,6 +3,7 @@ package person.zsx.transfering.service;
 import org.junit.Test;
 import org.springframework.beans.factory.annotation.Autowired;
 import person.zsx.transfering.TestBase;
+import person.zsx.transfering.serviceImpl.ServiceImpl;
 
 import java.math.BigDecimal;
 
@@ -18,6 +19,7 @@ public class IServiceTest extends TestBase {
     IService iService;
 @Test
     public void testDoGathering(){
+    iService = new ServiceImpl();
     iService.doGathering("321",new BigDecimal("20"));
 }
 }

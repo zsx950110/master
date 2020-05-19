@@ -10,7 +10,7 @@
         <module name="zuul" />
         <module name="gathering" />
         <module name="eureka" />
-        <module name="dtx-tcc-demo" />
+        <module name="mybatis-demo" />
         <module name="txlcn-tm" />
       </profile>
     </annotationProcessing>
@@ -20,6 +20,7 @@
       <module name="consumer" target="1.7" />
       <module name="demotest" target="1.8" />
       <module name="dtx-parent" target="1.8" />
+      <module name="dtx-tcc-demo" target="1.8" />
       <module name="gathering1" target="1.7" />
       <module name="lcntm" target="1.7" />
       <module name="maventest" target="8" />
@@ -35,6 +36,7 @@
       <module name="gathering" options="-parameters" />
       <module name="gathering1" options="-parameters" />
       <module name="lcntm" options="-parameters" />
+      <module name="mybatis-demo" options="-parameters" />
       <module name="parent-pom" options="-parameters" />
       <module name="transfering" options="-parameters" />
       <module name="txlcn-tm" options="-parameters -Xlint:deprecation" />

@@ -23,12 +23,14 @@
         <option value="$PROJECT_DIR$/../zuul/pom.xml" />
         <option value="$PROJECT_DIR$/../dtx/pom.xml" />
         <option value="$PROJECT_DIR$/../parent-pom/pom.xml" />
-        <option value="F:/技术文件/tx-manager/tx-lcn/txlcn-tm/pom.xml" />
         <option value="$PROJECT_DIR$/../gathering/pom.xml" />
+        <option value="$PROJECT_DIR$/../txlcn-tm/pom.xml" />
+        <option value="$PROJECT_DIR$/../mybatis-demo/pom.xml" />
       </list>
     </option>
     <option name="ignoredFiles">
       <set>
+        <option value="$PROJECT_DIR$/../dtx/dtx-tcc-demo/pom.xml" />
         <option value="$PROJECT_DIR$/../dtx/pom.xml" />
         <option value="$PROJECT_DIR$/../maventest/pom.xml" />
       </set>

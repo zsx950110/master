@@ -1,15 +1,10 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="dataSourceStorageLocal">
-    <data-source name="Oracle - @localhost" uuid="e2e4b486-401e-4258-bd21-53d7f77802b1">
-      <database-info product="Oracle" version="Oracle Database 11g Enterprise Edition Release 11.1.0.6.0 - Production&#10;With the Partitioning, OLAP, Data Mining and Real Application Testing options" jdbc-version="4.2" driver-name="Oracle JDBC driver" driver-version="12.2.0.1.0" dbms="ORACLE" exact-version="11.1.0.6.0" exact-driver-version="12.2">
-        <extra-name-characters>$#</extra-name-characters>
-        <identifier-quote-string>&quot;</identifier-quote-string>
-      </database-info>
-      <case-sensitivity plain-identifiers="upper" quoted-identifiers="exact" />
+    <data-source name="MySQL - account_b@localhost" uuid="a6b86c57-09cb-4ec9-883c-c93859ed05e1">
+      <database-info product="" version="" jdbc-version="" driver-name="" driver-version="" dbms="MYSQL" exact-version="0" />
       <secret-storage>master_key</secret-storage>
-      <user-name>sofa</user-name>
-      <introspection-schemas>*:SOFA</introspection-schemas>
+      <user-name>root</user-name>
     </data-source>
   </component>
 </project>

@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE configuration PUBLIC "-//mybatis.org//DTD Config 3.0//EN"
+        "http://mybatis.org/dtd/mybatis-3-config.dtd">
+
+<configuration>
+    <settings>
+        <setting name="mapUnderscoreToCamelCase" value="true"/>
+        <!--开启二级缓存,全局总开关，这里关闭，mapper中开启了也没用-->
+        <setting name="cacheEnabled" value="false"/>
+    </settings>
+    <!--别名配置包扫描，别名就是类名,不区分大小写-->
+    <typeAliases>
+     <package name="person.zsx.mybatisdemo.pojo"/>
+    </typeAliases>
+    <plugins>
+        <!--分页插件配置-->
+        <plugin interceptor="com.github.pagehelper.PageInterceptor"></plugin>
+    </plugins>
+
+</configuration>
+
+

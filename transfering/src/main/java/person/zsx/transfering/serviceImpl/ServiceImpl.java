@@ -1,6 +1,8 @@
 package person.zsx.transfering.serviceImpl;
 
 import com.codingapi.txlcn.tc.annotation.LcnTransaction;
+import org.slf4j.Logger;
+import org.slf4j.LoggerFactory;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 import org.springframework.transaction.annotation.Transactional;
@@ -16,11 +18,13 @@ import java.math.BigDecimal;
  */
 @Service
 public class ServiceImpl  implements IService {
+    final  static Logger logger = LoggerFactory.getLogger(ServiceImpl.class);
+
     @Autowired
     IMapperDao iMapperDao;
    // @TxTransaction
    @LcnTransaction //分布式事务
-    @Transactional //本地事务
+   // @Transactional //本地事务
     @Override
     public String transfer(String accountNumber, BigDecimal money) {
         System.out.println("--------减钱开始-----------");

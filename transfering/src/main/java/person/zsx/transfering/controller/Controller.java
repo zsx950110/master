@@ -50,7 +50,6 @@ public class Controller {
         System.out.println("-----------------远程请求到减钱的服务-----------");
         BigDecimal bigDecimal= new BigDecimal(money);
         return  iService.transfer(accountNumber,bigDecimal);
-
     }
 
     /**

@@ -2,6 +2,7 @@ package person.zsx.transfering.controller;
 
 import com.netflix.hystrix.contrib.javanica.annotation.HystrixCommand;
 import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.cloud.client.loadbalancer.LoadBalancerClient;
 import org.springframework.web.bind.annotation.PathVariable;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RestController;
@@ -29,6 +30,8 @@ public class Controller {
     //做服务调用
     @Autowired
     RestTemplate restTemplate;
+    @Autowired
+    LoadBalancerClient loadBalancerClient;
     /**
      * @Author: zsx
      * @Description: 转入请求
@@ -52,6 +55,7 @@ public class Controller {
    //ribbon使用断路器，一旦出异常，或者超时行为，就会调用fallback方法
    @HystrixCommand(fallbackMethod = "fallback")
     public String getService(){
+       System.out.println("------请求已进来---------，准备进行RPC");
       return   restTemplate.getForObject("http://transfer-service/transferController/transfer/19",String.class);
     }
     private String fallback(){
