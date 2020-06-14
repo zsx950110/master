@@ -1,0 +1,71 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<!--XML schema就是XSD，符合xml文件结构，可以用通用的xml解析器解析，要声明命名空间-->
+<!--以下的location指明了xml schema文档存储位置，包括两个部分，上面是命名空间的URI,另一个部分是
+该空间对应的文档位置或者URL-->
+<beans xmlns="http://www.springframework.org/schema/beans"
+       xmlns:mvc="http://www.springframework.org/schema/mvc"
+       xmlns:tx="http://www.springframework.org/schema/tx"
+       xmlns:contenxt="http://www.springframework.org/schema/context"
+       xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+       xmlns:aop="http://www.springframework.org/schema/aop"
+
+       xsi:schemaLocation="
+        http://www.springframework.org/schema/beans
+        http://www.springframework.org/schema/beans/spring-beans.xsd
+        http://www.springframework.org/schema/mvc
+        http://www.springframework.org/schema/mvc/spring-mvc.xsd
+        http://www.springframework.org/schema/context
+        http://www.springframework.org/schema/context/spring-context.xsd
+         http://www.springframework.org/schema/tx
+        http://www.springframework.org/schema/tx/spring-tx.xsd
+   		http://www.springframework.org/schema/aop
+    	http://www.springframework.org/schema/aop/spring-aop.xsd ">
+    <!--数据源-->
+    <bean id="dataSource" class="org.apache.commons.dbcp.BasicDataSource" destroy-method="close">
+        <property name="url" value="jdbc:mysql://localhost:3306/zsx_sql?useUnicode=true&amp;characterEncoding=UTF-8&amp;serverTimezone=UTC" />
+        <property name="username" value="root"/>
+        <property name="password" value="950110xn"/>
+       <!-- <property name="driverClassName" value="com.mysql.jdbc.Driver"/>-->
+        <property name="initialSize" value="1" />
+        <property name="maxActive" value="5" />
+        <property name="maxIdle" value="1" />
+        <property name="maxWait" value="10000" />
+        <!--空闲连接的释放时间，超过这个时间将被释放-->
+        <property name="minEvictableIdleTimeMillis" value="10000" />
+        <!--5秒检查一次连接池的空闲连接是否有超时-->
+        <property name="timeBetweenEvictionRunsMillis" value="5000" />
+        <!-- 验证使用的SQL语句-->
+        <property name="validationQuery" value="SELECT 1 from dual" />
+    </bean>
+    <!--set值到jdbc-->
+<bean id="userServiceImpl1" class="person.spring.test.jdbcTest.UserServiceImpl">
+    <property name="jdbcTemplate" ref="dataSource"/>
+</bean>
+    <bean id="userServiceImpl2" class="person.spring.test.jdbcTest.UserServiceImpl2">
+        <property name="jdbcTemplate" ref="dataSource"/>
+    </bean>
+    <bean id="bookFactory" class="person.test.BookFactory">
+
+    </bean>
+<!--声明式事务,创建基于jdbc的事务-->
+<tx:annotation-driven />
+    <bean id="transactionManager" class="org.springframework.jdbc.datasource.DataSourceTransactionManager">
+        <property name="dataSource" ref="dataSource"/>
+    </bean>
+
+
+    <bean id="listen" class="person.spring.test.springListener"></bean>
+
+
+<!--<bean id="convertService" class="org.springframework.context.support.ConversionServiceFactoryBean">
+    <property name="converters">
+        <list>
+            <bean  id="springConverter" class="person.spring.test.springConverter"></bean>
+        </list>
+    </property>
+</bean>-->
+    <!-- 开启Spring注解扫描 -->
+    <contenxt:component-scan base-package="person.spring.test,person.util,person.spring.test,person.spring.test"/>
+    <aop:aspectj-autoproxy />
+</beans>

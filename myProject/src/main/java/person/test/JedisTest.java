@@ -5,6 +5,7 @@ import org.apache.tools.ant.util.DateUtils;
 import org.springframework.util.StringUtils;
 import person.util.JedisUtil;
 import redis.clients.jedis.Jedis;
+import redis.clients.jedis.JedisCluster;
 import redis.clients.jedis.Pipeline;
 import redis.clients.jedis.Transaction;
 
@@ -21,12 +22,22 @@ import java.util.concurrent.TimeUnit;
  */
 public class JedisTest {
     final static String KEY = "ordertest";
-
     public static void main(String[] args) throws  Exception{
-        Jedis jedis = JedisUtil.getJedis();
-     //   jedis.setex("string",3,"test");
-        testNormal(jedis);
-        JedisUtil.returnJedis(jedis);
+        testCluster();
+
+    }
+    public static void  testCluster(){
+         JedisCluster jedisCluster =  JedisUtil.getJedisCluster();
+         jedisCluster.zadd("star",1,"zhangsan");
+         jedisCluster.zincrby("star",1,"zhangsan");
+         jedisCluster.zadd("star",3,"lisi");
+         jedisCluster.zadd("star",45,"wangwu");
+         Set<String> set = jedisCluster.zrange("star",0,-1);
+        for (String s : set) {
+            System.out.println(s);
+        }
+        JedisUtil.closeCluster(jedisCluster);
+
     }
 
     /**

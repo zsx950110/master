@@ -15,11 +15,12 @@ import java.time.Instant;
 import java.util.ArrayList;
 import java.util.Arrays;
 import java.util.Properties;
+import java.util.concurrent.TimeUnit;
 
 public class MyConsumer {
     //主题只能写命令提前放进去，不能代码里设置
-   static String topic ="zsx1";
-    public static void main(String[] args) {
+   static String topic ="test";
+    public static void main(String[] args) throws Exception{
         KafkaApis k=null;
         ReplicaManager r= null;
         Instant first = Instant.now();
@@ -35,10 +36,14 @@ public class MyConsumer {
             ConsumerRecords<String,String> consumerRecord = kafkaConsumer.poll(Duration.ofSeconds(1));
             System.out.println("数量====="+consumerRecord.count());
             //System.out.println("=====消费者record："+consumerRecord.count());
+
             for (ConsumerRecord<String, String> record : consumerRecord) {
                String key =  record.key();
                String value = record.value();
-                System.out.println("=====key："+key+"======value："+value);
+
+               MyProducer myProducer =(MyProducer) JSON.parseObject(value,MyProducer.class);
+
+                System.out.println("=====key："+key+"======value："+myProducer.toString());
             }
 
         }
@@ -49,7 +54,7 @@ public class MyConsumer {
     public static  Properties getConsumerProperties(){
         //属性
         Properties props = new Properties();
-        props.put("bootstrap.servers", "localhost:9092");
+        props.put("bootstrap.servers", "192.168.43.152:9092");
         props.put("group.id", "group");
         props.put("enable.auto.commit", "true");
         props.put("auto.commit.interval.ms", "1000");

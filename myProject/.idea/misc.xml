@@ -7,6 +7,7 @@
     <file type="web" url="file://$PROJECT_DIR$/../eureka" />
     <file type="web" url="file://$PROJECT_DIR$/../MVC" />
     <file type="web" url="file://$PROJECT_DIR$" />
+    <file type="web" url="file://$PROJECT_DIR$/../transferingB" />
     <file type="web" url="file://$PROJECT_DIR$/../universityHospital" />
     <type id="Spring" />
   </component>
@@ -16,7 +17,6 @@
         <option value="$PROJECT_DIR$/pom.xml" />
         <option value="$PROJECT_DIR$/gathering1/pom.xml" />
         <option value="$PROJECT_DIR$/../gathering1/pom.xml" />
-        <option value="$PROJECT_DIR$/../transfering/pom.xml" />
         <option value="$PROJECT_DIR$/../universityHospital/pom.xml" />
         <option value="$PROJECT_DIR$/../eureka/pom.xml" />
         <option value="$PROJECT_DIR$/../transferingB/pom.xml" />
@@ -26,6 +26,9 @@
         <option value="$PROJECT_DIR$/../gathering/pom.xml" />
         <option value="$PROJECT_DIR$/../txlcn-tm/pom.xml" />
         <option value="$PROJECT_DIR$/../mybatis-demo/pom.xml" />
+        <option value="$PROJECT_DIR$/../consumer/pom.xml" />
+        <option value="$PROJECT_DIR$/../common/pom.xml" />
+        <option value="$PROJECT_DIR$/../provider/pom.xml" />
       </list>
     </option>
     <option name="ignoredFiles">

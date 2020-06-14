@@ -1,7 +1,7 @@
 
 package person.pojo;
 import java.util.Date;
-
+import java.util.concurrent.Callable;
 
 
 /**
@@ -10,7 +10,10 @@ import java.util.Date;
  * @version 1.0, 2019-2-25
  * @since 1.0, 2019-2-25
  */
-public class ToDo {
+public class ToDo implements Callable {
+
+    public ToDo() {
+    }
 
     /**
      *
@@ -379,4 +382,11 @@ public class ToDo {
         this.createTime = createTime;
     }
 
+    @Override
+    public ToDo call() throws Exception {
+        ToDo toDo = new ToDo();
+        toDo.setId("123232");
+
+        return toDo;
+    }
 }

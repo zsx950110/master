@@ -7,14 +7,13 @@ import org.hibernate.service.ServiceRegistry;
 import org.hibernate.service.ServiceRegistryBuilder;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
-import redis.clients.jedis.Jedis;
-import redis.clients.jedis.JedisPool;
-import redis.clients.jedis.JedisPoolConfig;
-import redis.clients.jedis.Pipeline;
+import redis.clients.jedis.*;
 
 import java.io.IOException;
+import java.util.HashSet;
 import java.util.List;
 import java.util.Map;
+import java.util.Set;
 
 /*
  * jedis连接池类
@@ -28,7 +27,21 @@ public class JedisUtil {
     private static final String ADD = "192.168.43.152";
     private static final int PORT = 6379;
     private static Jedis jedis;
+    private static JedisCluster jedisCluster;
     private static Logger logger = LoggerFactory.getLogger(JedisUtil.class);
+    //集群连接
+    private static Set<HostAndPort> hostAndPortSet = new HashSet<>();
+
+    static {
+        //由于有六个集群这里添加六个HostAndPort对象
+        hostAndPortSet.add(new HostAndPort("192.168.43.152", 6001));
+        hostAndPortSet.add(new HostAndPort("192.168.43.152", 6002));
+        hostAndPortSet.add(new HostAndPort("192.168.43.152", 7001));
+        hostAndPortSet.add(new HostAndPort("192.168.43.152", 7002));
+        hostAndPortSet.add(new HostAndPort("192.168.43.152", 8001));
+        hostAndPortSet.add(new HostAndPort("192.168.43.152", 8002));
+
+    }
 
     //单例
     private JedisUtil() {
@@ -36,6 +49,7 @@ public class JedisUtil {
 
     static {
         try {
+
             config = new JedisPoolConfig();
             //最多连接数
             config.setMaxTotal(MAX_ACTIVE);
@@ -47,6 +61,32 @@ public class JedisUtil {
         }
     }
 
+    public static JedisCluster getJedisCluster() {
+        if (jedisCluster == null) {
+            synchronized (JedisUtil.class) {
+                if (jedisCluster == null) {
+                    return new JedisCluster(hostAndPortSet,config);
+                }
+            }
+        }
+        return jedisCluster;
+    }
+    /**
+    * @Author: Zhang Shaoxuan
+    * @Description:  集群关闭
+    * @DateTime: g 23:06
+    * @Params:
+    * @Return
+    */
+    public static void closeCluster(JedisCluster jedisCluster) {
+        if (jedisCluster != null) {
+            try {
+                jedisCluster.close();
+            } catch (IOException e) {
+                e.printStackTrace();
+            }
+        }
+    }
 
     //获得jedis对象,连接池为单例
     public static Jedis getJedis() {
@@ -63,67 +103,7 @@ public class JedisUtil {
         if (jedis != null) {
             jedis.close();
         }
-    }
 
-
-    //key-value封装
-    public static void putValue(String key,int expireSecond,String value){
-        Jedis jedis = JedisUtil.getJedis();
-        try {
-            jedis.setex(key, expireSecond,value);
-        } catch (Exception e) {
-            logger.error("字符串存储出错"+e.getMessage(),e);
-        } finally {
-            //关闭连接
-            JedisUtil.returnJedis(jedis);
-        }
-    }
-
-    //存map
-    public void putMap(String key, Map<String,String> map){
-        Jedis jedis = JedisUtil.getJedis();
-        try {
-            jedis.hmset(key,map);
-        } catch (Exception e) {
-            logger.error("map存储出错"+e.getMessage(),e);
-        } finally {
-            JedisUtil.returnJedis(jedis);
-        }
 
     }
-    //存list集合
-    public static void putList(String key, List<String> list){
-        Jedis jedis = JedisUtil.getJedis();
-        Pipeline pipeline= null;
-        try {
-             pipeline = jedis.pipelined();
-            for (String s : list) {
-                pipeline.lpush(key,s);
-            }
-            pipeline.sync();
-        } catch (Exception e) {
-            logger.error("集合存储失败"+e.getMessage(),e);
-        } finally {
-            try {
-                pipeline.close();
-            } catch (IOException e) {
-                e.printStackTrace();
-            }
-            JedisUtil.returnJedis(jedis);
-        }
-    }
-    //设置有效时间
-    public void expire (String key,long expiredTime){
-        Jedis jedis = JedisUtil.getJedis();
-        try {
-            jedis.expireAt(key,expiredTime);
-        } catch (Exception e) {
-            logger.error("过期时间设置出错"+e.getMessage(),e);
-        } finally {
-            JedisUtil.returnJedis(jedis);
-        }
-    }
-
-
-
 }
