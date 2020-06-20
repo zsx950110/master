@@ -5,8 +5,8 @@
 
     <!-- provider's application name, used for tracing dependency relationship -->
     <dubbo:application name="demo-provider"/>
-    <!-- use multicast registry center to export service -->
-   <!-- <dubbo:registry address="multicast://239.5.6.7:1234"/>-->
+    <!-- use multicast registry center to export service  使用广播作为注册中心-->
+   <dubbo:registry  protocol="multicast" address="239.5.6.7:1234"/>
     <!-- 使用zookeeper注册中心暴露服务地址 127.0.0.1:2181 ，register="false"配置表示该服务只订阅（服务有可能依赖其他稳定的服务），禁止注册，避免正在开发中的服务注册之后，被其他consumer调用导致出错是false，consumer会消费不到服务-->
    <dubbo:registry id="zkRegistry" protocol="zookeeper" address="127.0.0.1:2181" />
     <!--address为N/A表示不使用注册中心，使用的是直连，服务方启动时可以搜索日志：

@@ -27,8 +27,8 @@
  <dubbo:annotation package="dubbo.test"/>
 
 <!--服务引用，用于创建远程服务代理， url表示直连模式下 该服务的被导出的位置，registry表示多注册中心下，该消费的服务位于哪个注册中心-->
-<!--url="dubbo://192.168.1.109:2090"-->
-    <dubbo:reference id="operationService"  check="true"  interface="common.service.IOperationService"  group = "useful" >
+<!--url="dubbo://192.168.1.109:2090",mock做服务降级，当调用失败的时候返回null，retries表示重试的次数-->
+    <dubbo:reference id="operationService"  check="true"  cluster = "appName" loadbalance="random"  interface="common.service.IOperationService"  group = "useful"  timeout="2000" retries="3" mock="fail:return+null">
         <!--开启异步调用服务，消费者可以并行调用服务，-->
     <!--    <dubbo:method name="listToDos" async="true"/>-->
     </dubbo:reference>

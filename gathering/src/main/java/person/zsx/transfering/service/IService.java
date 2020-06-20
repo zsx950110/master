@@ -3,6 +3,8 @@ package person.zsx.transfering.service;
 import org.springframework.stereotype.Service;
 
 import java.math.BigDecimal;
+import java.util.List;
+import java.util.Set;
 
 /**
  * @Author: zsx
@@ -10,7 +12,7 @@ import java.math.BigDecimal;
  * @Description: 入账的接口服务类
  */
 
-public interface IService {
+public interface IService   {
 
     /**
      * @Author: zsx
@@ -52,4 +54,7 @@ public interface IService {
     * @Return
     */
    // void cancelUpdate(String accountNumber, BigDecimal money);
+
+
+
 }

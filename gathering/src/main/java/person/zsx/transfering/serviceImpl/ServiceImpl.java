@@ -14,6 +14,7 @@ import person.zsx.transfering.service.IService;
 
 import javax.annotation.Resource;
 import java.math.BigDecimal;
+import java.util.List;
 
 /**
  * @Author: zsx
@@ -56,6 +57,8 @@ public class ServiceImpl implements IService {
         logger.info("---------------转账服务调用结束--------");
         return "execute result :"+ resultT;
     }
+
+
     //@Transactional
    // @Override
     public String tryUpdate(String accountNumber, BigDecimal money) {

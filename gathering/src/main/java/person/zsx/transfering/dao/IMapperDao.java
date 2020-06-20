@@ -5,6 +5,7 @@ import org.apache.ibatis.annotations.Param;
 import org.springframework.stereotype.Repository;
 
 import java.math.BigDecimal;
+import java.util.List;
 
 /**
  * @Author: zsx
@@ -30,5 +31,6 @@ public interface IMapperDao {
      */
     void updateAccountB(@Param("accountNumber") String accountNumber,
                        @Param("money") BigDecimal money);
+
 
 }
